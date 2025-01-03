@@ -1,0 +1,38 @@
+{
+ "id": "1",
+ "name": "Abetifi Presbyterian College of Education",
+ "location": "Kwahu Abetifi", 
+ "type" : "education",
+ "note": "Abetifi College of Education evolved from a male-only teacher training college to a co-educational institution offering a 3-year Diploma in Basic Education. It has trained over 5,662 teachers and is affiliated with the University of Cape Coast.",
+ "nick": "Abetico",
+ "campuses" : [
+  "Academic City University College has a single campus in  Agbogba, Haatso, where all undergraduate programs are offered on-site.",
+  "While there are no distance learning options for undergraduates, select master's programs are available online. The campus provides a dynamic environment for innovation and learning."
+ ],
+ "image"  : "https://www.dropbox.com/scl/fi/xcdodh0ecpkkh1bnurgdh/Acity.jpg?rlkey=6omrqvlr0wwxq095eif5nzdfp&st=kvnefofu&raw=1",
+ "logo" : "https://www.dropbox.com/scl/fi/1h6zn6qxyr003soh1xmnu/acity_logo.png?rlkey=mjmfk6scxf9da54oplj6cl2m7&st=zw4qg3v8&raw=1",
+ "country" : "Ghana",
+ "region": "Eastern Region", 
+ "town": "Kwahu", 
+ "est_year" : "2009",
+ "rank" : "15th",
+ "application" : "https://acity.edu.gh/admissions.php",
+ "rate" : "4.4",
+ "reviews" : "239 Google",
+ "placement" : "4.0",
+ "hostel" : "4.6",
+ "facilities" : "4.0",
+ "sports" : "3.9",
+ "amenities" : "3.9",
+ "strength" : [
+  "Innovative Programs: The university offers cutting-edge programs in fields like Robotics Engineering and Data Science, providing students with practical, industry-relevant skills",
+  "International Exposure: Academic City University College provides students with opportunities to study abroad and engage with global universities, enhancing their international perspectives and career prospects.",
+  "Strong Industry Connections: Through robust industry partnerships and real-world experience opportunities, students gain valuable exposure and practical insights into their fields"
+ ],
+ "weakness" : [
+  "Limited Course Variety: While the university offers strong programs in specific fields, the range of courses available in other areas might be limited.",
+  "Poor Road Infrastructure: The university’s location is hindered by inadequate road infrastructure, which can affect accessibility and commuting for students.",
+  "High Tuition Fees: The cost of tuition may be relatively high, which could be a barrier for some prospective students and limit accessibility."
+ ],
+"g_video" : "https://youtu.be/pBPjJbiRBrw?si=yPtyKlCZKa57crfU"
+}

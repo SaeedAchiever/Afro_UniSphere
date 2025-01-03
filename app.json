@@ -1,27 +1,40 @@
 {
   "expo": {
-    "name": "unisphere",
-    "slug": "unisphere",
+    "name": "Afro UniSphere",
+    "slug": "tert",
+    "newArchEnabled": true,
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "default",
+    "icon": "./assets/UniSphere.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/UniSphere.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/iconhere.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.saeedachiever.tert"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f3446c57-dcc5-47c7-add2-30c0ffa3f076"
+      }
+    },
+    "plugins": [
+      "expo-video"
+    ]
   }
 }

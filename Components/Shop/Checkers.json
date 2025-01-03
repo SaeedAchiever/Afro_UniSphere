@@ -1,0 +1,44 @@
+[
+ {
+  "id" : "1",
+  "name" : "WAEC Results Checker",
+  "image" : "https://www.dropbox.com/scl/fi/ymjvvbwzzvfsg27mgueyb/Buy-WASSCE-Results-Checker-Cards-WAEC-Shortcode.png.png?rlkey=rj63jyt1d4fzqksx8wno0l0fa&raw=1",
+  "price" : 20,
+  "note" : "Ea ut et consectetur culpa labore voluptate et velit esse culpa velit magna sit."
+ },
+ {
+  "id" : "2",
+  "name" : "BECE Results Checker",
+  "image" : "https://www.dropbox.com/scl/fi/l1l5nhe0aosv1m0k0qilq/Buy-BECE-Results-Checker-Cards-Shortcode.png.png?rlkey=jibq4grgwt2g2r9jw5rhcqxm8&raw=1",
+  "price" : 30,
+  "note" : "Ea ut et consectetur culpa labore voluptate et velit esse culpa velit magna sit."
+ },
+ {
+  "id" : "3",
+  "name" : "ABCE Results Checker",
+  "image" : "https://www.dropbox.com/scl/fi/u90y9tw3b8domdg776m7h/Buy-ABCE-Results-Checker-Cards-Shortcode.png.png?rlkey=ey7okjhvhacq6h7uvh0202bk1&raw=1",
+  "price" : 32,
+  "note" : "Ea ut et consectetur culpa labore voluptate et velit esse culpa velit magna sit."
+ },
+ {
+  "id" : "4",
+  "name" : "CSSPS School Placement Checker",
+  "image" : "https://www.dropbox.com/scl/fi/3pmlpghtaw4t27alv0558/Buy-CSSPS-School-Placement-Checker-Shortcode.png.png?rlkey=2i3ojuaksxhsc183wrjxa2wb4&raw=1",
+  "price" : 25,
+  "note" : "Ea ut et consectetur culpa labore voluptate et velit esse culpa velit magna sit."
+ },
+ {
+  "id" : "5",
+  "name" : "CTVET Results Checker PIN",
+  "image" : "https://www.dropbox.com/scl/fi/20dijj2gcl9cjnrs1440y/Buy-CTVET-Results-Checker-Cards-NABPTEX.png.png?rlkey=xkahzl7bloyrh2i3gbdqv62zl&raw=1",
+  "price" : 50,
+  "note" : "Ea ut et consectetur culpa labore voluptate et velit esse culpa velit magna sit."
+ },
+ {
+  "id" : "6",
+  "name" : "TEU NABPTEX Results Checker",
+  "image" : "https://www.dropbox.com/scl/fi/w8o95pge0cv5z7ueaaz6m/Buy-NABPTEX-Results-Checker-Cards-TEU.png.png?rlkey=a7v64owwqigil1qi8qyswjdi2&raw=1",
+  "price" : 25,
+  "note" : "Ea ut et consectetur culpa labore voluptate et velit esse culpa velit magna sit."
+ }
+]
