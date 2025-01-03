@@ -1,43 +1,44 @@
 [
   {
-    "id": "3",
-    "name": "African University College of Communication",
-    "location": "Adabraka",
+    "id": "12",
+    "name": "KAAF University College",
+    "location": "Buduburam",
     "country": "Ghana",
-    "region": "Greater Accra",
-    "town": "Accra",
+    "region": "Central Region",
+    "town": "Kasoa",
     "type": "private",
-    "note": "The African University College of Communications (AUCC) is a private institution offering programs in Communication Studies, Business Administration, and Technology. Renowned as a UNESCO Centre of Excellence, AUCC is affiliated with GIMPA and globally connected through exchange programs. It also hosts specialized centers like the Kwabena Nketia Centre for Africana Studies and plans to expand its offerings and campuses.",
-    "nick": "AUCC",
-    "campus_number": "1",
-    "campuses": [
-      "African University College of Communications has a single campus in Adabraka, Accra, where all programs are offered on-campus."
-    ],
-    "image": "https://www.dropbox.com/scl/fi/p74b8jtwbwoq6xpma88mv/Screenshot_20241003_203736_Google.jpg?rlkey=szgb51rama0tqwogsp08mfylo&st=39e7rcwz&raw=1",
-    "logo": "https://www.dropbox.com/scl/fi/xz7rtympgfprl218kcl3h/Screenshot_20241003_204316_Google.jpg?rlkey=02tvl1xra611vtknh3rxbto5c&st=rphbk79m&raw=1",
-    "est_year": "2002",
-    "rank": "377th",
-    "application": "https://portal.aucc.edu.gh/applicant",
-    "rate": "4.3",
-    "reviews": "67 Google",
-    "placement": "4.2",
+    "note": "Kaaf University College offers diverse undergraduate and graduate programs across health sciences, business, and law, fostering holistic education and career readiness. With expert faculty, state-of-the-art facilities, and a focus on critical thinking, it prepares students for impactful roles in their fields. Known for its contributions to healthcare, corporate, and legal sectors, Kaaf emphasizes community engagement, research, and societal development, creating a supportive and inclusive learning environment.",
+    "nick": "KAAF",
+    "est_year": "2006",
+    "rank": "757th",
+    "application": "https://portal.kaafuni.edu.gh/kuceportalonline/users2.php",
+    "rate": "4.4",
+    "reviews": "104 Google",
+    "placement": "4.7",
     "hostel": "3.9",
     "facilities": "3.7",
     "sports": "3.9",
-    "amenities": "3.5",
+    "amenities": "3.6",
+    "campus_number": "2",
+    "campuses": [
+      "KAAF University College has two  campuses in Ghana. The main campus in Buduburam, Kasoa. The other campuse is Accra City Campus, located in Darkuman, Dr Bussia Highway. This is where all programmes are taken in person."
+    ],
+    "image": "https://www.dropbox.com/scl/fi/o7vzeqpf6tf3yzj1te4v5/KAAF-University-College-Main-Campus-Buduburam-Ghana-SchoolFinder-TortoisePathcom.jpeg?rlkey=tpd0u64musj54r18v1bb7zws8&st=vpiwnl4e&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/ix8ytgy896n9pt5x5zkah/images-6.jpeg?rlkey=zuqedny42r10w3axfw6alf4jy&st=h5j6npl0&raw=1",
     "strength": [
-      "Reputation for Excellence: Recognized by UNESCO as a Centre of Excellence and offers flagship programs in Journalism and Communication Studies.",
-      "Broad Academic Offerings: Provides diverse programs in Communications, Business Administration, and Technology with plans for expansion.",
-      "Global Affiliations: Strong international partnerships and exchange programs enhance global exposure for students.",
-      "Specialized Centers: Unique facilities like the Kwabena Nketia Centre for Africana Studies and the AUCC Pensions Academy enrich learning opportunities.",
-      "Experienced Leadership: Founded by Hon. Kojo Yankah, with extensive expertise in journalism and public service."
+      "Diverse Academic Offerings: Wide range of undergraduate and graduate programs, including health sciences, business, and law.",
+      "Expert Faculty: Distinguished professionals committed to fostering critical thinking and academic excellence.",
+      "Modern Facilities: State-of-the-art resources provide a conducive learning environment.",
+      "Healthcare Contributions: Recognized for its impact on healthcare education and development.",
+      "Holistic Approach: Combines academic, extracurricular, and community engagement to foster well-rounded graduates.",
+      "Inclusivity: Supportive community that encourages students to explore their potentia"
     ],
     "weakness": [
-      "Limited Geographic Reach: Current physical presence is limited, with only future plans to establish additional campuses like Tamale.",
-      "Dependency on Approvals: Expansion into new programs and campuses depends heavily on accreditation and regulatory approvals.",
-      "Niche Focus: Strong emphasis on communication and journalism may limit appeal to students seeking other disciplines.",
-      "Relatively Young: Still building its reputation and alumni network compared to older institutions."
+      "Private Institution Limitations: Higher tuition fees may limit accessibility for some students.",
+      "Reputation Building: Competes with older, more established universities for recognition.",
+      "Resource Challenges: Sustaining modern facilities and diverse programs may require significant funding.",
+      "Regional Focus: May face challenges in gaining global visibility and appeal."
     ],
-    "g_video": "https://web.facebook.com/auccafrica/videos/african-university-college-of-communications-aucc/387912971857207/?_rdc=1&_rdr"
+    "g_video": "https://www.youtube.com/watch?v=nqVbaDWB6rI"
   }
 ]
