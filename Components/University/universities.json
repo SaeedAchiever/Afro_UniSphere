@@ -219,74 +219,247 @@
   {
     "id": "7",
     "name": "Dominion University College",
-    "location": "Accra",
-    "campuses": "2",
-    "town": "East Lgon",
+    "location": "East Legon",
+    "country": "Ghana",
     "region": "Greater Accra",
-    "reviews": "120 Google",
-    "rate": "4.6",
-    "est_year": "2009",
-    "rank": "774",
-    "application": "https://mis.duc.edu.gh/apply",
-    "note": "require('../../assets/knust.jpeg')",
-    "image": "https://www.dropbox.com/scl/fi/15s81dovpg9ctvppkwe65/2018-09-04.jpg?rlkey=3adzx6c5seo2rgsx254iyh6l2&st=69ahxix9&raw=1",
-    "logo": "https://www.dropbox.com/scl/fi/vt8nqvjox3nv3xuphtj55/images-3.jpeg?rlkey=v6tmeod47qd8lwc26oqwxixxm&st=t7vajngf&raw=1",
+    "town": "Accra",
+    "type": "private",
+    "note": "Dominion University College, established in 2009 and accredited in 2012, aims to empower students through quality education, character development, research, and community engagement. Committed to academic excellence, it offers a vibrant campus life, modern facilities, and innovative teaching to nurture future leaders.",
     "nick": "DUC",
-    "type": "affiliated"
+    "est_year": "2009",
+    "rank": "774th",
+    "application": "https://admissions.duc.edu.gh/accounts/register",
+    "rate": "4.6",
+    "reviews": "121 Google",
+    "placement": "4.3",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.5",
+    "campus_number": "1",
+    "campuses": [
+      " The Dominion University College has only one campus in East Legon, Accra, where all programs are offered on-campus."
+    ],
+    "image": "https://www.dropbox.com/scl/fi/15s81dovpg9ctvppkwe65/2018-09-04.jpg?rlkey=3adzx6c5seo2rgsx254iyh6l2&st=u1oqv5m0&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/vt8nqvjox3nv3xuphtj55/images-3.jpeg?rlkey=v6tmeod47qd8lwc26oqwxixxm&st=wgogbysg&raw=1",
+    "strength": [
+      "Quality Education: Focus on academic excellence and character development.",
+      "Modern Facilities: State-of-the-art infrastructure supports learning and research.",
+      "Innovative Curricula: Offers programs designed to meet contemporary educational and societal needs.",
+      "Community Engagement: Actively involves students in societal impact initiatives.",
+      "Vibrant Campus Life: Provides a conducive and dynamic environment for holistic student development."
+    ],
+    "weakness": [
+      "Limited History: Being a relatively new institution, it has a smaller alumni network and less established reputation.",
+      "Regional Recognition: May face challenges in gaining visibility and competitiveness on a global scale.",
+      "Resource Dependency: Potential constraints in maintaining cutting-edge facilities and programs over time.",
+      "Focused Offerings: May lack the diversity in programs compared to more comprehensive universities."
+    ],
+    "g_video": "https://www.instagram.com/duc_ghana/reel/C8844iMN-pv"
   },
   {
     "id": "8",
     "name": "Evangelical Presbyterian University College",
     "location": "Ho",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
-    "Page": "WIUCPage",
-    "nick": "WIUC",
-    "type": "affiliated"
+    "country": "Ghana",
+    "region": "Volta Region",
+    "town": "Ho",
+    "type": "private",
+    "note": "The E.P. Church, with a 160-year history in Ghana, resolved at its 1999 Synod to establish a university in the Volta Region in response to regional demands. Known for providing social services like schools, health facilities, and agricultural initiatives, the church seeks to fulfill its mission of 'Bringing light to where there is darkness.'",
+    "nick": "EPUC",
+    "est_year": "1999",
+    "rank": "454th",
+    "application": "https://www.epuc.edu.gh/university/index.php/admissions/how-to-apply",
+    "rate": "4.1",
+    "reviews": "59 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.5",
+    "campus_number": "2",
+    "campuses": [
+      " The Evangelical Presbyterian University College has two campuses. The main campus in Ho and the other in Peki both in the Volta Region, where all programs are offered on-campus."
+    ],
+    "image": "https://www.dropbox.com/scl/fi/9pxsf7nptolwuu5qc5rju/peki_campus.jpg?rlkey=c1po2dkw0g0busd9mi964r9l1&st=82vagve4&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/tqflxjj37xdsjijc9psf6/images-2.jpeg?rlkey=6phxau4ibtkrl3x18ab46bqsn&st=3b1tk9nk&raw=1",
+    "strength": [
+      "Strong Community Focus: Long-standing commitment to social services, including education, healthcare, and agriculture, demonstrates dedication to community welfare.",
+      "Mission-Driven Vision: The church’s guiding mission, 'Bringing light to where there is darkness,' provides a clear and inspirational foundation for initiatives.",
+      "Historical Credibility: Over 160 years of active presence in Ghana lends credibility and trust to its projects, including the establishment of a university.",
+      "Regional Advocacy: Addressing the educational needs of the Volta Region aligns with a significant public demand, ensuring local relevance."
+    ],
+    "weakness": [
+      "Resource Dependence: Establishing a university requires substantial financial and infrastructural investment, which may strain church resources.",
+      "Late Entry: Entering the university sector later than other institutions could pose challenges in competing for students and staff.",
+      "Limited Expertise in Tertiary Education: While experienced in basic and secondary education, the transition to higher education may require significant adjustments and capacity building."
+    ],
+    "g_video": "https://web.facebook.com/epuniversitycollege/videos/epuc-students-visit-national-development-planning-commissionlevel-400-students-f/4233589713344995/?_rdc=1&_rdr"
   },
   {
     "id": "9",
     "name": "Family Health University College",
-    "location": "Accra",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
+    "location": "Teshie",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "Family Health University College began in 1997 as a diagnostic center and evolved into a hospital, later establishing a Nursing and Midwifery School in 2009. In 2015, it became Ghana’s first private medical school and gained university college status in 2016, now located at Teshie near the Atlantic Ocean.",
+    "nick": "FHU",
+    "est_year": "1997",
+    "rank": "Unknown",
+    "application": "https://iapply.fhu.edu.gh/Account/LogIn?ReturnUrl=%2F",
+    "rate": "4.5",
+    "reviews": "10 Google",
+    "placement": "4.7",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.5",
+    "campus_number": "1",
+    "campuses": [
+      " The Family Health University College has only one campus in Teshie Road, Accra, where all programs are offered on-campus."
+    ],
     "image": "https://www.dropbox.com/scl/fi/ux4d571hiwkpgdzzr5x03/new001-1024x640.jpg?rlkey=pee8wankipkyw5y41bqo3qjh1&st=zeq16xuu&raw=1",
     "logo": "https://www.dropbox.com/scl/fi/ky86jeyom9dp0ewcu1l9q/download-1.jpeg?rlkey=xjzsqkzxe3pcgzh7ubm6le8zl&st=ovtq4436&raw=1",
-    "nick": "CIBT",
-    "type": "affiliated"
+    "strength": [
+      "Pioneering Role: Ghana’s first private medical school, demonstrating innovation and leadership in healthcare education.",
+      "Comprehensive Growth: Transitioned from a diagnostic center to a university college with a focus on health sciences.",
+      "Strategic Location: Positioned at Teshie, offering accessibility and a serene learning environment near the Atlantic Ocean.",
+      "Specialized Focus: Strong emphasis on training healthcare professionals, addressing critical needs in the sector.",
+      "Institutional Heritage: Built on the foundation of a successful hospital, providing practical exposure for students.brant Campus Life: Provides a conducive and dynamic environment for holistic student development."
+    ],
+    "weakness": [
+      "Limited Academic Scope: Focus on health sciences may restrict diversity in academic offerings.",
+      "Relatively New University College: Shorter history compared to older institutions might limit its prestige and alumni influence.",
+      "Resource Dependency: Requires sustained investment to maintain and expand facilities and programs.",
+      "Geographic Focus: Primarily caters to healthcare, which may limit appeal to students seeking broader disciplines."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=MtxU8Hx0RRo"
   },
   {
     "id": "10",
     "name": "Ghana Christian University College",
     "location": "Amranhia",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "Ghana Christian University College', formerly known as Ghana Christian College and Seminary, is a private tertiary institution in Ghana. It was established in 1966 by independent Christian missionaries from the United States.",
+    "nick": "Ghanacu",
+    "est_year": "1966",
+    "rank": "804th",
+    "application": "https://ghanacu.edu.gh/Admission%20Registration%20Form/index.html",
+    "rate": "4.2",
+    "reviews": "133 Google",
+    "placement": "4.5",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "3",
+    "campuses": [
+      "Ghana Christian University College has three campuses. The main campus in Amranhia, Dodowa road, Accra, The two other majoring as in learning centers. Takoradi learning center: Located at Bompeh Secondary Technical in Takoradi and Kumasi learning center: Located in the Suame Post Office area in Kumasi"
+    ],
     "image": "https://www.dropbox.com/scl/fi/gve8j6lmg7zry6jsdrcsp/1524815453-96-ghana-christian-university-college.jpg?rlkey=oh6nsugpi5oh9d1ht84wqpw2h&st=ypbwis1o&raw=1",
     "logo": "https://www.dropbox.com/scl/fi/qejlnswidmtvujfxw4fcd/images-5.jpeg?rlkey=l2xizvzv6bdqf0l3t8jls7j5f&st=zrlufvjo&raw=1",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "strength": [
+      "Faith-Based Education: Combines academic excellence with moral and spiritual development, fostering holistic student growth.",
+      "Community Engagement: Actively participates in societal development and service.",
+      "Supportive Environment: Offers a nurturing and values-driven atmosphere for learning and character formation.",
+      "Focus on Leadership: Prepares students to be ethical leaders in various sectors.",
+      "Cultural Relevance: Incorporates Ghanaian and Christian values, appealing to a specific demographic."
+    ],
+    "weakness": [
+      "Limited Program Diversity: May focus predominantly on theology and related disciplines, reducing appeal to broader academic interests.",
+      "Smaller Scale: As a specialized institution, it may lack the infrastructure and resources of larger universities.",
+      "Regional Reputation: May struggle with visibility and recognition outside its faith-based and regional community.",
+      "Funding Constraints: Reliance on faith-based support could limit access to significant external funding for expansion and innovation."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=ND0mtenDmUQ"
   },
   {
     "id": "11",
     "name": "Jackson Institute of Innovation and Leadership",
-    "town": "Kumasi",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
+    "location": "Kumasi",
+    "country": "Ghana",
+    "region": "Ashante Region",
+    "town": "Accra",
+    "type": "private",
+    "note": "Jackson Institute of Innovation and Leadership (JIIL), part of the Jackson Educational Complex (JEC) established in 2009, emphasizes hands-on learning and leadership training across various sectors. As Ghana’s first private institution offering Bachelor and Diploma programs in Basic Education via Distance Learning, JIIL combines traditional academics with experiential learning and industry collaboration to prepare graduates for impactful careers.",
+    "nick": "JIIL",
+    "est_year": "2009",
+    "rank": "Unknown",
+    "application": "https://www.admissions.jiil.edu.gh/",
+    "rate": "4.7",
+    "reviews": "7 Google",
+    "placement": "4.7",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "1",
+    "campuses": [
+      "Ghana Christian University College has only one campus in Kumasi. This is where all programmes are taken in person."
+    ],
     "image": "https://www.dropbox.com/scl/fi/xnrzd65xfayj75dw3vdia/2021-04-23.jpg?rlkey=8plre1qc0jmbmu0ohc5gi46y2&st=4d1yh431&raw=1",
     "logo": "https://www.dropbox.com/scl/fi/t1ykbkatuaj48pfbdluks/picture.jpeg?rlkey=kc55f33sw3pgvlrxrobcy3mzn&st=23y274qs&raw=1",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "strength": [
+      "Pioneering Distance Learning: First private institution in Ghana to offer Bachelor and Diploma programs in Basic Education via Distance Learning.",
+      "Hands-On Learning: Emphasis on experiential education through group projects, presentations, and real-world industry collaboration.",
+      "Leadership Development: Focuses on training leaders across diverse societal sectors.",
+      "Industry Partnership: Collaborates with organizations to ensure graduates are workforce-ready.",
+      "Innovative Approach: Bridges academia and industry with inclusive, entrepreneurial, and innovative education."
+    ],
+    "weakness": [
+      "Narrow Focus: Emphasis on education and leadership may limit appeal to students interested in broader academic disciplines.",
+      "Relatively New Institution: Shorter history compared to older institutions could affect its reputation and influence.",
+      "Resource Demands: Maintaining experiential learning and industry partnerships may require substantial resources and funding.",
+      "Distance Learning Challenges: Potential issues with accessibility, engagement, and quality control in remote education delivery."
+    ],
+    "g_video": "https://web.facebook.com/JIILEDU/videos/welcome-to-jiil/740885336840199/?_rdc=1&_rdr"
   },
   {
     "id": "12",
     "name": "KAAF University College",
-    "location": "Mallam",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
+    "location": "Buduburam",
+    "country": "Ghana",
+    "region": "Central Region",
+    "town": "Kasoa",
+    "type": "private",
+    "note": "Kaaf University College offers diverse undergraduate and graduate programs across health sciences, business, and law, fostering holistic education and career readiness. With expert faculty, state-of-the-art facilities, and a focus on critical thinking, it prepares students for impactful roles in their fields. Known for its contributions to healthcare, corporate, and legal sectors, Kaaf emphasizes community engagement, research, and societal development, creating a supportive and inclusive learning environment.",
+    "nick": "KAAF",
+    "est_year": "2006",
+    "rank": "757th",
+    "application": "https://portal.kaafuni.edu.gh/kuceportalonline/users2.php",
+    "rate": "4.4",
+    "reviews": "104 Google",
+    "placement": "4.7",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "2",
+    "campuses": [
+      "KAAF University College has two  campuses in Ghana. The main campus in Buduburam, Kasoa. The other campuse is Accra City Campus, located in Darkuman, Dr Bussia Highway. This is where all programmes are taken in person."
+    ],
     "image": "https://www.dropbox.com/scl/fi/o7vzeqpf6tf3yzj1te4v5/KAAF-University-College-Main-Campus-Buduburam-Ghana-SchoolFinder-TortoisePathcom.jpeg?rlkey=tpd0u64musj54r18v1bb7zws8&st=vpiwnl4e&raw=1",
     "logo": "https://www.dropbox.com/scl/fi/ix8ytgy896n9pt5x5zkah/images-6.jpeg?rlkey=zuqedny42r10w3axfw6alf4jy&st=h5j6npl0&raw=1",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "strength": [
+      "Diverse Academic Offerings: Wide range of undergraduate and graduate programs, including health sciences, business, and law.",
+      "Expert Faculty: Distinguished professionals committed to fostering critical thinking and academic excellence.",
+      "Modern Facilities: State-of-the-art resources provide a conducive learning environment.",
+      "Healthcare Contributions: Recognized for its impact on healthcare education and development.",
+      "Holistic Approach: Combines academic, extracurricular, and community engagement to foster well-rounded graduates.",
+      "Inclusivity: Supportive community that encourages students to explore their potentia"
+    ],
+    "weakness": [
+      "Private Institution Limitations: Higher tuition fees may limit accessibility for some students.",
+      "Reputation Building: Competes with older, more established universities for recognition.",
+      "Resource Challenges: Sustaining modern facilities and diverse programs may require significant funding.",
+      "Regional Focus: May face challenges in gaining global visibility and appeal."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=nqVbaDWB6rI"
   },
   {
     "id": "13",
