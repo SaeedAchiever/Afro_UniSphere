@@ -464,48 +464,171 @@
   {
     "id": "13",
     "name": "Garden City University College",
+    "location": "Kenyasi",
+    "country": "Ghana",
+    "region": "Ashante Region",
     "town": "Kumasi",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
-    "image": "https://www.dropbox.com/scl/fi/vfd4f7srn8w4mb3sturrb/front.jpeg?rlkey=uwf6ilkphxrfsqircljavjamt&st=acw6uyah&raw=1",
-    "logo": "https://www.dropbox.com/scl/fi/xjjsz81x9rqgo43qsqztg/gcuc_logo.png?rlkey=xq82q8enrg7x0ln4fm74byebe&st=hmflzaj4&raw=1",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "type": "private",
+    "note": "Garden City University College was established in 2001 has eleven departments within the Faculties offering undergraduate programmes in business, health and applied sciences. Among its facilities are internet connectivity with Wi-Fi accessibility, fully equipped libraries, office equipment, state of the art hostel, simulation rooms, dental clinic, fully dedicated satellite system and many more.",
+    "nick": "GCUC",
+    "est_year": "2001",
+    "rank": "364th",
+    "application": "https://gcuc.edu.gh/gcucadmission/application",
+    "rate": "4.2",
+    "reviews": "273 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "3",
+    "campuses": [
+      "Garden City University College has three  campuses in Ghana. The main campus in Kumasi. The other campuses in Akim Oda and Berekum."
+    ],
+    "image": "https://www.dropbox.com/scl/fi/o7vzeqpf6tf3yzj1te4v5/KAAF-University-College-Main-Campus-Buduburam-Ghana-SchoolFinder-TortoisePathcom.jpeg?rlkey=tpd0u64musj54r18v1bb7zws8&st=vpiwnl4e&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/ix8ytgy896n9pt5x5zkah/images-6.jpeg?rlkey=zuqedny42r10w3axfw6alf4jy&st=h5j6npl0&raw=1",
+    "strength": [
+      "Diverse Programs: Offers a variety of undergraduate and postgraduate programs tailored to meet industry demands.",
+      "Healthcare Focus: Strong emphasis on health sciences, contributing to Ghana’s healthcare sector.",
+      "Conducive Learning Environment: Equipped with modern facilities to support academic and extracurricular activities.",
+      "Industry-Relevant Education: Curricula designed to prepare students for the workforce with practical skills.",
+      "Community Engagement: Actively participates in societal development and outreach programs."
+    ],
+    "weakness": [
+      "Regional Focus: Limited recognition outside Ghana, reducing its international appeal.",
+      "Private Institution Challenges: Higher costs of education may deter students from lower-income backgrounds.",
+      "Resource Dependency: Sustaining infrastructure and programs may require substantial and consistent funding.",
+      "Limited Alumni Network: Relatively newer institution compared to older universities, impacting influence and partnerships.",
+      "Program Range: May lack the diversity of offerings compared to comprehensive universities."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=H3oZS6tORoc"
   },
   {
     "id": "14",
     "name": "Lancaster University",
-    "location": "Accra",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
+    "location": "Tantra Hill, Achimota",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "Lancaster University Ghana aims to lead in higher education by offering a research-driven curriculum in a dynamic, innovative environment. It fosters a diverse, collaborative community that emphasizes research, social and environmental awareness, and practical, case-based learning to prepare students for local and global challenges.",
+    "nick": "Lancaster",
+    "est_year": "2013",
+    "rank": "547th",
+    "application": "https://lancaster.edu.gh/applying-to-lancaster-university",
+    "rate": "4.6",
+    "reviews": "95 Google",
+    "placement": "4.2",
+    "hostel": "4.0",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "1",
+    "campuses": [
+      "Lancaster University has a single campus in Tantra-Hill, Accra, this campus is the only British branch campus in West Africa. It offers undergraduate courses in business, management, international relations, computer science, law, psychology, and a global MBA program. Students will be taught by local and Lancaster academic staff."
+    ],
     "image": "https://www.dropbox.com/scl/fi/vbbhovkpfrbbeb3vku76v/LUG-Campus-_4.JPG-1-scaled-800x533.jpg?rlkey=25rcm7imkb1sxhawtpz3l7cn0&st=22xlnhd6&raw=1",
     "logo": "https://www.dropbox.com/scl/fi/u59al48w2qfrdd9skpogi/images-7.jpeg?rlkey=3cswdmidxbu2m2ofyxpjos4sw&st=9krthiiu&raw=1",
-    "nick": "Lancaster",
-    "type": "affiliated"
+    "strength": [
+      "Research-Driven Curriculum: Emphasis on research and innovation aligns with global academic standards.",
+      "Diverse Community: Promotes collaboration among students, faculty, and staff from various backgrounds.",
+      "Practical Learning: Combines theoretical knowledge with case-based studies and real-world applications.",
+      "Global Affiliation: Connection to the UK campus enhances reputation and access to resources.",
+      "Progressive Vision: Focus on adaptability to local and global challenges fosters well-rounded graduates."
+    ],
+    "weakness": [
+      "High Costs: Affiliation with an international university may lead to higher tuition fees, limiting accessibility.",
+      "Limited Local Identity: Strong UK ties might overshadow efforts to establish a unique local identity in Ghana.",
+      "Resource Intensive: Maintaining research-driven programs and facilities requires significant investment.",
+      "Niche Focus: Concentration on research and innovation might limit appeal to students seeking traditional programs.",
+      "Regional Competition: Faces competition from other institutions offering similar programs at lower costs."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=ES5VVLtoRt8"
   },
   {
     "id": "15",
     "name": "Maranatha University College",
     "location": "Sowutuom",
-    "town": "Accra",
+    "country": "Ghana",
     "region": "Greater Accra",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
+    "town": "Accra",
+    "type": "private",
+    "note": "Maranatha University College (formerly Maranatha Bible College) was founded in 1972 through the vision of Mr. William Ofori Atta and Rev. John Bergen to train young Ghanaians in the Word of God for service. Established as a collaboration between Ghanaian believers and the Sudan Interior Mission, it operates as an autonomous institution. MUC has been instrumental in training leaders for town fellowship groups, contributing significantly to the religious community and the nation's spiritual growth.",
+    "nick": "MUC",
+    "est_year": "1972",
+    "rank": "1056th",
+    "application": "https://muc-gh.com/online-application",
+    "rate": "4.1",
+    "reviews": "65 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "1",
+    "campuses": [
+      "Maranatha University College has a single campus in Sowutuom, Accra, where all programmes are takne on-campus."
+    ],
     "image": "https://www.dropbox.com/scl/fi/ljvpg4p5nf9nkfb4qdhpq/images-8.jpeg?rlkey=vi28jun3meth3tz2vd7esxioc&st=eu77m65j&raw=1",
     "logo": "https://www.dropbox.com/scl/fi/mb9kqewbfnpke56c58fcu/images-9.jpeg?rlkey=2k1oousmjksoodvdv9klqut3x&st=rpgzmz58&raw=1",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "strength": [
+      "Strong Religious Foundation: Rooted in a clear vision to train leaders in the Word of God for service.",
+      "Legacy of Leadership Training: Successfully equips students to play key spiritual roles in communities and churches.",
+      "Autonomy: Operates as an independent Ghanaian organization with strong local governance.",
+      "Historical Significance: Founded by respected figures, contributing to its credibility and impact.",
+      "Community Impact: Significant influence in fostering town fellowship groups and spiritual growth."
+    ],
+    "weakness": [
+      "Limited Program Diversity: Focused primarily on theological and religious education, which may limit appeal.",
+      "Small Scale: May not compete with larger institutions offering a broader range of programs.",
+      "Resource Constraints: Potentially limited funding and facilities compared to secular universities.",
+      "Narrow Market Appeal: Primarily attracts students interested in religious studies, restricting enrollment diversity.",
+      "Modernization Challenges: May face difficulties adapting to contemporary educational demands and trends."
+    ],
+    "g_video": ""
   },
   {
     "id": "16",
     "name": "Radford University College",
     "location": "East Legon",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "Radford University College (RUC), affiliated with Kwame Nkrumah University of Science and Technology (KNUST), offers a diverse range of degree programs including Graphic Design, Fashion Design, Medical Laboratory Technology, and Business Administration. Renowned for its academic excellence, RUC features modern facilities, innovative teaching methods, and a qualified faculty. It is celebrated for pioneering Ghana’s first Bachelor’s degree program in Fashion Design, earning national and international recognition.",
+    "nick": "MUC",
+    "est_year": "2009",
+    "rank": "398th",
+    "application": "https://ruc.edu.gh/how-to-apply",
+    "rate": "4.1",
+    "reviews": "143 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "1",
+    "campuses": [
+      "Radford University College has a single campus in East Legony, Accra, where all programmes are takne on-campus."
+    ],
     "image": "https://www.dropbox.com/scl/fi/dtlepy9yu8056shmt7zu1/Radford-University-College-Accra-Ghana-SchoolFinder-TortoisePathcom-1.jpeg?rlkey=4bn1o977sybb0jkw9s6pk3hm7&st=thmowl9q&raw=1",
     "logo": "https://www.dropbox.com/scl/fi/dbsglbsmlgvem1h801tp8/download-2.jpeg?rlkey=y1lx9cegahx8yn3zi9hgd76r4&st=kk81ljvs&raw=1",
-    "nick": "RUC",
-    "type": "affiliated"
+    "strength": [
+      "Strong Affiliation: Partnership with KNUST enhances credibility and academic standards.",
+      "Program Diversity: Offers a wide range of industry-relevant degree programs.",
+      "Innovative Leadership: Pioneer of Ghana’s first Bachelor’s program in Fashion Design.",
+      "Modern Facilities: Equipped with advanced labs, studios, and libraries to support learning.",
+      "Strategic Location: Situated in Accra, providing accessibility and exposure to opportunities.",
+      "Academic Reputation: Recognized for excellence, with graduates excelling globally."
+    ],
+    "weakness": [
+      "Limited Reach: Focused primarily on urban students due to its Accra location.",
+      "Resource Dependence: Reliance on KNUST for accreditation and academic oversight.",
+      "Specialized Recognition: Strong in Fashion Design but less visibility in other programs.",
+      "Competition: Faces challenges from larger universities offering similar programs.",
+      "Scalability: Potential constraints in expanding infrastructure and resources for increasing demand."
+    ],
+    "g_video": "https://web.facebook.com/RadfordUC/videos/3038436229768100/"
   },
   {
     "id": "17",
