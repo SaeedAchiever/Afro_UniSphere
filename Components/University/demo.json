@@ -1,44 +1,45 @@
 [
   {
-    "id": "12",
-    "name": "KAAF University College",
-    "location": "Buduburam",
+    "id": "16",
+    "name": "Radford University College",
+    "location": "East Legon",
     "country": "Ghana",
-    "region": "Central Region",
-    "town": "Kasoa",
+    "region": "Greater Accra",
+    "town": "Accra",
     "type": "private",
-    "note": "Kaaf University College offers diverse undergraduate and graduate programs across health sciences, business, and law, fostering holistic education and career readiness. With expert faculty, state-of-the-art facilities, and a focus on critical thinking, it prepares students for impactful roles in their fields. Known for its contributions to healthcare, corporate, and legal sectors, Kaaf emphasizes community engagement, research, and societal development, creating a supportive and inclusive learning environment.",
-    "nick": "KAAF",
-    "est_year": "2006",
-    "rank": "757th",
-    "application": "https://portal.kaafuni.edu.gh/kuceportalonline/users2.php",
-    "rate": "4.4",
-    "reviews": "104 Google",
-    "placement": "4.7",
+    "note": "Radford University College (RUC), affiliated with Kwame Nkrumah University of Science and Technology (KNUST), offers a diverse range of degree programs including Graphic Design, Fashion Design, Medical Laboratory Technology, and Business Administration. Renowned for its academic excellence, RUC features modern facilities, innovative teaching methods, and a qualified faculty. It is celebrated for pioneering Ghana’s first Bachelor’s degree program in Fashion Design, earning national and international recognition.",
+    "nick": "MUC",
+    "est_year": "2009",
+    "rank": "398th",
+    "application": "https://ruc.edu.gh/how-to-apply",
+    "rate": "4.1",
+    "reviews": "143 Google",
+    "placement": "4.2",
     "hostel": "3.9",
     "facilities": "3.7",
     "sports": "3.9",
     "amenities": "3.6",
-    "campus_number": "2",
+    "campus_number": "1",
     "campuses": [
-      "KAAF University College has two  campuses in Ghana. The main campus in Buduburam, Kasoa. The other campuse is Accra City Campus, located in Darkuman, Dr Bussia Highway. This is where all programmes are taken in person."
+      "Radford University College has a single campus in East Legony, Accra, where all programmes are takne on-campus."
     ],
-    "image": "https://www.dropbox.com/scl/fi/o7vzeqpf6tf3yzj1te4v5/KAAF-University-College-Main-Campus-Buduburam-Ghana-SchoolFinder-TortoisePathcom.jpeg?rlkey=tpd0u64musj54r18v1bb7zws8&st=vpiwnl4e&raw=1",
-    "logo": "https://www.dropbox.com/scl/fi/ix8ytgy896n9pt5x5zkah/images-6.jpeg?rlkey=zuqedny42r10w3axfw6alf4jy&st=h5j6npl0&raw=1",
+    "image": "https://www.dropbox.com/scl/fi/dtlepy9yu8056shmt7zu1/Radford-University-College-Accra-Ghana-SchoolFinder-TortoisePathcom-1.jpeg?rlkey=4bn1o977sybb0jkw9s6pk3hm7&st=thmowl9q&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/dbsglbsmlgvem1h801tp8/download-2.jpeg?rlkey=y1lx9cegahx8yn3zi9hgd76r4&st=kk81ljvs&raw=1",
     "strength": [
-      "Diverse Academic Offerings: Wide range of undergraduate and graduate programs, including health sciences, business, and law.",
-      "Expert Faculty: Distinguished professionals committed to fostering critical thinking and academic excellence.",
-      "Modern Facilities: State-of-the-art resources provide a conducive learning environment.",
-      "Healthcare Contributions: Recognized for its impact on healthcare education and development.",
-      "Holistic Approach: Combines academic, extracurricular, and community engagement to foster well-rounded graduates.",
-      "Inclusivity: Supportive community that encourages students to explore their potentia"
+      "Strong Affiliation: Partnership with KNUST enhances credibility and academic standards.",
+      "Program Diversity: Offers a wide range of industry-relevant degree programs.",
+      "Innovative Leadership: Pioneer of Ghana’s first Bachelor’s program in Fashion Design.",
+      "Modern Facilities: Equipped with advanced labs, studios, and libraries to support learning.",
+      "Strategic Location: Situated in Accra, providing accessibility and exposure to opportunities.",
+      "Academic Reputation: Recognized for excellence, with graduates excelling globally."
     ],
     "weakness": [
-      "Private Institution Limitations: Higher tuition fees may limit accessibility for some students.",
-      "Reputation Building: Competes with older, more established universities for recognition.",
-      "Resource Challenges: Sustaining modern facilities and diverse programs may require significant funding.",
-      "Regional Focus: May face challenges in gaining global visibility and appeal."
+      "Limited Reach: Focused primarily on urban students due to its Accra location.",
+      "Resource Dependence: Reliance on KNUST for accreditation and academic oversight.",
+      "Specialized Recognition: Strong in Fashion Design but less visibility in other programs.",
+      "Competition: Faces challenges from larger universities offering similar programs.",
+      "Scalability: Potential constraints in expanding infrastructure and resources for increasing demand."
     ],
-    "g_video": "https://www.youtube.com/watch?v=nqVbaDWB6rI"
+    "g_video": "https://web.facebook.com/RadfordUC/videos/3038436229768100/"
   }
 ]
