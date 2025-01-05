@@ -29,7 +29,8 @@
     "react-native-screens": "^4.4.0",
     "react-native-swiper": "^1.6.0",
     "react-native-video": "^6.6.4",
-    "react-native-web": "~0.19.13",
+    "react-native-web": "^0.19.13",
+    "react-scripts": "^5.0.1",
     "swiper": "^11.0.5"
   },
   "devDependencies": {

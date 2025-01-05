@@ -801,12 +801,44 @@
   {
     "id": "21",
     "name": "Lakeside University College",
-    "location": "Madina",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
-    "Page": "NAFTIPage",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "location": "Adenta",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "Lakeside University College, Ghana (LUCG), formerly the Madina Institute of Science and Technology, was established in 2013 by the Madina Foundation for Science and Technology (MFST) with support from Al-Diya, aiming to empower youth in underserved communities through quality science and technology education. Accredited in 2016, LUCG began operations with 70 students and four degree programs. Today, it offers six accredited programs across three schools, with a student population of 372 from four countries. The university has graduated three cohorts, with an alumni network of approximately 180 students.",
+    "nick": "LUCG",
+    "est_year": "2013",
+    "rank": "Unknown",
+    "application": "https://services.lucg.edu.gh/admission/auth-pin",
+    "rate": "4.5",
+    "reviews": "22 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "1",
+    "campuses": [
+      "Lakeside University College has one campus. The university has four schools: School of Engineering, School of Business and Technology, Business Administration, and School of Arts. LUCG is a private nonprofit university in Accra, Ghana. It was established by the Madina Foundation."
+    ],
+    "image": "https://www.dropbox.com/scl/fi/4wkoi3s3k65dm2byuzubt/download-6.jpeg?rlkey=e32iv73ckbyc3ixyk00qywwoc&st=tb40fq5r&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/rr8z2wjvjp1frz1zymyyg/1000090292-removebg-preview.png?rlkey=u6nkrz3w2eunczcniehfe1rwh&st=ibaukvei&raw=1",
+    "strength": [
+      "Focus on Science and Technology: Emphasizes education in fields critical for societal advancement.",
+      "Targeting Underserved Communities: Aims to provide quality education to disadvantaged youth.",
+      "Accreditation: Recognized by the Ghana Tertiary Education Commission, ensuring credibility.",
+      "Diverse Student Body: Attracts students from multiple countries, promoting cultural exchange.",
+      "Growth in Offerings: Expanded from four to six degree programs since inception."
+    ],
+    "weakness": [
+      "Limited Alumni Base: With only 180 graduates, the alumni network is relatively small.",
+      "Modest Student Enrollment: The current population of 372 indicates room for growth.",
+      "Resource Constraints: Likely dependent on external support from NGOs for operations.",
+      "Low Visibility: Still building its reputation and presence within Ghana’s higher educaon sector.",
+      "Geographic Scope: Predominantly serving local communities, limiting broader impact."
+    ],
+    "g_video": "https://web.facebook.com/lucghana/videos/3123395564615938/"
   },
   {
     "id": "22",

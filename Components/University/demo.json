@@ -1,19 +1,19 @@
 [
   {
-    "id": "16",
-    "name": "Radford University College",
-    "location": "East Legon",
+    "id": "21",
+    "name": "Lakeside University College",
+    "location": "Adenta",
     "country": "Ghana",
     "region": "Greater Accra",
     "town": "Accra",
     "type": "private",
-    "note": "Radford University College (RUC), affiliated with Kwame Nkrumah University of Science and Technology (KNUST), offers a diverse range of degree programs including Graphic Design, Fashion Design, Medical Laboratory Technology, and Business Administration. Renowned for its academic excellence, RUC features modern facilities, innovative teaching methods, and a qualified faculty. It is celebrated for pioneering Ghana’s first Bachelor’s degree program in Fashion Design, earning national and international recognition.",
-    "nick": "MUC",
-    "est_year": "2009",
-    "rank": "398th",
-    "application": "https://ruc.edu.gh/how-to-apply",
-    "rate": "4.1",
-    "reviews": "143 Google",
+    "note": "Lakeside University College, Ghana (LUCG), formerly the Madina Institute of Science and Technology, was established in 2013 by the Madina Foundation for Science and Technology (MFST) with support from Al-Diya, aiming to empower youth in underserved communities through quality science and technology education. Accredited in 2016, LUCG began operations with 70 students and four degree programs. Today, it offers six accredited programs across three schools, with a student population of 372 from four countries. The university has graduated three cohorts, with an alumni network of approximately 180 students.",
+    "nick": "LUCG",
+    "est_year": "2013",
+    "rank": "Unknown",
+    "application": "https://services.lucg.edu.gh/admission/auth-pin",
+    "rate": "4.5",
+    "reviews": "22 Google",
     "placement": "4.2",
     "hostel": "3.9",
     "facilities": "3.7",
@@ -21,25 +21,24 @@
     "amenities": "3.6",
     "campus_number": "1",
     "campuses": [
-      "Radford University College has a single campus in East Legony, Accra, where all programmes are takne on-campus."
+      "Lakeside University College has one campus. The university has four schools: School of Engineering, School of Business and Technology, Business Administration, and School of Arts. LUCG is a private nonprofit university in Accra, Ghana. It was established by the Madina Foundation."
     ],
-    "image": "https://www.dropbox.com/scl/fi/dtlepy9yu8056shmt7zu1/Radford-University-College-Accra-Ghana-SchoolFinder-TortoisePathcom-1.jpeg?rlkey=4bn1o977sybb0jkw9s6pk3hm7&st=thmowl9q&raw=1",
-    "logo": "https://www.dropbox.com/scl/fi/dbsglbsmlgvem1h801tp8/download-2.jpeg?rlkey=y1lx9cegahx8yn3zi9hgd76r4&st=kk81ljvs&raw=1",
+    "image": "https://www.dropbox.com/scl/fi/5qp73pydnebddtwl079sn/2024-07-19.jpg?rlkey=t354w3eqad2jonwxz8f22r6pl&st=1syyxovg&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/rr8z2wjvjp1frz1zymyyg/1000090292-removebg-preview.png?rlkey=u6nkrz3w2eunczcniehfe1rwh&st=ibaukvei&raw=1",
     "strength": [
-      "Strong Affiliation: Partnership with KNUST enhances credibility and academic standards.",
-      "Program Diversity: Offers a wide range of industry-relevant degree programs.",
-      "Innovative Leadership: Pioneer of Ghana’s first Bachelor’s program in Fashion Design.",
-      "Modern Facilities: Equipped with advanced labs, studios, and libraries to support learning.",
-      "Strategic Location: Situated in Accra, providing accessibility and exposure to opportunities.",
-      "Academic Reputation: Recognized for excellence, with graduates excelling globally."
+      "Focus on Science and Technology: Emphasizes education in fields critical for societal advancement.",
+      "Targeting Underserved Communities: Aims to provide quality education to disadvantaged youth.",
+      "Accreditation: Recognized by the Ghana Tertiary Education Commission, ensuring credibility.",
+      "Diverse Student Body: Attracts students from multiple countries, promoting cultural exchange.",
+      "Growth in Offerings: Expanded from four to six degree programs since inception."
     ],
     "weakness": [
-      "Limited Reach: Focused primarily on urban students due to its Accra location.",
-      "Resource Dependence: Reliance on KNUST for accreditation and academic oversight.",
-      "Specialized Recognition: Strong in Fashion Design but less visibility in other programs.",
-      "Competition: Faces challenges from larger universities offering similar programs.",
-      "Scalability: Potential constraints in expanding infrastructure and resources for increasing demand."
+      "Limited Alumni Base: With only 180 graduates, the alumni network is relatively small.",
+      "Modest Student Enrollment: The current population of 372 indicates room for growth.",
+      "Resource Constraints: Likely dependent on external support from NGOs for operations.",
+      "Low Visibility: Still building its reputation and presence within Ghana’s higher educaon sector.",
+      "Geographic Scope: Predominantly serving local communities, limiting broader impact."
     ],
-    "g_video": "https://web.facebook.com/RadfordUC/videos/3038436229768100/"
+    "g_video": "https://web.facebook.com/lucghana/videos/3123395564615938/"
   }
 ]

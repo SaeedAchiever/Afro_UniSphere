@@ -12,9 +12,7 @@
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -26,15 +24,13 @@
       "package": "com.saeedachiever.tert"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/iconhere.png"
     },
     "extra": {
       "eas": {
         "projectId": "f3446c57-dcc5-47c7-add2-30c0ffa3f076"
       }
     },
-    "plugins": [
-      "expo-video"
-    ]
+    "plugins": ["expo-video"]
   }
 }
