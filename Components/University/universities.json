@@ -843,32 +843,130 @@
   {
     "id": "22",
     "name": "Knutsford University College",
-    "location": "East Legon",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
-    "Page": "NAFTIPage",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "location": "Bamako, East Legon",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "Knutsford University College, established in 2007, addresses the need for affordable, high-quality university education in Ghana and beyond. Accredited by the Ghana Tertiary Education Commission (GTEC) the same year, the institution is known for its excellent facilities, transformative programs, and partnerships, including mentorship and degree conferment agreements with the University of Ghana (since 2011) and the University for Development Studies (since 2017). Starting with 25 students in 2008, Knutsford has grown significantly, serving thousands across its campuses in East Legon, Accra, and Kumasi.",
+    "nick": "Knutsford",
+    "est_year": "2007",
+    "rank": "601st",
+    "application": "https://pyrosys.co/kucnew/admissions/verify-voucher",
+    "rate": "4.5",
+    "reviews": "168 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "2",
+    "campuses": [
+      "Knutsford University College has two campuses: one in Accra and one in Kumasi:",
+      "Accra - Located at 10 Bamako Street, East Legon, Accra, Ghana. It's about a 10-minute drive from Kotoka International Airport and the University of Ghana.",
+      "Kumasi - Located at GBC Street, Plot 13 Blk, Opposite Bomso Clinic, Kumasi, Ghana. It's about a 25-minute drive from the regional airport."
+    ],
+    "image": "https://www.dropbox.com/scl/fi/s9pn0b6jgcoqnfnmctbfv/download.jpeg?rlkey=ujrj1tcifug4xc0qfz30on77i&e=1&st=z9et88xb&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/6gfl0qj8gdm02im8jv7bt/1000090456-removebg-preview.png?rlkey=1pkc5ydzx408gmaxy3q56k1yc&st=pjanxgx7&raw=1",
+    "strength": [
+      "Accreditation and Partnerships: Accredited by GTEC and affiliated with prestigious institutions like the University of Ghana and the University for Development Studies.",
+      "Significant Growth: Expanded from 25 students to thousands, reflecting its appeal and impact.",
+      "Strategic Location: Main campus in East Legon, near Kotoka International Airport, with an additional campus in Kumasi.",
+      "High-Quality Facilities: Offers exceptional academic resources and a conducive learning environment.",
+      "Affordable Education: Provides accessible, high-quality programs for a diverse student body."
+    ],
+    "weakness": [
+      "Limited Global Recognition: Needs to strengthen its international reputation and collaborations.",
+      "Reliance on Affiliations: Degree conferment depends on partner institutions, potentially limiting autonomy.",
+      "Resource Strain: Rapid growth may challenge infrastructure and faculty capacity.",
+      "'Geographic Concentration: Expansion is primarily within Ghana, limiting broader regional influence.",
+      "Late Adoption of Multi-Campus Model: The second campus was only established later, which may have slowed earlier expansion."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=PYQfaDbyFrU"
   },
   {
     "id": "23",
     "name": "Entrance University College of Health Sciences",
-    "location": "Accra",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
-    "Page": "NAFTIPage",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "location": "Spintex",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "Entrance University of Health Sciences is the first private university in the West African sub-region to offer the Doctor of Pharmacy degree. Affiliated with Kwame Nkrumah University of Science and Technology (KNUST), the university emphasizes experiential learning and state-of-the-art facilities. Situated in Spintex, Accra, Ghana, EUHS boasts well-equipped lecture rooms, laboratories, a library, and convenient off-campus hostel accommodations with shuttle services. The institution is committed to Ghana's socio-economic development and embraces its role in the global academic community.",
+    "nick": "EUHS",
+    "est_year": "2018",
+    "rank": "Unknown",
+    "application": "https://euhs.edu.gh/SignUp/",
+    "rate": "4.6",
+    "reviews": "20 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "1",
+    "campuses": [
+      "Entrance University College of Health Sciences has a single  campus in Spintex, Accra. This is where all their academic activities are held"
+    ],
+    "image": "https://www.dropbox.com/scl/fi/rgos1gw4ylgfpmzgvdvac/images-1.jpeg?rlkey=8xl9cvbrlnnfz7c0m4fftqd1v&st=91cxhirv&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/jz09qg0kdm4pze8u669aw/1000090466-removebg-preview.png?rlkey=z55vjrcm886w49gbh0wct0g6c&st=q40pjglt&raw=1",
+    "strength": [
+      "Pioneering Program: The first private university in West Africa to offer a Doctor of Pharmacy degree.",
+      "Experiential Learning: Focuses on hands-on education to enhance student proficiency.",
+      "Affiliation with KNUST: Ensures academic credibility and access to expertise.",
+      "Modern Facilities: State-of-the-art lecture rooms, laboratories, and library resources.",
+      "Convenient Location and Accommodation: Prime Spintex location and nearby hostel facilities with shuttle services.",
+      "Global Outlook: Committed to integrating into the global academic and socio-economic landscape."
+    ],
+    "weakness": [
+      "Limited Program Diversity: Focuses primarily on health sciences, potentially restricting broader student appeal.",
+      "Relatively New Institution: May face challenges in establishing a strong reputation compared to older universities.",
+      "Geographic Accessibility: Limited to Spintex, which may not be convenient for students outside Accra.",
+      "Dependence on Affiliation: Relies on KNUST for academic credibility, which may limit autonomy.",
+      "Competition: Competes with other established health science institutions in Ghana and beyond."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=PU7bGPbDX3g"
   },
   {
     "id": "24",
     "name": "West End University College",
-    "location": "Kasoa",
-    "campuses": "2",
-    "note": "require('../../assets/knust.jpeg')",
-    "Page": "NAFTIPage",
-    "nick": "NAFTI",
-    "type": "affiliated"
+    "location": "Ngleshie Amanfro",
+    "country": "Ghana",
+    "region": "Greater Accra",
+    "town": "Accra",
+    "type": "private",
+    "note": "West End University College (WEUC), established in 2010 and situated in Ngleshie-Amanfro, Accra, is an independent, non-denominational tertiary institution accredited by the National Accreditation Board and affiliated with the University of Cape Coast. WEUC offers comprehensive programs and services aimed at addressing societal educational and technical needs through learning, research, and outreach, fostering leadership, innovation, and social stewardship.",
+    "nick": "WEUC",
+    "est_year": "2010",
+    "rank": "910th",
+    "application": "https://weuc.edu.gh/admissions",
+    "rate": "4.4",
+    "reviews": "74 Google",
+    "placement": "4.2",
+    "hostel": "3.9",
+    "facilities": "3.7",
+    "sports": "3.9",
+    "amenities": "3.6",
+    "campus_number": "1",
+    "campuses": [
+      "West End University College has only campus in Ngleshie Amanfro, which  is accredited by the National Accreditation Board (NAB) of the Ministry of Education. WEUC is also affiliated with the University of Cape Coast (UCC). This is where all their academic activities are held"
+    ],
+    "image": "https://www.dropbox.com/scl/fi/nj8r4dbgk5eto3r9jc63f/img_2_1736110691956.jpg?rlkey=3wrjofl20abd80kx8jyqxi5ge&st=fbqtxgod&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/hsbhbo7ba59522c31xiz2/1000090479-removebg-preview.png?rlkey=14cns4yde6nd951qx35yk9dyp&st=oy0l26g6&raw=1",
+    "strength": [
+      "Accreditation and Affiliation: Accredited by the National Accreditation Board and affiliated with the University of Cape Coast, ensuring academic credibility and recognition.",
+      "Comprehensive Programs: Offers a wide range of programs that address societal and technical needs, fostering innovation and leadership.",
+      "Urban Location: Situated in Ngleshie-Amanfro, Accra, with proximity to major city amenities, providing accessibility to students.",
+      "Mission-Driven Focus: Strong emphasis on leadership, organizational change, and social stewardship, aligning education with societal development.",
+      "Modern Facilities: Urban setting conducive to learning and research activities."
+    ],
+    "weakness": [
+      "Relatively New Institution: Established in 2010, WEUC may face challenges competing with older, more established universities in terms of reputation and alumni network.",
+      "Limited International Recognition: As a local institution, it may lack the global presence or partnerships necessary for international competitiveness.",
+      "Narrow Urban Focus: Located in the urban periphery, the institution may have limited appeal to students from rural or remote areas.",
+      "Potential Resource Constraints: As a private institution, maintaining state-of-the-art facilities and extensive research funding could be challenging without robust financial support."
+    ],
+    "g_video": "https://www.youtube.com/watch?v=aj47b2qlZbA"
   },
   {
     "id": "25",

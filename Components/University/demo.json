@@ -1,19 +1,19 @@
 [
   {
-    "id": "21",
-    "name": "Lakeside University College",
-    "location": "Adenta",
+    "id": "24",
+    "name": "West End University College",
+    "location": "Ngleshie Amanfro",
     "country": "Ghana",
     "region": "Greater Accra",
     "town": "Accra",
     "type": "private",
-    "note": "Lakeside University College, Ghana (LUCG), formerly the Madina Institute of Science and Technology, was established in 2013 by the Madina Foundation for Science and Technology (MFST) with support from Al-Diya, aiming to empower youth in underserved communities through quality science and technology education. Accredited in 2016, LUCG began operations with 70 students and four degree programs. Today, it offers six accredited programs across three schools, with a student population of 372 from four countries. The university has graduated three cohorts, with an alumni network of approximately 180 students.",
-    "nick": "LUCG",
-    "est_year": "2013",
-    "rank": "Unknown",
-    "application": "https://services.lucg.edu.gh/admission/auth-pin",
-    "rate": "4.5",
-    "reviews": "22 Google",
+    "note": "West End University College (WEUC), established in 2010 and situated in Ngleshie-Amanfro, Accra, is an independent, non-denominational tertiary institution accredited by the National Accreditation Board and affiliated with the University of Cape Coast. WEUC offers comprehensive programs and services aimed at addressing societal educational and technical needs through learning, research, and outreach, fostering leadership, innovation, and social stewardship.",
+    "nick": "WEUC",
+    "est_year": "2010",
+    "rank": "910th",
+    "application": "https://weuc.edu.gh/admissions",
+    "rate": "4.4",
+    "reviews": "74 Google",
     "placement": "4.2",
     "hostel": "3.9",
     "facilities": "3.7",
@@ -21,24 +21,23 @@
     "amenities": "3.6",
     "campus_number": "1",
     "campuses": [
-      "Lakeside University College has one campus. The university has four schools: School of Engineering, School of Business and Technology, Business Administration, and School of Arts. LUCG is a private nonprofit university in Accra, Ghana. It was established by the Madina Foundation."
+      "West End University College has only campus in Ngleshie Amanfro, which  is accredited by the National Accreditation Board (NAB) of the Ministry of Education. WEUC is also affiliated with the University of Cape Coast (UCC). This is where all their academic activities are held"
     ],
-    "image": "https://www.dropbox.com/scl/fi/5qp73pydnebddtwl079sn/2024-07-19.jpg?rlkey=t354w3eqad2jonwxz8f22r6pl&st=1syyxovg&raw=1",
-    "logo": "https://www.dropbox.com/scl/fi/rr8z2wjvjp1frz1zymyyg/1000090292-removebg-preview.png?rlkey=u6nkrz3w2eunczcniehfe1rwh&st=ibaukvei&raw=1",
+    "image": "https://www.dropbox.com/scl/fi/nj8r4dbgk5eto3r9jc63f/img_2_1736110691956.jpg?rlkey=3wrjofl20abd80kx8jyqxi5ge&st=fbqtxgod&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/hsbhbo7ba59522c31xiz2/1000090479-removebg-preview.png?rlkey=14cns4yde6nd951qx35yk9dyp&st=oy0l26g6&raw=1",
     "strength": [
-      "Focus on Science and Technology: Emphasizes education in fields critical for societal advancement.",
-      "Targeting Underserved Communities: Aims to provide quality education to disadvantaged youth.",
-      "Accreditation: Recognized by the Ghana Tertiary Education Commission, ensuring credibility.",
-      "Diverse Student Body: Attracts students from multiple countries, promoting cultural exchange.",
-      "Growth in Offerings: Expanded from four to six degree programs since inception."
+      "Accreditation and Affiliation: Accredited by the National Accreditation Board and affiliated with the University of Cape Coast, ensuring academic credibility and recognition.",
+      "Comprehensive Programs: Offers a wide range of programs that address societal and technical needs, fostering innovation and leadership.",
+      "Urban Location: Situated in Ngleshie-Amanfro, Accra, with proximity to major city amenities, providing accessibility to students.",
+      "Mission-Driven Focus: Strong emphasis on leadership, organizational change, and social stewardship, aligning education with societal development.",
+      "Modern Facilities: Urban setting conducive to learning and research activities."
     ],
     "weakness": [
-      "Limited Alumni Base: With only 180 graduates, the alumni network is relatively small.",
-      "Modest Student Enrollment: The current population of 372 indicates room for growth.",
-      "Resource Constraints: Likely dependent on external support from NGOs for operations.",
-      "Low Visibility: Still building its reputation and presence within Ghana’s higher educaon sector.",
-      "Geographic Scope: Predominantly serving local communities, limiting broader impact."
+      "Relatively New Institution: Established in 2010, WEUC may face challenges competing with older, more established universities in terms of reputation and alumni network.",
+      "Limited International Recognition: As a local institution, it may lack the global presence or partnerships necessary for international competitiveness.",
+      "Narrow Urban Focus: Located in the urban periphery, the institution may have limited appeal to students from rural or remote areas.",
+      "Potential Resource Constraints: As a private institution, maintaining state-of-the-art facilities and extensive research funding could be challenging without robust financial support."
     ],
-    "g_video": "https://web.facebook.com/lucghana/videos/3123395564615938/"
+    "g_video": "https://www.youtube.com/watch?v=aj47b2qlZbA"
   }
 ]
