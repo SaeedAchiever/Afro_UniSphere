@@ -13,6 +13,7 @@ import { useUser } from '../Authentication/UserContext'
 const Menu  = require("../../assets/menu.png")
 const CloseBtn  = require("../../assets/close.png")
 const UserPic  = require("../../assets/user_3.jpg")
+const Guest  = require("../../assets/guest.png")
 
 
 
@@ -24,16 +25,11 @@ const Head = () => {
   const {userData} = useUser()
 
   const [isModalVisible, setIsModalVisible] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(UserPic)
 
       // DEFINING  WIDTH AND HEIGHT 
       const deviceWidth = useWindowDimensions().width
       // const deviceHeight = useWindowDimensions().height
-
-      const refreshApp = () => {
-        const appName = 'YourAppName'; // Replace with your app's name
-        const appEntry = AppRegistry.getApplication(appName);
-        AppRegistry.runApplication(appName, appEntry);
-      };
 
       const handleSignOut = () => {
         auth.signOut().then(() => {
@@ -97,7 +93,7 @@ const Head = () => {
           <View style={styles.ModalBodyContainer}>
             <View>
             <Image 
-              source={UserPic}
+              source={userData ? UserPic : Guest}
               style={styles.modalUserImage}
               />
             </View>

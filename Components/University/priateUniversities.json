@@ -193,14 +193,6 @@
   "Page": "KFordUniColPage"
  },
  {
-  "id": "26",
-  "name": "Regional Maritime University",
-  "location": "Accra",
-  "campuses": "1",
-  "ImageUrl": "require('../../assets/knust.jpeg')",
-  "Page": "RegMarUniPage"
- },
- {
   "id": "27",
   "name": "Wisconsin International University College",
   "location": "Accra",

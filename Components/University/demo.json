@@ -1,43 +1,48 @@
 [
   {
-    "id": "24",
-    "name": "West End University College",
-    "location": "Ngleshie Amanfro",
+    "id": "42",
+    "name": "Ghana Communication Technology University",
+    "location": "Tesano",
     "country": "Ghana",
-    "region": "Greater Accra",
+    "region": " Greater Accra",
     "town": "Accra",
-    "type": "private",
-    "note": "West End University College (WEUC), established in 2010 and situated in Ngleshie-Amanfro, Accra, is an independent, non-denominational tertiary institution accredited by the National Accreditation Board and affiliated with the University of Cape Coast. WEUC offers comprehensive programs and services aimed at addressing societal educational and technical needs through learning, research, and outreach, fostering leadership, innovation, and social stewardship.",
-    "nick": "WEUC",
-    "est_year": "2010",
-    "rank": "910th",
-    "application": "https://weuc.edu.gh/admissions",
+    "type": "public",
+    "note": "Ghana Communication Technology University (GCTU), established in 2005 and accredited in 2006, gained full public university status in 2020. Renowned for its technology-oriented, industry-relevant programs, GCTU partners with international institutions like Coventry University (UK) and Ramaiah University (India) to enhance transnational education. The University offers Certificate, Diploma, Degree, and Postgraduate programs across three faculties: Engineering, Computing and Information Systems, and Business, along with a Graduate School. With over 10,000 students, seasoned lecturers, and modern facilities, GCTU prepares graduates for careers in telecommunications, business, and ICT. Campuses are located in Tesano, Abeka, Kumasi, and various learning centers nationwide.",    "nick": "GIMPA",
+    "est_year": "2005",
+    "rank": "181st",
+    "application": "https://apply.gctu.edu.gh",
     "rate": "4.4",
-    "reviews": "74 Google",
+    "reviews": "757 Google",
     "placement": "4.2",
-    "hostel": "3.9",
-    "facilities": "3.7",
-    "sports": "3.9",
-    "amenities": "3.6",
-    "campus_number": "1",
+    "hostel": "4.0",
+    "facilities": "3.9",
+    "sports": "4.1",
+    "amenities": "4.0",
+    "campus_number": "3+",
     "campuses": [
-      "West End University College has only campus in Ngleshie Amanfro, which  is accredited by the National Accreditation Board (NAB) of the Ministry of Education. WEUC is also affiliated with the University of Cape Coast (UCC). This is where all their academic activities are held"
+      "Ghana Communication Technology University has over three campuses in Ghana, including Tesano, Abeka, and Kumasi. It also has various learning centers nationwide to cater to students across the country.",
+      "Tesano Campus: The main campus of GCTU is located in Tesano, Accra, and serves as the hub for academic activities, administrative functions, and student services. It houses lecture halls, laboratories, libraries, and recreational facilities to support students' learning and development.",
+      "Abeka Campus: The Abeka Campus is another key location for GCTU, providing additional facilities and resources for students pursuing programs in engineering, computing, and business. It complements the main campus in Tesano and offers a conducive environment for academic pursuits.", 
+      "Kumasi Campus: GCTU's Kumasi Campus extends the university's reach to the Ashanti Region, providing students in the area with access to quality education and training in technology, business, and related fields. It offers a range of programs and services to support student success.",
+      "Learning Centers: In addition to its main campuses, GCTU has established learning centers across the country to make education more accessible to students in various regions. These centers provide local support, resources, and facilities for students enrolled in GCTU programs. These learning centers can be founf in places like Takoradi, Ho, Tamale and more." 
     ],
-    "image": "https://www.dropbox.com/scl/fi/nj8r4dbgk5eto3r9jc63f/img_2_1736110691956.jpg?rlkey=3wrjofl20abd80kx8jyqxi5ge&st=fbqtxgod&raw=1",
-    "logo": "https://www.dropbox.com/scl/fi/hsbhbo7ba59522c31xiz2/1000090479-removebg-preview.png?rlkey=14cns4yde6nd951qx35yk9dyp&st=oy0l26g6&raw=1",
+    "image": "https://www.dropbox.com/scl/fi/g41sv7eug9ltlh6145o91/download-1.jpeg?rlkey=5pr24zj30gfk5pj66dkwb4rcu&st=9g2sab1f&raw=1",
+    "logo": "https://www.dropbox.com/scl/fi/xqu98xl99bvu0vq18ijcc/1000096819-removebg-preview.png?rlkey=tc4m9pjoukooydyvp3xg6odyr&st=2wyv324u&raw=1",
     "strength": [
-      "Accreditation and Affiliation: Accredited by the National Accreditation Board and affiliated with the University of Cape Coast, ensuring academic credibility and recognition.",
-      "Comprehensive Programs: Offers a wide range of programs that address societal and technical needs, fostering innovation and leadership.",
-      "Urban Location: Situated in Ngleshie-Amanfro, Accra, with proximity to major city amenities, providing accessibility to students.",
-      "Mission-Driven Focus: Strong emphasis on leadership, organizational change, and social stewardship, aligning education with societal development.",
-      "Modern Facilities: Urban setting conducive to learning and research activities."
+      "Specialization in Technology: GCTU focuses on technology-oriented, industry-relevant programs, particularly in ICT and telecommunications, aligning with modern workforce demands.",
+      "Strong International Partnerships: Collaborations with institutions like Coventry University (UK) and Ramaiah University (India) enhance the quality of education and global exposure for students.",
+      "Comprehensive Academic Offerings: A wide range of programs from Certificates to Doctoral degrees across multiple faculties and a Graduate School.",
+      "State-of-the-Art Facilities: Modern training equipment and conducive learning environments support effective teaching and hands-on learning.",
+      "Nationwide Accessibility: Multiple campuses and learning centers provide flexibility and accessibility to students across Ghana.",
+      "Focus on Employability: GCTU emphasizes preparing students for meaningful careers in ICT, business, and telecommunications, contributing to national economic growth."
     ],
     "weakness": [
-      "Relatively New Institution: Established in 2010, WEUC may face challenges competing with older, more established universities in terms of reputation and alumni network.",
-      "Limited International Recognition: As a local institution, it may lack the global presence or partnerships necessary for international competitiveness.",
-      "Narrow Urban Focus: Located in the urban periphery, the institution may have limited appeal to students from rural or remote areas.",
-      "Potential Resource Constraints: As a private institution, maintaining state-of-the-art facilities and extensive research funding could be challenging without robust financial support."
+      "Limited Program Diversity: Heavy emphasis on ICT and technology may limit opportunities for students interested in non-technical fields.",
+      "Regional Competition: Competing with other technology-focused institutions within and outside Ghana for recognition and student enrollment.",
+      "Resource Dependence: Reliance on partnerships for certain aspects of academic delivery may pose challenges if partnerships weaken or dissolve.",
+      "Scaling Challenges: Ensuring consistent quality of education and facilities across all campuses and learning centers could be a logistical and operational challenge.",
+      "Public Awareness: As a relatively young institution, GCTU may face challenges in establishing a strong brand identity and recognition compared to older universities."
     ],
-    "g_video": "https://www.youtube.com/watch?v=aj47b2qlZbA"
+    "g_video": "https://www.youtube.com/watch?v=5wMGJQUlXSY"
   }
 ]

@@ -61,6 +61,8 @@ const HomePage = () => {
   const Preference_Uni = getRandomUniversities(selectedData, 5);
   // const Ongoing_List = selectedData.filter(value => value.town ===  "Tamale");
 
+
+
   const renderItem = ({ item }) => {
     const AllComponents = item.component;
     return (

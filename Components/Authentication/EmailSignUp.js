@@ -47,7 +47,7 @@ const EmailSignUp = () => {
         setEmail("")
         setPassword("")
         Alert.alert("Account created successfully, Log In to continue");
-        navigation.navigate("EmailLogIn");
+        navigation.replace("EmailLogIn");
       })
       .catch(error => {
         setLoading(false);

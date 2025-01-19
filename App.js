@@ -57,8 +57,8 @@ return (
       <UserProvider>
         <NavigationContainer>
           <Stack.Navigator
-           initialRouteName={"HomePage"}
-          //  initialRouteName={user ? "HomePage" : "EmailLogIn"}
+          //  initialRouteName={"HomePage"}
+           initialRouteName={user ? "HomePage" : "EmailLogIn"}
            screenOptions={{ headerShown: false }}
           >
             <Stack.Screen name='PhoneLogIn' component={PhoneLogIn}  />
