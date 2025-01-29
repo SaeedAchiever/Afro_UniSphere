@@ -12,6 +12,7 @@ import Suggested from "./UniSubComponents/Suggested";
 import Top_Place from "./UniSubComponents/Top_Place";
 import Ongoing_Admission from "./UniSubComponents/Ongoing_Admission";
 import Preference from "./UniSubComponents/Preference";
+import Feeds from "./UniSubComponents/Feeds";
 import Sub_Scholarship from "./UniSubComponents/Sub_Scholarship";
 import Desired_Course from "./UniSubComponents/Desired_Course";
 import AdmissionApplication from "./UniSubComponents/AdmissionApplication";
@@ -19,13 +20,14 @@ import Footer from "../HeadFoot/Footer";
 import { useNavigation } from "@react-navigation/native";
 
 const data = [
-  { id: 3, component: Suggested },
-  { id: 4, component: Top_Place },
-  { id: 5, component: AdmissionApplication },
-  { id: 6, component: Ongoing_Admission },
-  { id: 7, component: Desired_Course },
-  { id: 8, component: Preference },
-  { id: 10, component: Sub_Scholarship },
+  { id: 1, component: Suggested },
+  { id: 2, component: Top_Place },
+  { id: 3, component: AdmissionApplication },
+  { id: 4, component: Ongoing_Admission },
+  { id: 5, component: Desired_Course },
+  { id: 6, component: Feeds },
+  { id: 7, component: Preference },
+  { id: 8, component: Sub_Scholarship },
 ];
 
 // Helper function to get a random university or college
@@ -60,8 +62,6 @@ const HomePage = () => {
   const [uni1, uni2, uni3] = getThreeRandomUniversities(selectedData);
   const Preference_Uni = getRandomUniversities(selectedData, 5);
   // const Ongoing_List = selectedData.filter(value => value.town ===  "Tamale");
-
-
 
   const renderItem = ({ item }) => {
     const AllComponents = item.component;

@@ -1,36 +1,30 @@
-import { View , FlatList } from 'react-native';
-import React from 'react';
+import { View, FlatList } from "react-native";
+import React from "react";
 
-import styles from './Style';
+import styles from "./Style";
 
-import ProfileHeader from './ProfileHeader';
-import ProfileBody from './ProfileBody';
+import ProfileHeader from "./ProfileHeader";
+import ProfileBody from "./ProfileBody";
 
-import Footer from '../HeadFoot/Footer';
+import Footer from "../HeadFoot/Footer";
 
 const data = [
-  { id: '1', component: 'ProfileHeader' },
-  // { id: '2', component: 'ProfileBody' }
+  { id: "1", component: "ProfileHeader" },
+  { id: '2', component: 'ProfileBody' }
 ];
 
 const User_Profile = () => {
-
   const renderItem = ({ item }) => {
-
     // Render components conditionally based on the component name in `data`
-    
+
     let Component;
-    if (item.component === 'ProfileHeader') {
+    if (item.component === "ProfileHeader") {
       Component = ProfileHeader;
-    } else if (item.component === 'ProfileBody') {
+    } else if (item.component === "ProfileBody") {
       Component = ProfileBody;
     }
 
-    return (
-      <View>
-        {Component && <Component />}
-      </View>
-    );
+    return <View>{Component && <Component />}</View>;
   };
 
   return (
@@ -40,9 +34,6 @@ const User_Profile = () => {
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
-
-      {/* <Footer /> */}
-
     </View>
   );
 };

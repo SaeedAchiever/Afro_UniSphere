@@ -1,21 +1,26 @@
-import { View, FlatList, Image, useWindowDimensions, Pressable } from 'react-native';
-import React, { useState, useRef, useCallback } from 'react';
-import { Video } from 'expo-av';
+import {
+  View,
+  FlatList,
+  Image,
+  useWindowDimensions,
+  Pressable,
+} from "react-native";
+import React, { useState, useRef, useCallback } from "react";
+import { Video } from "expo-av";
 
-import videos from './allvideos.json'; // Your JSON data file
-import styles from './Style';
-import Interactions from './Interactions';
-import User from './User';
-import Comments from './Comments';
-import Footer from '../HeadFoot/Footer';
+import videos from "./allvideos.json"; // Your JSON data file
+import styles from "./Style";
+import Interactions from "./Interactions";
+import User from "./User";
+import Comments from "./Comments";
+import Footer from "../HeadFoot/Footer";
 
-const Menu = require('../../assets/menu.png');
-const Close = require('../../assets/minus.png');
-const PlayIcon = require('../../assets/play.png'); // Add your play icon image
-const PauseIcon = require('../../assets/pause.png'); // Add your pause icon image
+const Menu = require("../../assets/menu.png");
+const Close = require("../../assets/minus.png");
+const PlayIcon = require("../../assets/play.png"); // Add your play icon image
+const PauseIcon = require("../../assets/pause.png"); // Add your pause icon image
 
 const Shorts = () => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isCommentsVisible, setIsCommentsVisible] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true); // Track play/pause state
@@ -25,27 +30,30 @@ const Shorts = () => {
 
   const videoRefs = useRef([]); // Store references to video components
 
-  const handleViewableItemsChanged = useCallback(({ viewableItems }) => {
-    if (viewableItems.length > 0) {
-      const newIndex = viewableItems[0].index;
+  const handleViewableItemsChanged = useCallback(
+    ({ viewableItems }) => {
+      if (viewableItems.length > 0) {
+        const newIndex = viewableItems[0].index;
 
-      // Reset and stop the currently playing video
-      const currentVideo = videoRefs.current[currentIndex]?.current;
-      if (currentVideo) {
-        currentVideo.pauseAsync().catch(() => {});
-        currentVideo.seekAsync(0).catch(() => {}); // Reset video to the beginning
+        // Reset and stop the currently playing video
+        const currentVideo = videoRefs.current[currentIndex]?.current;
+        if (currentVideo) {
+          currentVideo.pauseAsync().catch(() => {});
+          currentVideo.seekAsync(0).catch(() => {}); // Reset video to the beginning
+        }
+
+        // Play the newly visible video
+        const newVideo = videoRefs.current[newIndex]?.current;
+        if (newVideo) {
+          newVideo.playAsync().catch(() => {});
+          setIsPlaying(true); // Set playing state
+        }
+
+        setCurrentIndex(newIndex);
       }
-
-      // Play the newly visible video
-      const newVideo = videoRefs.current[newIndex]?.current;
-      if (newVideo) {
-        newVideo.playAsync().catch(() => {});
-        setIsPlaying(true); // Set playing state
-      }
-
-      setCurrentIndex(newIndex);
-    }
-  }, [currentIndex]);
+    },
+    [currentIndex]
+  );
 
   const togglePlayPause = () => {
     const currentVideo = videoRefs.current[currentIndex]?.current;
@@ -73,10 +81,7 @@ const Shorts = () => {
 
       {/* Play/Pause Button */}
       {index === currentIndex && (
-        <Pressable
-          style={styles.playPauseButton}
-          onPress={togglePlayPause}
-        >
+        <Pressable style={styles.playPauseButton} onPress={togglePlayPause}>
           <Image
             source={isPlaying ? PauseIcon : PlayIcon}
             style={styles.playPauseIcon}
@@ -96,7 +101,10 @@ const Shorts = () => {
 
       {/* Interactions Section */}
       <View style={styles.InteractionsMainContainer}>
-        <Interactions item={item} showComments={() => setIsCommentsVisible(true)} />
+        <Interactions
+          item={item}
+          showComments={() => setIsCommentsVisible(true)}
+        />
       </View>
 
       {/* User Section */}
@@ -110,7 +118,7 @@ const Shorts = () => {
     <View style={styles.shortsMainContainer}>
       {/* Menu Button */}
       <View style={styles.shortsMenuContainer}>
-        <Pressable onPress={() => console.log('Menu clicked')}>
+        <Pressable onPress={() => console.log("Menu clicked")}>
           <Image source={Menu} style={styles.shortsMenu} />
         </Pressable>
       </View>

@@ -54,7 +54,8 @@ ScholarshipSubBodyFlexContainer:{
   alignItems:'center',
   justifyContent:'center',
   textAlign:'center',
-  gap:7
+  gap:7,
+  width:'33%',
 },
 ScholarshipSubBodyFlexHeadText:{
   fontSize:11,
@@ -67,17 +68,16 @@ ScholarshipSubBodyFlexBodyText:{
   fontWeight:'400'
 },
 ScholarshipButton:{
-  borderWidth:1.3,
   paddingHorizontal:20,
   paddingVertical:5,
   borderRadius:7,
-  borderColor:'lightblue'
 },
 ScholarshipButtonText:{
   fontSize:16,
   opacity:0.8,
   letterSpacing:0.7,
-  textTransform:'capitalize'
+  textTransform:'none',
+  textAlign:'left'
 },
   
 Button:{
@@ -96,6 +96,20 @@ ButtonText:{
   fontWeight:'400',
   textTransform:'capitalize'
 },
+ReadMoreButton:{
+  marginVertical:10,
+  paddingVertical:5,
+  borderWidth:1,
+  maxWidth:100,
+  alignContent:'center',
+  borderRadius:5
+},
+ReadMoreButtonText:{
+  fontSize:12,
+  fontWeight:'500',
+  textTransform:'capitalize',
+  textAlign:'center'
+}
 })
 
 export default styles

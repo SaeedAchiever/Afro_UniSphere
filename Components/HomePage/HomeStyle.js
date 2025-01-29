@@ -290,12 +290,15 @@ const styles = StyleSheet.create({
       paddingHorizontal:10,
       paddingVertical:6,
       borderRadius:4,
-      borderColor:'rgba(50,50,100,0.9)'
+      borderColor:'rgba(50,50,100,0.9)',
+      maxWidth:120,
+      marginLeft:10
     },
     userPreferenceSubBodyBtnText:{
       fontSize:13,
       color:'#333',
-      fontWeight:'500'
+      fontWeight:'500',
+    textAlign:'center'
     },
     userPreferenceSubBodyImageCont:{
       flex:0.4
