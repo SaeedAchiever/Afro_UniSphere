@@ -1,77 +1,64 @@
 import { View, Text, Image, Pressable, Modal } from "react-native";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigation } from "@react-navigation/native";
 
 import styles from "../../Components/HomePage/HomeStyle";
 
-import { useUser } from "../Authentication/UserContext";
-import { auth } from "../../firebaseConfig"; // Import `auth` from your config
 import Notification from "../Notifications/Notification";
+
+import SetGoalModal from "./SetGoalModal";
 
 const CloseBtn = require("../../assets/close.png");
 const UserPic = require("../../assets/user_3.jpg");
-const Guest = require("../../assets/guest.png");
 
 const HeadLinks = ({ setIsModalVisible }) => {
-  
-
-  const { userData } = useUser();
-
   const navigation = useNavigation();
 
   const [refreshing, setRefreshing] = useState(0);
   const [notsShown, setNotsShown] = useState(false);
-
-  const handleSignOut = () => {
-    auth.signOut().then(() => {
-      navigation.reset({
-        index: 0,
-        routes: [{ name: "EmailLogIn" }],
-      });
-    });
-  };
+  const [goalModal, setGoalModal] = useState(false);
 
   return (
     <View key={refreshing} style={styles.modalMainContainer}>
-      <View
-        onTouchEnd={() => {
+      <Pressable
+        onPress={() => {
           setIsModalVisible(false);
         }}
         style={styles.modalButtonContainer}
       >
         <Image source={CloseBtn} style={styles.modalButtonImage} />
-      </View>
+      </Pressable>
 
       <View style={styles.ModalBodyMainContainer}>
-        <Pressable
-          onPress={() => {
-            userData
-              ? navigation.navigate("User_Profile")
-              : navigation.navigate("EmailLogIn");
-            setIsModalVisible(false);
-          }}
-        >
-          <View style={styles.ModalBodyContainer}>
-            <View>
-              <Image
-                source={userData ? UserPic : Guest}
-                style={styles.modalUserImage}
-              />
+        <View style={styles.ModalBodyContainer}>
+          <Pressable
+            onPress={() => {
+              navigation.navigate("User_Profile");
+              setIsModalVisible(false);
+            }}
+          >
+            <View style={styles.userInfo}>
+              <View>
+                <Image source={UserPic} style={styles.modalUserImage} />
+              </View>
+              <View>
+                <Text style={styles.modalUserText}>Guest</Text>
+              </View>
             </View>
-            <View>
-              <Text style={styles.modalUserText}>
-                {userData ? userData.first_Name : "Guest"}
-              </Text>
-            </View>
+          </Pressable>
+          <View style={styles.setgoalContainer}>
+            <Pressable
+              onPress={() => {
+                setGoalModal(true);
+              }}
+            >
+              <Text style={styles.setgoalText}>Set Goal</Text>
+            </Pressable>
           </View>
-        </Pressable>
+        </View>
       </View>
 
       <View style={styles.modalLinksMainContainer}>
-        <View style={styles.modalLinksContainer}>
-          <Text style={styles.modalLinksText}>My Favorites</Text>
-        </View>
-
         <View style={styles.modalLinksContainer}>
           <Pressable
             onPress={() => {
@@ -120,15 +107,11 @@ const HeadLinks = ({ setIsModalVisible }) => {
         </View>
       </View>
 
-      {userData ? (
-        <View style={styles.logOutContainer}>
-          <Pressable onPress={handleSignOut}>
-            <Text style={styles.logOutText}>Log out</Text>
-          </Pressable>
-        </View>
-      ) : (
-        <View></View>
-      )}
+      <View style={styles.logOutContainer}>
+        <Pressable>
+          <Text style={styles.logOutText}>Log out</Text>
+        </Pressable>
+      </View>
 
       <Modal
         visible={notsShown}
@@ -138,6 +121,15 @@ const HeadLinks = ({ setIsModalVisible }) => {
         animationType="slide"
       >
         <Notification />
+      </Modal>
+
+      <Modal
+        visible={goalModal}
+        onRequestClose={() => {
+          setGoalModal(false);
+        }}
+      >
+        <SetGoalModal />
       </Modal>
     </View>
   );

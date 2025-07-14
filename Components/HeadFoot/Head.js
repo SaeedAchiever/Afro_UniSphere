@@ -1,6 +1,13 @@
-import { View, useWindowDimensions, Image, Modal } from "react-native";
+import {
+  View,
+  useWindowDimensions,
+  Image,
+  Modal,
+  Pressable,
+  Platform,
+} from "react-native";
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import { useNavigation } from "@react-navigation/native";
 
@@ -19,17 +26,23 @@ const Head = () => {
   const deviceWidth = useWindowDimensions().width;
 
   return (
-    <View>
+    <View
+      style={{
+        display: Platform.OS === "web" ? "none" : "flex",
+      }}
+    >
       <View style={styles.headerContainer}>
-        <View onTouchEnd={() => setIsModalVisible(true)}>
-          <Image
-            source={Menu}
-            style={{
-              width: deviceWidth > 500 ? 50 : 40,
-              height: deviceWidth > 500 ? 50 : 40,
-              marginRight: 20,
-            }}
-          />
+        <View>
+          <Pressable onPress={() => setIsModalVisible(true)}>
+            <Image
+              source={Menu}
+              style={{
+                width: deviceWidth > 500 ? 50 : 40,
+                height: deviceWidth > 500 ? 50 : 40,
+                marginRight: 20,
+              }}
+            />
+          </Pressable>
         </View>
       </View>
 
