@@ -15,6 +15,8 @@ import User_Profile from "./Components/User_Profile/User_Profile";
 import LogIn from "./Components/Authentication/LogIn";
 import SignUp from "./Components/Authentication/SignUp";
 
+import MatchForm from "./Components/MatchMe/MatchForm";
+
 import Demo from "./Demo";
 
 const Stack = createNativeStackNavigator();
@@ -34,10 +36,11 @@ const RenderData = () => {
   return (
     <NavigationContainer linking={linking}>
       <Stack.Navigator
-        initialRouteName={"HomePage"}
+        initialRouteName={"LogIn"}
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Demo" component={Demo} />
+        <Stack.Screen name="MatchForm" component={MatchForm} />
         <Stack.Screen name="LogIn" component={LogIn} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="HomePage" component={HomePage} />
@@ -50,7 +53,7 @@ const RenderData = () => {
         <Stack.Screen name="Shorts" component={Shorts} />
         <Stack.Screen name="User_Profile" component={User_Profile} />
       </Stack.Navigator>
-      <StatusBar backgroundColor={"#cfcfcf"} />
+      <StatusBar />
     </NavigationContainer>
   );
 };

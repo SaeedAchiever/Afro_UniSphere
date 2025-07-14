@@ -6,6 +6,8 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingBottom: 50,
     alignSelf: "center",
+    marginTop:30,
+    marginBottom:30
   },
   HomeContainer: {
     backgroundColor: "#fff",

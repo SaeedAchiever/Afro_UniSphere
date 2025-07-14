@@ -7,17 +7,15 @@ import {
   useWindowDimensions,
   Pressable,
 } from "react-native";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import styles from "../HomePage/HomeStyle";
 import Universities from "../University/universities.json";
-import UniContextProvider from "../../UniContextProvider";
 
 const Location = require("../../assets/location.png");
 const Star = require("../../assets/star.png");
 
 const UniversityBody = () => {
-  // const { universities } = useContext(UniContextProvider);
 
   const width = useWindowDimensions().width;
   const navigation = useNavigation();

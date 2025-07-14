@@ -6,6 +6,7 @@ import {
   Modal,
   Image,
   Pressable,
+  StatusBar
 } from "react-native";
 import React, { useState } from "react";
 
@@ -67,7 +68,7 @@ const MatchForm = () => {
             <View style={styles.coreTextContainer}>
               <Text style={styles.coreMainText}>Mathematics</Text>
             </View>
-            <View>
+            <View  style={styles.coreGradeContainer}>
               <TextInput placeholder="....." style={styles.gradeText} />
             </View>
           </View>
@@ -76,7 +77,7 @@ const MatchForm = () => {
             <View style={styles.coreTextContainer}>
               <Text style={styles.coreMainText}>English Lang.</Text>
             </View>
-            <View>
+            <View  style={styles.coreGradeContainer}>
               <TextInput placeholder="....." style={styles.gradeText} />
             </View>
           </View>
@@ -85,7 +86,7 @@ const MatchForm = () => {
             <View style={styles.coreTextContainer}>
               <Text style={styles.coreMainText}>Science</Text>
             </View>
-            <View>
+            <View   style={styles.coreGradeContainer}>
               <TextInput placeholder="....." style={styles.gradeText} />
             </View>
           </View>
@@ -94,7 +95,7 @@ const MatchForm = () => {
             <View style={styles.coreTextContainer}>
               <Text style={styles.coreMainText}>Social Studies</Text>
             </View>
-            <View>
+            <View   style={styles.coreGradeContainer}>
               <TextInput placeholder="....." style={styles.gradeText} />
             </View>
           </View>
@@ -115,7 +116,7 @@ const MatchForm = () => {
                 placeholder="Type to choose"
               />
             </View>
-            <View>
+            <View style={styles.coreGradeContainer}>
               <TextInput placeholder="....." style={styles.gradeText} />
             </View>
           </View>
@@ -127,7 +128,7 @@ const MatchForm = () => {
                 placeholder="Type to choose"
               />
             </View>
-            <View>
+            <View style={styles.coreGradeContainer}>
               <TextInput placeholder="....." style={styles.gradeText} />
             </View>
           </View>
@@ -139,7 +140,7 @@ const MatchForm = () => {
                 placeholder="Type to choose"
               />
             </View>
-            <View>
+            <View style={styles.coreGradeContainer}>
               <TextInput placeholder="....." style={styles.gradeText} />
             </View>
           </View>
@@ -174,6 +175,7 @@ const MatchForm = () => {
           <MatchUniversities />
         </View>
       </Modal>
+      <StatusBar />
     </View>
   );
 };

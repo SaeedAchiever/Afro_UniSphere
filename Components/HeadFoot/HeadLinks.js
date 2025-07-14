@@ -83,6 +83,17 @@ const HeadLinks = ({ setIsModalVisible }) => {
         <Pressable
           onPress={() => {
             setIsModalVisible(false);
+            navigation.navigate("MatchForm");
+          }}
+        >
+          <View style={styles.modalLinksContainer}>
+            <Text style={styles.modalLinksText}>Match me</Text>
+          </View>
+        </Pressable>
+
+        <Pressable
+          onPress={() => {
+            setIsModalVisible(false);
             navigation.navigate("Updates");
           }}
         >

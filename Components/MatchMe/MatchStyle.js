@@ -2,9 +2,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
  MatchHomeMainContainer:{
-  backgroundColor:'rgba(120,0,0,0.09)',
+  backgroundColor:'rgba(12, 120, 0, 0.09)',
   width:'100%',
   height:'auto',
+  maxWidth:900,
+  alignSelf:'center',
+  marginTop:30
+
  },
  MatchHomeHeadContainer:{
   width:'90%',
@@ -67,26 +71,37 @@ const styles = StyleSheet.create({
   display:'flex',
   flexDirection:'row',
   alignItems:'center',
-  gap:20,
   borderWidth:1,
   alignContent:'center',
   borderRadius:10
  },
  coreTextContainer:{
-  paddingVertical:10,
+  alignContent:'center',
   paddingHorizontal:15,
-  backgroundColor:'rgba(0,0,0,0.09)',
   borderTopLeftRadius:10,
   borderBottomLeftRadius:10,
-  width:'70%'
+  width:'70%',
+  height:"auto"
  },
  coreMainText:{
   fontSize:13,
-  fontWeight:'500'
+  fontWeight:'500',
+  justifyContent:'center'
  },
  gradeText:{
   fontSize:13,
-  fontWeight:'500'
+  fontWeight:'500',
+  overflow:'hidden',
+  textAlign:'center',
+  paddingVertical:10
+ },
+ coreGradeContainer:{
+    width:'30%',
+    height:'100%',
+    overflow:'hidden',
+    borderTopRightRadius:10,
+    borderBottomRightRadius:10,
+    backgroundColor:'#ffffff'
  },
  matchButton:{
   marginVertical:20,
