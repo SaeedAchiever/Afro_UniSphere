@@ -1,43 +1,30 @@
-import { View, Text, Image, FlatList, ActivityIndicator } from 'react-native';
-import { useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
-import styles from '../HomePage/HomeStyle';
-import Universities from '../University/universities.json';
+import {
+  View,
+  Text,
+  Image,
+  FlatList,
+  ActivityIndicator,
+  useWindowDimensions,
+  Pressable,
+} from "react-native";
+import { useState, useContext } from "react";
+import { useNavigation } from "@react-navigation/native";
+import styles from "../HomePage/HomeStyle";
+import Universities from "../University/universities.json";
+import UniContextProvider from "../../UniContextProvider";
 
 const Location = require("../../assets/location.png");
 const Star = require("../../assets/star.png");
 
 const UniversityBody = () => {
+  // const { universities } = useContext(UniContextProvider);
+
+  const width = useWindowDimensions().width;
   const navigation = useNavigation();
-  const [data, setData] = useState(Universities.slice(0, 5)); // Initially load first 5 items
-  const [loading, setLoading] = useState(false); // Preloader state
-  const [page, setPage] = useState(1); // Current page
-  const itemsPerPage = 5; // Number of items to load per page
-
-  const loadMoreData = () => {
-    if (loading) return;
-
-    setLoading(true);
-
-    // Simulate data fetching
-    setTimeout(() => {
-      const nextPage = page + 1;
-      const newItems = Universities.slice(
-        page * itemsPerPage,
-        nextPage * itemsPerPage
-      );
-
-      if (newItems.length > 0) {
-        setData((prevData) => [...prevData, ...newItems]);
-        setPage(nextPage);
-      }
-
-      setLoading(false);
-    }, 1000); // Simulate network delay
-  };
+  const [data, setData] = useState(Universities); // Initially load first 5 items
 
   return (
-    <View>
+    <View style={styles.allschoolsHome}>
       <FlatList
         data={data}
         keyExtractor={(item) => item.id.toString()}
@@ -47,10 +34,18 @@ const UniversityBody = () => {
             <View>
               <View style={styles.UniHomeMainContainer}>
                 <View style={styles.UniHomeContainer}>
-                  <View style={styles.UniHomeImageContainer}>
+                  <View
+                    style={[
+                      styles.UniHomeImageContainer,
+                      {
+                        height: width > 500 ? 250 : 150,
+                      },
+                    ]}
+                  >
                     <Image
                       source={{ uri: item.image }}
                       style={styles.UniHomeImage}
+                      resizeMode="cover"
                     />
                   </View>
 
@@ -114,26 +109,19 @@ const UniversityBody = () => {
                     </View>
                   </View>
 
-                  <View
+                  <Pressable
                     style={styles.ReadButton}
-                    onTouchEnd={() => {
+                    onPress={() => {
                       navigation.navigate("UniData", { university: item });
                     }}
                   >
                     <Text style={styles.ReadButtonText}>Read More</Text>
-                  </View>
+                  </Pressable>
                 </View>
               </View>
             </View>
           );
         }}
-        onEndReached={loadMoreData} // Trigger loading more data
-        onEndReachedThreshold={0.5} // Trigger when 50% away from the end
-        ListFooterComponent={
-          loading ? (
-            <ActivityIndicator size="large" color="blue" />
-          ) : null
-        } // Show loader at the bottom
       />
     </View>
   );

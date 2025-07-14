@@ -1,0 +1,81 @@
+{
+    "id": 1,
+    "courseName": "Computer Science",
+    "schools": [
+      {
+        "id": 1,
+        "name": "Academic City University College",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 2,
+        "name": "Catholic Institute of Business and Technology",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 3,
+        "name": "Christian Service University College",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 4,
+        "name": "Dominion University College",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 5,
+        "name": "KAAF University College",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 6,
+        "name": "Garden City University College",
+        "degreeTypes": ["Undergraduate", "Certificate"]
+      },
+      {
+        "id": 7,
+        "name": "Lancaster University",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 8,
+        "name": "Regentropfen College of Applied Science",
+        "degreeTypes": ["Undergraduate", "Diploma"]
+      },
+      {
+        "id": 9,
+        "name": "Lakeside University College",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 10,
+        "name": "Knutsford University College",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 11,
+        "name": "West End University College",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 12,
+        "name": "Webster University",
+        "degreeTypes": ["Undergraduate"]
+      },
+      {
+        "id": 13,
+        "name": "University Of Ghana",
+        "degreeTypes": ["Undergraduate", "Masters", "MPhil", "PhD"]
+      },
+      {
+        "id": 14,
+        "name": "Kwame Nkrumah University  Of  Science And Tecnology",
+        "degreeTypes": ["Undergraduate", "Masters", "MPhil", "PhD"]
+      },
+      {
+        "id": 15,
+        "name": "University of Cape Coast",
+        "degreeTypes": ["Undergraduate"]
+      }
+    ]
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "undergraduate": [
+      {
+        "id": 1,
+        "name": "Academic City University College"
+      },
+      {
+        "id": 1,
+        "name": "University Of Ghana"
+      },
+      {
+        "id": 3,
+        "name": "Asheisi University"
+      }
+    ],
+    "hnd": [],
+    "diploma": [],
+    "degree": [],
+    "masters": [],
+    "mphil": [],
+    "phd": []
+  }
+]

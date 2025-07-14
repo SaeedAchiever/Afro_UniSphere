@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Computer Science",
+    "duration" : "2 years",
+    "certicate": [
+      {
+        "id": 1,
+        "fees": 2000,
+        "cut-off_points": [
+         {
+          "id" : "1",
+          "first" : ["2001 agg. 20"]
+         }
+        ],
+        "entry_requirement" : [],
+        "special_admission" : ""
+      }
+    ]
+  }
+]

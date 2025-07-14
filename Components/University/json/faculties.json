@@ -756,7 +756,7 @@
      "courses" : [
        {
          "course_id" : 1,
-         "course_name" : "Computer Science",
+         "course_name" : " ",
          "course_type" : "undergraduate",
          "entry_requirements" : [
            "Requirements : Refer to faculty/department note"
@@ -842,7 +842,7 @@
  },
  {
   "id": "6",
-  "name": "Christian Service University College ",
+  "name": "Christian Service University College",
   "faculties" : [
    {
      "faculty_id" : 1,

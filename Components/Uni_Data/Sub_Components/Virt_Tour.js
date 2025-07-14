@@ -6,23 +6,25 @@ import {
   FlatList,
   ActivityIndicator,
   Linking,
-} from 'react-native';
-import React, { useState, useEffect } from 'react';
-import styles from '../Styles';
-import gallery from '../../University/json/gallery.json'; // Import your gallery JSON file
+  Pressable,
+  useWindowDimensions,
+} from "react-native";
+import React, { useState, useEffect } from "react";
+import styles from "../Styles";
+import gallery from "../../University/json/gallery.json"; // Import your gallery JSON file
 
-const Close = require('../../../assets/close.png');
-const Pic_Icon = require('../../../assets/pic_icon.png');
-const Vid_Icon = require('../../../assets/vid_icon.png');
+const Close = require("../../../assets/close.png");
+const Pic_Icon = require("../../../assets/pic_icon.png");
+const Vid_Icon = require("../../../assets/vid_icon.png");
 
 const Virt_Tour = ({ university }) => {
-  const [isGalleryVisible, setIsGalleryVisible] = useState('none');
+  const [isGalleryVisible, setIsGalleryVisible] = useState("none");
   const [loading, setLoading] = useState(true);
   const [galleryImages, setGalleryImages] = useState([]);
 
   useEffect(() => {
     // Match the university name with the gallery name and set the images
-    const matchedGallery = gallery.find(g => g.name === university.name);
+    const matchedGallery = gallery.find((g) => g.name === university.name);
     if (matchedGallery) {
       setGalleryImages(matchedGallery.g_images || []);
     }
@@ -38,44 +40,52 @@ const Virt_Tour = ({ university }) => {
 
   const handleVideoPress = () => {
     // Open the YouTube URL
-    Linking.openURL(university.g_video)
-      .catch(err => console.error('An error occurred', err));
+    Linking.openURL(university.g_video).catch((err) =>
+      console.error("An error occurred", err)
+    );
   };
+
+  const width = useWindowDimensions().width;
 
   return (
     <View style={styles.schoolNoteMainContainer}>
       <View style={styles.schoolNoteHeadContainer}>
         <Text style={styles.campusesTitle}>Virtual Tour</Text>
         <Text style={styles.schoolNoteBodyText}>
-          Aliqua Lorem aliqua esse do. Commodo non est 
-          tempor enim anim proident veniam fugiat enim.
+          Aliqua Lorem aliqua esse do. Commodo non est tempor enim anim proident
+          veniam fugiat enim.
         </Text>
       </View>
 
       {/* Body */}
       <View style={styles.vTourBodyMainContainer}>
         <ImageBackground
-          source={{uri : university.image}}
-          style={styles.vTourBodyContainer}
+          source={{ uri: university.image }}
+          style={[
+            styles.vTourBodyContainer,
+            {
+              height: width > 550 ? 300 : 250,
+            },
+          ]}
         >
           <View style={styles.vTourBodyTextContainer}>
-            <View 
+            <Pressable
               style={[styles.virtualButton, { borderRightWidth: 5 }]}
-              onTouchEnd={() => setIsGalleryVisible('flex')}
+              onPress={() => setIsGalleryVisible("flex")}
             >
               <Text style={styles.vTourBodyText}>
                 {`${galleryImages.length} Images`}
               </Text>
               <Image source={Pic_Icon} style={styles.revStar} />
-            </View>
+            </Pressable>
 
-            <View 
+            <Pressable
               style={styles.virtualButton}
-              onTouchEnd={handleVideoPress} // Handle video press
+              onPress={handleVideoPress} // Handle video press
             >
               <Text style={styles.vTourBodyText}>{`1 Video`}</Text>
               <Image source={Vid_Icon} style={styles.revStar} />
-            </View>
+            </Pressable>
           </View>
         </ImageBackground>
       </View>
@@ -88,33 +98,30 @@ const Virt_Tour = ({ university }) => {
             style={styles.preloader}
           />
         )}
-        <FlatList  
+        <FlatList
           horizontal
           showsHorizontalScrollIndicator={false}
           data={galleryImages}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <View style={styles.imageContainer}>
-              <Image  
+              <Image
                 source={{ uri: item }}
                 style={styles.mainImage}
                 onLoadStart={handleImageLoadStart} // Show preloader
-                onLoadEnd={handleImageLoadEnd}    // Hide preloader
+                onLoadEnd={handleImageLoadEnd} // Hide preloader
               />
             </View>
           )}
         />
-        
+
         {/* Close Button */}
-        <View
+        <Pressable
           style={styles.closeBtn}
-          onTouchEnd={() => setIsGalleryVisible('none')}
+          onPress={() => setIsGalleryVisible("none")}
         >
-          <Image  
-            source={Close}
-            style={styles.closeImage}
-          />
-        </View>
+          <Image source={Close} style={styles.closeImage} />
+        </Pressable>
       </View>
     </View>
   );

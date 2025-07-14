@@ -20,7 +20,7 @@ const Feeds = ({university}) => {
   return (
    <View style={styles.schoolNoteMainContainer}>
    <View style={styles.schoolNoteHeadContainer}>
-     <Text style={styles.schoolNoteHeadText}>Silimar Universities</Text>
+     <Text style={styles.schoolNoteHeadText}>Similar Universities</Text>
    </View>
 
    <View style={styles.schoolNoteBodyContainer}>

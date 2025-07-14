@@ -1,24 +1,31 @@
-import { View, Text, Image, TextInput, FlatList, Modal, Keyboard} from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { useState, } from 'react';
+import {
+  View,
+  Text,
+  Image,
+  TextInput,
+  FlatList,
+  Pressable,
+} from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { useState } from "react";
 
-import styles from '../HomePage/HomeStyle';
-import Universities from '../University/universities.json';
+import styles from "../HomePage/HomeStyle";
+import Universities from "../University/universities.json";
 
 const Back = require("../../assets/back.jpg");
 
 const UniversityHead = () => {
-  const [searchedData, setSearchedData] = useState('');
-  const [isSearchVisible, setIsSearchVisible] = useState('none');
+  const [searchedData, setSearchedData] = useState("");
+  const [isSearchVisible, setIsSearchVisible] = useState("none");
 
   const navigation = useNavigation();
 
   const searchedList = () => {
-    if (searchedData === '') {
+    if (searchedData === "") {
       return [];
     }
-    return Universities.filter(
-      value => value.name.toLowerCase().startsWith(searchedData.toLowerCase())
+    return Universities.filter((value) =>
+      value.name.toLowerCase().startsWith(searchedData.toLowerCase())
     );
   };
 
@@ -32,15 +39,15 @@ const UniversityHead = () => {
         </View>
 
         <View style={styles.searchBarContainer}>
-          <View
-            onTouchEnd={() => {
-              setIsSearchVisible('none');
-              setSearchedData('')
+          <Pressable
+            onPress={() => {
+              setIsSearchVisible("none");
+              setSearchedData("");
             }}
             style={{ display: isSearchVisible }}
           >
             <Image source={Back} style={styles.searchBack} />
-          </View>
+          </Pressable>
 
           <TextInput
             placeholder="Search Here..."
@@ -48,28 +55,26 @@ const UniversityHead = () => {
             numberOfLines={1}
             onChangeText={(text) => setSearchedData(text)}
             onFocus={() => {
-              setIsSearchVisible('flex');
+              setIsSearchVisible("flex");
             }}
             style={styles.searchBar}
           />
         </View>
 
-        <View
-         style={[styles.searchContainer, 
-         { display: isSearchVisible }]}>
+        <View style={[styles.searchContainer, { display: isSearchVisible }]}>
           <FlatList
             data={searchedList()}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => {
               return (
-                <View
+                <Pressable
                   style={styles.searchListContainer}
-                  onTouchEnd={() => {
-                    navigation.navigate('UniData', { university: item });
+                  onPress={() => {
+                    navigation.navigate("UniData", { university: item });
                   }}
                 >
                   <Text style={styles.searchListText}>{item.name}</Text>
-                </View>
+                </Pressable>
               );
             }}
           />

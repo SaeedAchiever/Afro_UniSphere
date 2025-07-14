@@ -1,0 +1,25 @@
+[
+ {
+   "id": 1,
+   "certificate": [
+     {
+       "id": 1,
+       "name": "Kwame Nkrumah University Of Science And Teechnology"
+     },
+     {
+       "id": 1,
+       "name": "University Of Ghana"
+     },
+     {
+       "id": 3,
+       "name": "Asheisi University"
+     }
+   ],
+   "hnd": [],
+   "diploma": [],
+   "degree": [],
+   "masters": [],
+   "mphil": [],
+   "phd": []
+ }
+]

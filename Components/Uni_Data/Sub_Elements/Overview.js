@@ -1,5 +1,5 @@
 import { View, Text, Image, FlatList, Linking, TouchableOpacity, Alert } from 'react-native'
-import React from 'react'
+import React, {useEffect} from 'react'
 import styles from './Styles'
 
 import linksData from '../../University/json/links.json'
@@ -24,6 +24,10 @@ const Overview = ({ university }) => {
       Alert.alert('Error', 'Unable to open the link. Please try again later.')
     }
   }
+
+useEffect(()=>{
+  openLink()
+},[])
 
   // Find the university in the links.json that matches the current university's name
   const universityLinks = linksData.find(linkItem => linkItem.name === university.name)
