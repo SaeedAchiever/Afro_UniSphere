@@ -8,11 +8,9 @@ import {
   Pressable,
   useWindowDimensions,
 } from "react-native";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Video } from "expo-av";
-import { Picker } from "@react-native-picker/picker";
-
 
 import styles from "./Style";
 import VideoBG from "../../assets/vids/bgVid.mp4";
@@ -21,17 +19,13 @@ const Email = require("../../assets/email.png");
 const Password = require("../../assets/password.png");
 const Google = require("../../assets/google.png");
 
-const SignUp = () => {
-  const Name = require("../../assets/name.png");
-  const Position = require("../../assets/position.png");
+const LogIn = () => {
   const height = useWindowDimensions().height;
 
   const navigation = useNavigation();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [full_Name, setFull_Name] = useState("");
-  const [selectedValue, setSelectedValue] = useState("Student");
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -42,16 +36,17 @@ const SignUp = () => {
           <ActivityIndicator size="large" color="blue" />
         </View>
       )}
-
       <ScrollView
         style={{
           height: height,
+          display: videoLoaded ? "flex" : "none",
         }}
       >
         <View
           style={{
             width: "100%",
             height: height,
+            minHeight: 700,
             position: "absolute",
           }}
         >
@@ -76,41 +71,16 @@ const SignUp = () => {
             {/* Note */}
             <View style={[styles.LogInContainer, { flex: 0.3 }]}>
               <View style={styles.LogInWelcomeContainer}>
-                <Text style={styles.LogInWelcome}>Afro UniSphere</Text>
+                <Text style={styles.LogInWelcome}>Welcome back</Text>
               </View>
               <View style={styles.LogInWelcomeContainer}>
                 <Text style={styles.LogInNote}>
-                  Enter your personal info to continue
+                  Enter your log in info to continue
                 </Text>
               </View>
             </View>
 
             <View style={[styles.LogInContainer, { flex: 0.4 }]}>
-              <View style={styles.inputIconsContainer}>
-                <Image source={Name} style={styles.inputIcons} />
-                <TextInput
-                  placeholder="Full Name"
-                  value={full_Name}
-                  onChangeText={setFull_Name}
-                  style={styles.logInSignUpText}
-                />
-              </View>
-              <View style={styles.inputIconsContainer}>
-                <Image source={Position} style={styles.inputIcons} />
-                <Picker
-                  selectedValue={selectedValue}
-                  onValueChange={(itemValue, itemIndex) =>
-                    setSelectedValue(itemValue)
-                  }
-                  style={{ height: "100%", width: "90%" }}
-                >
-                  <Picker.Item label="Student" value="Student" />
-                  <Picker.Item label="Applicant" value="Applicant" />
-                  <Picker.Item label="Lecturer" value="Lecturer" />
-                  <Picker.Item label="Guest" value="Guest" />
-                  <Picker.Item label="University Rep" value="University Rep" />
-                </Picker>
-              </View>
               <View style={styles.inputIconsContainer}>
                 <Image source={Email} style={styles.inputIcons} />
                 <TextInput
@@ -134,21 +104,23 @@ const SignUp = () => {
                   style={styles.logInSignUpText}
                 />
               </View>
-              <>
+
+              <View style={styles.login_psswdreset}>
+                <View style={styles.password_resetcontainer}>
+                  <Text style={styles.logInAsGuestText}>
+                    Forgot your password?
+                  </Text>
+                </View>
                 {loading ? (
-                  <ActivityIndicator
-                    size="large"
-                    color="#fff"
-                    style={{ marginBottom: 10 }}
-                  />
+                  <ActivityIndicator size="large" color="#fff" />
                 ) : (
                   <View style={styles.logInBtn}>
                     <Pressable>
-                      <Text style={styles.logInBtnText}>Sign Up</Text>
+                      <Text style={styles.logInBtnText}>Log In</Text>
                     </Pressable>
                   </View>
                 )}
-              </>
+              </View>
             </View>
 
             <View
@@ -171,7 +143,7 @@ const SignUp = () => {
                     }}
                   />
                 </View>
-                <View>
+                <View style={styles.sociallogInbtnTxt}>
                   <Text style={styles.logInSignUpBtnText}>
                     Continue With Google
                   </Text>
@@ -181,14 +153,14 @@ const SignUp = () => {
 
             <View style={[styles.LogInContainer, { flex: 0.3 }]}>
               <View style={styles.logInSignUpContainer}>
-                <Text style={styles.logInSignUpText}>Already a member?</Text>
+                <Text style={styles.logInSignUpText}>Not a member yet?</Text>
                 <Pressable
                   onPress={() => {
-                    navigation.navigate("LogIn");
+                    navigation.navigate("SignUp");
                   }}
                 >
                   <View style={styles.logInBtnalt}>
-                    <Text style={styles.logInSignUpBtnText}>Log In</Text>
+                    <Text style={styles.logInSignUpBtnText}>Sign Up</Text>
                   </View>
                 </Pressable>
               </View>
@@ -211,4 +183,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default LogIn;
