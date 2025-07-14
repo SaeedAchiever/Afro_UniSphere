@@ -2,7 +2,7 @@ import { View } from "react-native";
 import React, { useState } from "react";
 
 import HomePage from "./HomePage";
-import HomePage from "./HomePage";
+// import HomePage from "./HomePage";
 
 import styles from "./HomeStyle";
 
@@ -27,7 +27,7 @@ const HomePageBody = () => {
         <View>
           <View>
             {selectedBody === "HomePage" && <HomePage />}
-            {selectedBody === "HomePage" && <HomePage />}
+            {/* {selectedBody === "HomePage" && <HomePage />} */}
           </View>
         </View>
       </SafeAreaView>

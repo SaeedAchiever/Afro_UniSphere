@@ -1,5 +1,5 @@
-import { View, FlatList, Text } from "react-native";
-import React, { useState } from "react";
+import { View, FlatList, Text, Pressable, StatusBar } from "react-native";
+import React, { useEffect, useState } from "react";
 
 import styles from "./HomeStyle";
 
@@ -17,9 +17,10 @@ import Sub_Scholarship from "./UniSubComponents/Sub_Scholarship";
 import Desired_Course from "./UniSubComponents/Desired_Course";
 import AdmissionApplication from "./UniSubComponents/AdmissionApplication";
 import Footer from "../HeadFoot/Footer";
-import { useNavigation } from "@react-navigation/native";
+import Landing from "./UniSubComponents/Landing";
 
 const data = [
+  { id: 0, component: Landing },
   { id: 1, component: Suggested },
   { id: 2, component: Top_Place },
   { id: 3, component: AdmissionApplication },
@@ -46,6 +47,7 @@ const getThreeRandomUniversities = (data) => {
 };
 
 // Function to get random universities or colleges
+
 const getRandomUniversities = (data, count) => {
   let shuffled = data.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
@@ -55,8 +57,6 @@ const HomePage = () => {
   const [selectedData, setSelectedData] = useState(universities);
   const [UniBorWid, setUniBorWid] = useState(2);
   const [ColBorWid, setColBorWid] = useState(0);
-
-  const navigation = useNavigation();
 
   // Get data for rendering
   const [uni1, uni2, uni3] = getThreeRandomUniversities(selectedData);
@@ -80,30 +80,37 @@ const HomePage = () => {
 
   return (
     <View style={styles.allHomeContainer}>
-      <Head />
-
       {/* Switch between Universities and Colleges */}
       <View style={styles.SwitchContainer}>
         <View
+          style={{
+            position: "absolute",
+            right: 10,
+            zIndex: 100,
+          }}
+        >
+          <Head />
+        </View>
+        <Pressable
           style={[styles.SwitchContainerBTN, { borderBottomWidth: UniBorWid }]}
-          onTouchEnd={() => {
+          onPress={() => {
             setSelectedData(universities);
             setUniBorWid(2);
             setColBorWid(0);
           }}
         >
           <Text style={styles.SwitchContainerText}>Universities</Text>
-        </View>
-        <View
+        </Pressable>
+        <Pressable
           style={[styles.SwitchContainerBTN, { borderBottomWidth: ColBorWid }]}
-          onTouchEnd={() => {
+          onPress={() => {
             setSelectedData(colleges);
             setColBorWid(2);
             setUniBorWid(0);
           }}
         >
           <Text style={styles.SwitchContainerText}>Colleges</Text>
-        </View>
+        </Pressable>
       </View>
 
       {/* Render Components */}
@@ -111,6 +118,7 @@ const HomePage = () => {
         <FlatList data={data} renderItem={renderItem} />
       </View>
       <Footer />
+      <StatusBar />
     </View>
   );
 };

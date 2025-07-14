@@ -129,12 +129,13 @@ const Top_Place = ({ selectedData }) => {
         >
           <FlatList
             data={placeData}
+            showsVerticalScrollIndicator={true}
             renderItem={({ item }) => {
               return (
                 <View style={styles.FilterPageUniContainer}>
-                  <View
+                  <Pressable
                     style={styles.FilterPageUniHeaderContainer}
-                    onTouchEnd={() => {
+                    onPress={() => {
                       navigation.navigate("UniData", {
                         university: placeData.find(
                           (uni) => uni.name === item.name
@@ -202,7 +203,7 @@ const Top_Place = ({ selectedData }) => {
                         </View>
                       </View>
                     </View>
-                  </View>
+                  </Pressable>
                 </View>
               );
             }}

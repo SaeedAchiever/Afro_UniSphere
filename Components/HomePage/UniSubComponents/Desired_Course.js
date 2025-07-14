@@ -1,13 +1,12 @@
-import { View, Text, FlatList, Modal, Pressable } from 'react-native';
-import React, { useState } from 'react';
+import { View, Text, FlatList, Modal, Pressable } from "react-native";
+import React, { useState } from "react";
 
-import CourseModal from './CourseModal';
+import CourseModal from "./CourseModal";
 
-import styles from '../HomeStyle';
-import { allcourses } from './Data';
+import styles from "../HomeStyle";
+import { allcourses } from "./Data";
 
 const Desired_Course = () => {
-
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
 
@@ -17,10 +16,12 @@ const Desired_Course = () => {
   };
 
   return (
-    <View style={styles.HomeMainScholarshipContainer}>
-      <View style={styles.HomeScholarshipHeaderContainer}>
+    <View style={styles.recommendationMainContainer}>
+      <View style={styles.recommendationHeadContainer}>
         <View>
-          <Text style={styles.HomeScholarshipHeaderText}>Get Matched Courses</Text>
+          <Text style={styles.HomeScholarshipHeaderText}>
+            Get Matched Courses
+          </Text>
         </View>
       </View>
 
@@ -37,15 +38,27 @@ const Desired_Course = () => {
                   <Text style={styles.scrollBodyDistText}>{`On Campus`}</Text>
                 </View>
                 <View>
-                  <Text style={styles.scrollBodyCourseText}>{`${item.name}`}</Text>
+                  <Text
+                    style={styles.scrollBodyCourseText}
+                  >{`${item.name}`}</Text>
                 </View>
-                <View style={[styles.scrollUniAvailContainer, { paddingTop: 10 }]}>
-                  <Text style={styles.scrollBodyDistText}>{`Universities Available`}</Text>
-                  <Text style={styles.scrollBodyDistText}>{`${item.data.length}`}</Text>
+                <View
+                  style={[styles.scrollUniAvailContainer, { paddingTop: 10 }]}
+                >
+                  <Text
+                    style={styles.scrollBodyDistText}
+                  >{`Universities Available`}</Text>
+                  <Text
+                    style={styles.scrollBodyDistText}
+                  >{`${item.data.length}`}</Text>
                 </View>
                 <View style={styles.scrollUniAvailContainer}>
-                  <Text style={styles.scrollBodyDistText}>{`Course Duration`}</Text>
-                  <Text style={styles.scrollBodyDistText}>{`${item.duration} years`}</Text>
+                  <Text
+                    style={styles.scrollBodyDistText}
+                  >{`Course Duration`}</Text>
+                  <Text
+                    style={styles.scrollBodyDistText}
+                  >{`${item.duration} years`}</Text>
                 </View>
               </View>
             </Pressable>
@@ -60,10 +73,10 @@ const Desired_Course = () => {
         }}
       >
         {selectedCourse && (
-          <CourseModal 
-            course={selectedCourse} 
+          <CourseModal
+            course={selectedCourse}
             setIsModalVisible={setIsModalVisible}
-            onClose={() => setIsModalVisible(false)} 
+            onClose={() => setIsModalVisible(false)}
           />
         )}
       </Modal>

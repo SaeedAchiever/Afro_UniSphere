@@ -1,37 +1,66 @@
-import { View, Text, FlatList, Image } from 'react-native';
-import React from 'react';
-import styles from '../HomeStyle';
+import {
+  View,
+  Text,
+  FlatList,
+  Image,
+  Pressable,
+  useWindowDimensions,
+} from "react-native";
+import React, { use } from "react";
+import styles from "../HomeStyle";
 
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from "@react-navigation/native";
 
 const Location = require("../../../assets/location.png");
 const Star = require("../../../assets/star.png");
 
 import universities from "../../University/universities.json";
 
-const CourseModal = ({ course,setIsModalVisible }) => {
+const CourseModal = ({ course, setIsModalVisible }) => {
+  const width = useWindowDimensions().width;
 
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   const { data } = course;
 
   // Merge data with universities JSON
   const mergedData = data.map((item) => {
-    const universityDetails = universities.find((uni) => uni.name === item.name);
+    const universityDetails = universities.find(
+      (uni) => uni.name === item.name
+    );
     return { ...item, ...universityDetails }; // Combine item with matching university details
   });
 
   return (
-    <View>
-      
+    <View
+      style={{
+        flex: 1,
+        overflow: "scroll",
+        marginVertical:10
+      }}
+    >
       <FlatList
         data={mergedData}
         keyExtractor={(item) => item.id.toString()} // Ensure unique key
+        showsVerticalScrollIndicator={true}
         renderItem={({ item }) => {
           return (
-            <View>
+            <View
+              style={{
+                width:'98%',
+                maxWidth: 900,
+                alignSelf: "center",
+              }}
+            >
               <View style={styles.UniHomeMainContainer}>
                 <View style={styles.UniHomeContainer}>
-                  <View style={styles.UniHomeImageContainer}>
+                  <View
+                    style={[
+                      styles.UniHomeImageContainer,
+                      {
+                        height: width > 500 ? 270 : 200,
+                      },
+                    ]}
+                  >
                     <Image
                       source={{ uri: item.image }}
                       style={styles.UniHomeImage}
@@ -59,7 +88,7 @@ const CourseModal = ({ course,setIsModalVisible }) => {
                       <View
                         style={{
                           width: 2,
-                          backgroundColor: '#000',
+                          backgroundColor: "#000",
                           height: 20,
                           marginLeft: 10,
                         }}
@@ -85,7 +114,7 @@ const CourseModal = ({ course,setIsModalVisible }) => {
                     <View
                       style={{
                         width: 2,
-                        backgroundColor: '#000',
+                        backgroundColor: "#000",
                         height: 30,
                         marginLeft: 10,
                       }}
@@ -97,16 +126,15 @@ const CourseModal = ({ course,setIsModalVisible }) => {
                     </View>
                   </View>
 
-                  <View
+                  <Pressable
                     style={styles.ReadButton}
-                    onTouchEnd={() => {
-                      setIsModalVisible(false)
-                      navigation.navigate('UniData', { university: item });
-                      
+                    onPress={() => {
+                      setIsModalVisible(false);
+                      navigation.navigate("UniData", { university: item });
                     }}
                   >
                     <Text style={styles.ReadButtonText}>Read More</Text>
-                  </View>
+                  </Pressable>
                 </View>
               </View>
             </View>
