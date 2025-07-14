@@ -16,17 +16,12 @@ const UserBG = require("../../assets/ug.jpeg");
 const MainUser = require("../../assets/user_1.jpg");
 const Close = require("../../assets/close.png");
 
-import { useUser } from "../Authentication/UserContext";
-import User_Profile from "./User_Profile";
-
 export default function ProfileHeader() {
   const width = useWindowDimensions().width;
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const navigation = useNavigation();
-
-  const { userData } = useUser();
 
   return (
     <View style={styles.profileHeaderMainContainer}>
@@ -37,25 +32,17 @@ export default function ProfileHeader() {
         ]}
       >
         <View style={styles.profileHeaderUserNameContainer}>
-          <Text style={styles.profileHeaderUserName}>
-            {userData
-              ? userData.first_Name + " " + userData.other_Name
-              : "Guest"}
-          </Text>
+          <Text style={styles.profileHeaderUserName}>Guest</Text>
 
-          { userData && User_Profile && userData.username ? (
-            <View style={styles.editProfile}>
-              <Pressable
-                onPress={() => {
-                  setIsModalVisible(true);
-                }}
-              >
-                <Text style={styles.editProfileText}>Edit Profile</Text>
-              </Pressable>
-            </View>
-          ) : (
-            <View></View>
-          )}
+          <View style={styles.editProfile}>
+            <Pressable
+              onPress={() => {
+                setIsModalVisible(true);
+              }}
+            >
+              <Text style={styles.editProfileText}>Edit Profile</Text>
+            </Pressable>
+          </View>
         </View>
 
         <Image source={UserBG} style={styles.profileHeaderUserBGImage} />
@@ -76,7 +63,7 @@ export default function ProfileHeader() {
                 },
               ]}
             >
-              {userData ? userData.first_Name : "Guest"}
+              Guest
             </Text>
             <Text
               style={[
@@ -87,7 +74,7 @@ export default function ProfileHeader() {
                 },
               ]}
             >
-              {userData ? `@${userData.username}` : "No Username Availble"}
+              No Username Availble
             </Text>
           </View>
           <View style={styles.MainUserFanNVidContainer}>
@@ -115,15 +102,9 @@ export default function ProfileHeader() {
       </View>
 
       <View style={styles.UserBioButtonContainer}>
-        {userData && userData.username ? (
-          <View>
-            <Text style={styles.UserBioBtn}>Up load A video</Text>
-          </View>
-        ) : (
-          <View>
-            <Text style={styles.UserBioBtn}>Follow</Text>
-          </View>
-        )}
+        <View>
+          <Text style={styles.UserBioBtn}>Up load A video</Text>
+        </View>
       </View>
 
       {/* Edit Profile */}
