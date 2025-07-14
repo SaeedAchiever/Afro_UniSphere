@@ -5,6 +5,7 @@ import {
   Image,
   ScrollView,
   Pressable,
+  useWindowDimensions,
 } from "react-native";
 import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
@@ -36,6 +37,8 @@ const CollegeBody = () => {
   const [mainCol, setmainCol] = useState(colleges);
 
   const navigation = useNavigation();
+
+  const width = useWindowDimensions().width;
   return (
     <View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -99,7 +102,14 @@ const CollegeBody = () => {
             <View>
               <View style={styles.UniHomeMainContainer}>
                 <View style={styles.UniHomeContainer}>
-                  <View style={styles.UniHomeImageContainer}>
+                  <View
+                    style={[
+                      styles.UniHomeImageContainer,
+                      {
+                        height: width > 500 ? 250 : 150,
+                      },
+                    ]}
+                  >
                     <Image
                       source={{ uri: item.image }}
                       style={styles.UniHomeImage}
@@ -165,14 +175,14 @@ const CollegeBody = () => {
                     </View>
                   </View>
 
-                  <View
+                  <Pressable
                     style={styles.ReadButton}
-                    onTouchEnd={() => {
+                    onPress={() => {
                       navigation.navigate("UniData", { colleges: item });
                     }}
                   >
                     <Text style={styles.ReadButtonText}>Read More</Text>
-                  </View>
+                  </Pressable>
                 </View>
               </View>
             </View>
