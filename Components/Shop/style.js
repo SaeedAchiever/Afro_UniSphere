@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
   position:'absolute',
   backgroundColor:'rgba(0,0,0,0.5)',
   width:'35%',
-  overflow:'scroll',
   height:20,
   borderRadius:20,
   paddingHorizontal:5,

@@ -29,12 +29,12 @@ const Interactions = ({showComments,item}) => {
        }]}>102K</Text> */}
       </View>
 
-      <View
+      <Pressable
        style={[styles.InteractionsButtonsContainer,{
         width:width > 600 ? 90 : 70,
         height : width > 600 ? 90 : 70
         }]}
-        onTouchEnd={()=>{
+        onPress={()=>{
          showComments()
         }}
       >
@@ -42,7 +42,7 @@ const Interactions = ({showComments,item}) => {
        <Text style={[styles.InteractionsText, {
         fontSize: width > 600 ? 15 : 10
        }]}>{`${item.comments.length}`}</Text>
-      </View>
+      </Pressable>
 
       <View style={[styles.InteractionsButtonsContainer,{width:width > 600 ? 90 : 70,height : width > 600 ? 90 : 70}]}>
        <Image source={Share} style={styles.InteractionsButtons}/>
