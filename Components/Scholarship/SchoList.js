@@ -1,7 +1,9 @@
-import { View, Text, Pressable, Linking, Modal } from "react-native";
+import { View, Text, Pressable, Image, Modal } from "react-native";
 import React, { useState } from "react";
 
 import styles from "./Style";
+import ScholarshipBody from "./ScholarshipBody";
+const Close = require("../../assets/close.png");
 
 const SchoList = ({ item, isSelected, setSelectedId }) => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -70,7 +72,17 @@ const SchoList = ({ item, isSelected, setSelectedId }) => {
             setModalVisible(false);
           }}
         >
-          <Text>Modal</Text>
+          <View style={{maxWidth:1400}}>
+            <View style={styles.closeIconContainer}>
+              <Pressable onPress={() => setModalVisible(false)}>
+                <Image source={Close} style={styles.closeIcon} />
+              </Pressable>
+            </View>
+
+            {/* Body */}
+
+            <ScholarshipBody />
+          </View>
         </Modal>
       </View>
     </View>

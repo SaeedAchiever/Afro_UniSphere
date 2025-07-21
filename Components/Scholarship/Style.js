@@ -1,115 +1,223 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  ScholarshipMainBodyContainer:{
-    paddingBottom:40,
-    marginBottom:80
+  ScholarshipMainBodyContainer: {
+    paddingBottom: 40,
+    marginBottom: 80,
+    alignSelf: "center",
+    width: "95%",
+    maxwidth: 900,
   },
-ScholarshipMainHeaderText:{
-  fontSize:15,
-  fontWeight:'600',
-  opacity:0.7,
-  textTransform:'capitalize',
-  letterSpacing:1.2,
-  paddingLeft:20,
-},
-ScholarshipMainHeaderInput:{
-  paddingHorizontal:10,
-  borderWidth:1,
-  paddingVertical:5,
-  borderRadius:10,
-  borderColor:'lightblue',
-  fontSize:14,
-  backgroundColor:'rgba(0,0,0,0.074)',
-  letterSpacing:0.66,
-  textAlign:'center',
-  fontWeight:'500'
-},
-ScholarshipListBodyContainer:{
-  backgroundColor:'#fcfcfc',
-  width:'97%',
-  paddingTop:20,
-  alignSelf:'center',
-  marginVertical:10,
-  borderWidth:1,
-  borderColor:'lightblue',
-  borderRadius:5,
-},
-ScholarshipMainBodyFlexContainer:{
-  flexDirection:'row',
-  width:'100%',
-  paddingHorizontal:10,
-  paddingVertical:15,
-  justifyContent:'space-between',
-  alignItems:'center',
-},
-ScholarshipMainBodyFlexHeaderText:{
-  fontSize:15,
-  fontWeight:'500',
-  opacity:0.7,
-  paddingHorizontal:20,
-  letterSpacing:0.5,
-},
-ScholarshipSubBodyFlexContainer:{
-  alignItems:'center',
-  justifyContent:'center',
-  textAlign:'center',
-  gap:7,
-  width:'33%',
-},
-ScholarshipSubBodyFlexHeadText:{
-  fontSize:11,
-  fontWeight:'500',
-  textTransform:'uppercase'
-},
-ScholarshipSubBodyFlexBodyText:{
-  fontSize:10,
-  textTransform:'none',
-  fontWeight:'400'
-},
-ScholarshipButton:{
-  paddingHorizontal:20,
-  paddingVertical:5,
-  borderRadius:7,
-},
-ScholarshipButtonText:{
-  fontSize:16,
-  opacity:0.8,
-  letterSpacing:0.7,
-  textTransform:'none',
-  textAlign:'left'
-},
-  
-Button:{
-  marginVertical:5,
-  paddingVertical:8,
-  alignItems:'center',
-  borderWidth:1,
-  paddingHorizontal:10,
-  borderColor:'lightblue',
-  borderRadius:5,
-  width:'80%',
-  alignSelf:'center'
-},
-ButtonText:{
-  fontSize:15,
-  fontWeight:'400',
-  textTransform:'capitalize'
-},
-ReadMoreButton:{
-  marginVertical:10,
-  paddingVertical:5,
-  borderWidth:1,
-  maxWidth:100,
-  alignContent:'center',
-  borderRadius:5
-},
-ReadMoreButtonText:{
-  fontSize:12,
-  fontWeight:'500',
-  textTransform:'capitalize',
-  textAlign:'center'
-}
-})
+  ScholarshipMainHeaderText: {
+    fontSize: 15,
+    fontWeight: "600",
+    opacity: 0.7,
+    textTransform: "capitalize",
+    letterSpacing: 1.2,
+    paddingLeft: 20,
+  },
+  ScholarshipMainHeaderInput: {
+    paddingHorizontal: 10,
+    borderWidth: 1,
+    paddingVertical: 5,
+    borderRadius: 10,
+    borderColor: "lightblue",
+    fontSize: 14,
+    backgroundColor: "rgba(0,0,0,0.074)",
+    letterSpacing: 0.66,
+    textAlign: "center",
+    fontWeight: "500",
+  },
+  ScholarshipListBodyContainer: {
+    backgroundColor: "#fcfcfc",
+    width: "97%",
+    paddingTop: 20,
+    alignSelf: "center",
+    marginVertical: 10,
+    borderWidth: 1,
+    borderColor: "lightblue",
+    borderRadius: 5,
+  },
+  ScholarshipMainBodyFlexContainer: {
+    flexDirection: "row",
+    width: "100%",
+    paddingHorizontal: 10,
+    paddingVertical: 15,
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  ScholarshipMainBodyFlexHeaderText: {
+    fontSize: 15,
+    fontWeight: "500",
+    opacity: 0.7,
+    paddingHorizontal: 20,
+    letterSpacing: 0.5,
+  },
+  ScholarshipSubBodyFlexContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    gap: 7,
+    width: "33%",
+  },
+  ScholarshipSubBodyFlexHeadText: {
+    fontSize: 11,
+    fontWeight: "500",
+    textTransform: "uppercase",
+  },
+  ScholarshipSubBodyFlexBodyText: {
+    fontSize: 10,
+    textTransform: "none",
+    fontWeight: "400",
+  },
+  ScholarshipButton: {
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    borderRadius: 7,
+  },
+  ScholarshipButtonText: {
+    fontSize: 16,
+    opacity: 0.8,
+    letterSpacing: 0.7,
+    textTransform: "none",
+    textAlign: "left",
+  },
 
-export default styles
+  Button: {
+    marginVertical: 5,
+    paddingVertical: 8,
+    alignItems: "center",
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    borderColor: "lightblue",
+    borderRadius: 5,
+    width: "80%",
+    alignSelf: "center",
+  },
+  ButtonText: {
+    fontSize: 15,
+    fontWeight: "400",
+    textTransform: "capitalize",
+  },
+  ReadMoreButton: {
+    marginVertical: 10,
+    paddingVertical: 5,
+    borderWidth: 1,
+    maxWidth: 100,
+    alignContent: "center",
+    borderRadius: 5,
+  },
+  ReadMoreButtonText: {
+    fontSize: 12,
+    fontWeight: "500",
+    textTransform: "capitalize",
+    textAlign: "center",
+  },
+  closeIconContainer: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    zIndex: 1,
+  },
+  closeIcon: {
+    width: 30,
+    height: 30,
+  },
+  scholarshipBodyContainer: {
+    width: "97%",
+    maxWidth: 1100,
+    alignSelf: "center",
+    borderWidth: 1,
+    paddingVertical: 20,
+    borderColor: "#000",
+    marginTop: 50,
+    marginHorizontal: 5,
+    paddingHorizontal: 5,
+  },
+  scholarshipBodyHeader: {
+    alignSelf: "flex-start",
+    width: "100%",
+  },
+  scholarshipBodyTitleContainer: {
+    gap: 5,
+    width: "90%",
+    alignSelf: "center",
+    borderBottomWidth: 1,
+    paddingVertical: 10,
+    borderColor: "#333",
+  },
+  scholarshipBodyTitle: {
+    fontSize: 18,
+    fontWeight: 500,
+    color: "#555",
+  },
+  scholarshipBodyDate: {
+    fontSize: 10,
+    fontWeight: 500,
+    color: "#333",
+  },
+  scholarshipSubMainBodyContainer: {
+    width: "100%",
+    paddingVertical: 20,
+  },
+  scholarshipOperaContainer: {
+    width: "100%",
+    alignSelf: "center",
+    display: "flex",
+    flexDirection: "row",
+  },
+  scholarshipSubOperaContainer: {
+    width: "48%",
+    alignSelf: "center",
+    gap: 2,
+  },
+  scholarshipUniName: {
+    fontSize: 16,
+    fontWeight: "400",
+    color: "#333",
+    marginBottom: 5,
+  },
+  scholarshipDegreeName: {
+    fontSize: 11,
+    fontWeight: "500",
+    color: "#555",
+  },
+  scholarshipDeadline: {
+    fontSize: 13,
+    fontWeight: 600,
+    color: "#444",
+  },
+  scholarshipDeadlineInfo: {
+    fontSize: 14,
+    fontWeight: 400,
+    color: "#333",
+  },
+  scholarshipOtherBodyInfoMainContainer: {
+    width: "100%",
+    alignSelf: "center",
+    display: "flex",
+    paddingVertical: 10,
+    gap: 5,
+  },
+  scholarshipOtherBodyHeaderInfoContainer: {
+    width: "100%",
+    alignSelf: "center",
+  },
+  scholarshipOtherBodyBodyInfoContainer: {
+    width: "85%",
+    alignSelf: "flex-start",
+    marginHorizontal: "7%",
+  },
+  titles: {
+    fontSize: 16,
+    fontWeight: "500",
+    color: "rgba(20, 20, 200, 0.7)",
+  },
+
+  mainText: {
+    fontSize: 15,
+    color: "rgba(20, 20, 20, 0.7)",
+  },
+});
+
+export default styles;

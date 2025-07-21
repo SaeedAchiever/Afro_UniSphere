@@ -96,9 +96,9 @@ const styles = StyleSheet.create({
   webLogoContainer: {
     width: "100%",
     alignSelf: "center",
-    justifyContent: "space-between",
+    justifyContent: "center",
     display: "flex",
-    flexDirection: "row",
+    // flexDirection: "row",
     paddingHorizontal: 20,
   },
   webandLogo: {
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     alignContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0,0,0,0.3)",
-    width: "auto",
+    maxWidth: 230,
     minWidth: 70,
     maxHeight: 50,
   },
@@ -120,6 +120,26 @@ const styles = StyleSheet.create({
   webLogoImg: {
     width: "100%",
     height: "100%",
+  },
+  webLinksContainer: {
+    marginTop: 10,
+    width: "100%",
+    maxWidth: 900,
+    backgroundColor: "rgba(31, 16, 16, 1)",
+    alignSelf: "flex-end",
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexDirection: "row",
+    padding: 20,
+  },
+  webLinksSubContainer: {
+    gap: 10,
+    width: "50%",
+  },
+  webLinksText: {
+    fontSize: 15,
+    color: "#cfcfcf",
+    fontWeight: 700,
   },
   logoText: {
     fontSize: 20,

@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingBottom: 50,
     alignSelf: "center",
-    marginTop:30,
-    marginBottom:30
+    marginTop: 30,
+    marginBottom: 30,
   },
   HomeContainer: {
     backgroundColor: "#fff",
@@ -161,7 +161,8 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 40,
     alignItems: "center",
-    // marginTop:30
+    maxWidth: 900,
+    alignSelf: "center",
   },
   SwitchContainerBTN: {
     borderColor: "#000",
@@ -811,7 +812,7 @@ const styles = StyleSheet.create({
     height: "auto",
   },
   updatesHeaderTextContainer: {
-    width: "95%",
+    width: "100%",
     paddingTop: 15,
     alignSelf: "center",
   },
@@ -823,9 +824,11 @@ const styles = StyleSheet.create({
     gap: 7,
   },
   updatesBodyMainContainer: {
-    width: "96%",
-    paddingVertical: 10,
+    // gap: 17,
     alignSelf: "center",
+    margin: 10,
+    justifyContent: "flex-start",
+    width:'95%'
   },
   NewsBGImage: {
     width: "100%",

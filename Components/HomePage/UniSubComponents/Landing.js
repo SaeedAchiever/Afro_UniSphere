@@ -9,16 +9,16 @@ import {
   TextInput,
   Modal,
   ScrollView,
-  StatusBar
+  StatusBar,
 } from "react-native";
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./style";
+import { useNavigation } from "@react-navigation/native";
+import LandingLinks from "./LandingLinks";
 
 const BGImage = require("../../../assets/accra.jpg");
 const BGImageTwo = require("../../../assets/ug.jpeg");
 const BGImageThree = require("../../../assets/cape_coast.jpeg");
-const Logo = require("../../../assets/logo.png");
-const Menu = require("../../../assets/menu.png");
 
 const images = [
   {
@@ -39,11 +39,9 @@ const images = [
 ];
 
 const Landing = () => {
+  const navigation = useNavigation();
   const width = useWindowDimensions().width;
   const height = useWindowDimensions().height;
-
-  const [menuVisible, setIsMenuIVisible] = useState("flex");
-  const [closeVisible, setIsCloseIVisible] = useState("flex");
 
   const scrollRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -82,37 +80,7 @@ const Landing = () => {
               </Pressable>
             </View>
           ),
-          web: () => (
-            <View style={styles.webLogoContainer}>
-              <View style={styles.webandLogo}>
-                <View style={styles.webLogoImgCont}>
-                  <Image
-                    source={Logo}
-                    style={styles.webLogoImg}
-                    resizeMode="cover"
-                  />
-                </View>
-                <Text style={styles.logoText}>Afro UniSphere</Text>
-              </View>
-              <View>
-                <Pressable
-                  style={[
-                    styles.webLogoImgCont,
-                    {
-                      position: "absolute",
-                      right: 10,
-                    },
-                  ]}
-                >
-                  <Image
-                    source={Menu}
-                    style={styles.webLogoImg}
-                    resizeMode="cover"
-                  />
-                </Pressable>
-              </View>
-            </View>
-          ),
+          web: () => <LandingLinks />,
         })()}
 
         {/* Search Text */}
@@ -173,7 +141,7 @@ const Landing = () => {
           </ImageBackground>
         ))}
       </ScrollView>
-      <StatusBar backgroundColor={"blue"}/>
+      <StatusBar backgroundColor={"blue"} />
     </View>
   );
 };

@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Leiden University Excellence Scholarship",
+    "description": "The Leiden University Excellence Scholarship Programme (LExS) is open to outstanding non-EEA/non-EFTA students enrolling in a full-time master's degree Programme",
+    "school": "Leiden University",
+    "no_awards": "The number and type of award of the scholarship depends on the budget available for each Faculty department.",
+    "targeted_group": " Non-EEA/non-EFTA students",
+    "level": "Master's",
+    "deadline": " 1 Feb/1 Oct (annually)",
+    "country": "Netherlands",
+    "course_schedule": "Programmes starts in September and February every year",
+    "website": "https://www.universiteitleiden.nl/en/education/study-programmes/masters/scholarships/leiden-university-excellence-scholarship",
+    "value_&_duration": {
+      "note": "The scholarship is awarded for the duration of the master's programme, with a maximum of 24 months.",
+      "amount": ["€ 10,000", "€ 15,000", "€ 20,000"]
+    },
+    "field": {
+      "inclusive": ["All full time master's Programmes with the exception of"],
+      "exclusive": [
+        "Leiden Law School’s LLM (non-advanced) and MSc programmes",
+        "Study programmes starting in February at the Faculty of Humanities, the Faculty of Sciences and Leiden Law School."
+      ]
+    },
+    "eligibility": [
+      "You are a non-EEA/non-EFTA student",
+      "You have been admitted to a full-time master's degree programme at Leiden University",
+      "You meet the specific requirements of the programme you are applying for"
+    ],
+    "instructions": [
+      "You must first apply online for admissions to a Master’s programme at Leiden University. After you’ve applied for admissions, if you are eligible to apply for the LExS, it will now be visible in the scholarships section of online application system. You must indicate clearly that you would like to apply for the LExS scholarship and upload your letter of motivation for the LExS scholarship. The deadline for programmes starting in September is 1 February while programmes starting in February has a deadline of 1 October.",
+      "It is important to visit the official website (link found below) to access the online application form and for detailed information on how to apply for this scholarship."
+    ],
+    "disclaimer": "Please note that the information provided is based on the latest available data and may be subject to change. It is advisable to verify details directly with the scholarship provider before applying."
+  }
+]

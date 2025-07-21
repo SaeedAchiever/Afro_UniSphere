@@ -14,6 +14,7 @@ import News from "../../../Components/Updates/news.json";
 const NewsImage = require("../../../assets/cape_coast.jpeg");
 const Feeds = () => {
   const width = useWindowDimensions().width;
+  const numColumns = width > 750 ? 3 : width > 610 ? 2 : 1;
 
   const navigation = useNavigation();
   return (
@@ -29,12 +30,17 @@ const Feeds = () => {
       <FlatList
         data={News}
         keyExtractor={(item) => item.id}
+        numColumns={numColumns}
+        key={numColumns}
         renderItem={({ item }) => {
           return (
             <View
               style={[
                 styles.updatesBodyMainContainer,
-                { height: width > 600 ? 270 : 250 },
+                {
+                  height: width > 600 ? 270 : 250,
+                  maxWidth: width > 600 ? 300 : 300,
+                },
               ]}
             >
               <ImageBackground source={NewsImage} style={styles.NewsBGImage}>
