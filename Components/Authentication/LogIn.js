@@ -167,7 +167,7 @@ const LogIn = () => {
               <View style={styles.logInAsGuestContainer}>
                 <Pressable
                   onPress={() => {
-                    navigation.navigate("HomePage");
+                    navigation.replace("HomePage");
                   }}
                 >
                   <Text style={styles.logInAsGuestText}>

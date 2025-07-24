@@ -5,9 +5,7 @@ import {
   Platform,
   ImageBackground,
   Pressable,
-  Image,
   TextInput,
-  Modal,
   ScrollView,
   StatusBar,
 } from "react-native";
@@ -39,7 +37,6 @@ const images = [
 ];
 
 const Landing = () => {
-  const navigation = useNavigation();
   const width = useWindowDimensions().width;
   const height = useWindowDimensions().height;
 

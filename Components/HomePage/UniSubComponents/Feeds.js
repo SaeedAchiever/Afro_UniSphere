@@ -21,8 +21,7 @@ const Feeds = () => {
     <View style={styles.recommendationMainContainer}>
       <View style={styles.recommendationHeadContainer}>
         <View>
-          <Text style={styles.HomeScholarshipHeaderText}>
-            What's Trendng Now...?
+          <Text style={styles.HomeScholarshipHeaderText}>What's Trendng Now...?
           </Text>
         </View>
       </View>
@@ -39,7 +38,7 @@ const Feeds = () => {
                 styles.updatesBodyMainContainer,
                 {
                   height: width > 600 ? 270 : 250,
-                  maxWidth: width > 600 ? 300 : 300,
+                  maxWidth: width > 700 ? 240 : 300,
                 },
               ]}
             >
