@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
   modalButtonImage: {
     width: 50,
     height: 50,
-    resizeMode: "contain",
   },
   ModalBodyMainContainer: {
     paddingTop: 50,
@@ -91,7 +90,6 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 50,
-    resizeMode: "cover",
     marginLeft: 15,
   },
   modalLinksMainContainer: {
@@ -147,7 +145,6 @@ const styles = StyleSheet.create({
   footerImage: {
     width: "100%",
     height: "60%",
-    resizeMode: "contain",
   },
 
   SwitchContainer: {
@@ -235,7 +232,6 @@ const styles = StyleSheet.create({
   recommendationLocation: {
     width: 15,
     height: 15,
-    resizeMode: "contain",
   },
   recommendationTextRate: {
     fontSize: 11,
@@ -250,7 +246,6 @@ const styles = StyleSheet.create({
   recommendationImage: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
   },
 
   // TOP PLACES  TO  STUDY
@@ -277,7 +272,6 @@ const styles = StyleSheet.create({
   topPlaceImage: {
     width: "100%",
     height: "85%",
-    resizeMode: "cover",
   },
 
   // PREFERANCE
@@ -337,7 +331,6 @@ const styles = StyleSheet.create({
   userPreferenceImage: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
   },
 
   //       // UniversityHome  STYLE
@@ -360,11 +353,9 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     textTransform: "capitalize",
   },
-  filterImageContainer: {},
   filterImage: {
     width: 30,
     height: 30,
-    resizeMode: "cover",
   },
   searchBarContainer: {
     width: "95%",
@@ -506,7 +497,6 @@ const styles = StyleSheet.create({
   collegeImage: {
     width: "100%",
     height: 140,
-    resizeMode: "cover",
   },
   collegeButtonContainer: {
     flexDirection: "row",
@@ -560,7 +550,6 @@ const styles = StyleSheet.create({
   ScholarImage: {
     width: "100%",
     height: "100%",
-    resizeMode: "contain",
   },
   ScholarshipBodyTextContainer: {
     width: "90%",
@@ -631,7 +620,6 @@ const styles = StyleSheet.create({
   uniMainHomeLocImage: {
     width: "80%",
     height: "80%",
-    resizeMode: "cover",
   },
   uniMainHomeLocText: {
     fontSize: 13,
@@ -806,7 +794,6 @@ const styles = StyleSheet.create({
   updatesHeaderImage: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
   },
   updatesHeadMainContainer: {
     height: "auto",
@@ -963,7 +950,6 @@ const styles = StyleSheet.create({
   Applicant: {
     width: "100%",
     height: "100%",
-    resizeMode: "stretch",
     alignSelf: "center",
   },
   allschoolsHome: {

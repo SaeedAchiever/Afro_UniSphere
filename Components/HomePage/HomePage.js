@@ -1,4 +1,4 @@
-import { View, FlatList, Text, Pressable, StatusBar } from "react-native";
+import { View, FlatList, Text, Pressable, StatusBar,Platform } from "react-native";
 import React, { useEffect, useState } from "react";
 
 import styles from "./HomeStyle";
@@ -81,7 +81,7 @@ const HomePage = () => {
   return (
     <View style={styles.allHomeContainer}>
       {/* Switch between Universities and Colleges */}
-      <View style={styles.SwitchContainer}>
+      <View style={[styles.SwitchContainer, {display: Platform.OS === "web" ? "none" : "flex"}]}>
         <View
           style={{
             position: "absolute",

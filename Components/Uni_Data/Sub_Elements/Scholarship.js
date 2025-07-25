@@ -1,11 +1,11 @@
-import { View, Text, Image } from 'react-native';
-import React, { useState } from 'react';
-import styles from './Styles';
+import { View, Text, Image } from "react-native";
+import React, { useState } from "react";
+import styles from "./Styles";
 
 // Import the scholarship data from the JSON file
 import scholarshipData from "../../University/json/scholarship.json";
 
-const Preloader = require('../../../assets/loading.gif');
+const Preloader = require("../../../assets/loading.gif");
 
 const Scholarship = ({ university }) => {
   // Find the corresponding scholarship data for the university
@@ -35,19 +35,16 @@ const ScholarshipItem = ({ item }) => {
     <View style={styles.scholarshipItemContainer}>
       {/* Preloader while loading image */}
       {loading && (
-        <Image
-          source={Preloader}
-          style={{ width: 40, height: 40, resizeMode: 'center' }}
-        />
+        <Image source={Preloader} style={{ width: 40, height: 40 }} />
       )}
 
       {/* Image Container */}
       <View style={styles.imageContainer}>
         <Image
-          source={{ uri: item.image }}  // Load image from URI
+          source={{ uri: item.image }} // Load image from URI
           style={styles.scholarshipImage}
-          onLoadStart={() => setLoading(true)}  // Start loading
-          onLoadEnd={() => setLoading(false)}  // Finish loading
+          onLoadStart={() => setLoading(true)} // Start loading
+          onLoadEnd={() => setLoading(false)} // Finish loading
         />
       </View>
 

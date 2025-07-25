@@ -31,7 +31,6 @@ const ResultsChecker = () => {
          style={{
           width: '100%',
           height: '80%',
-          resizeMode: 'cover',
           borderRadius: 10,
          }}
         />

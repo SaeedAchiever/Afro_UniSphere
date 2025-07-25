@@ -4,12 +4,9 @@ import {
   Image,
   Modal,
   Pressable,
-  Platform,
 } from "react-native";
 import React from "react";
-import { useState, useContext } from "react";
-
-import { useNavigation } from "@react-navigation/native";
+import { useState } from "react";
 
 import styles from "../../Components/HomePage/HomeStyle";
 
@@ -18,8 +15,6 @@ import HeadLinks from "./HeadLinks";
 const Menu = require("../../assets/menu.png");
 
 const Head = () => {
-  const navigation = useNavigation();
-
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   // DEFINING  WIDTH AND HEIGHT
@@ -27,9 +22,11 @@ const Head = () => {
 
   return (
     <View
-      style={{
-        display: Platform.OS === "web" ? "none" : "flex",
-      }}
+      style={
+        {
+          // display: Platform.OS === "web" ? "none" : "flex",
+        }
+      }
     >
       <View style={styles.headerContainer}>
         <View>

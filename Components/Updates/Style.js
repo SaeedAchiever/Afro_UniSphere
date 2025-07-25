@@ -30,7 +30,6 @@ const style = StyleSheet.create({
   updatesHeaderImage: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
   },
   updatesHeaderTextContainer: {
     width: "95%",

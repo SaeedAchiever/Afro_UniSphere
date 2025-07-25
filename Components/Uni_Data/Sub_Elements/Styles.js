@@ -310,7 +310,6 @@ const styles = StyleSheet.create({
   scholarshipImage: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
     borderTopLeftRadius: 10,
     borderBottomLeftRadius: 10,
   },

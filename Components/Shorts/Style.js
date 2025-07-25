@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
   shortsMenu:{
     width:'100%',
     height:'100%',
-    resizeMode:'cover'
   },
   MenuBtnContainer:{
     alignSelf:'center',
@@ -110,7 +109,6 @@ const styles = StyleSheet.create({
   mainCommentsImage:{
     width:'100%',
     height:'100%',
-    resizeMode:'cover',
     borderRadius:50
   },
   mainCommentsTextContainer:{
@@ -145,7 +143,6 @@ const styles = StyleSheet.create({
   commenteactionsIcon:{
     width:20,
     height:20,
-    resizeMode:'cover'
   },
 
   // USer
@@ -171,7 +168,6 @@ const styles = StyleSheet.create({
   UserProfileImage:{
     width:'100%',
     height:'100%',
-    resizeMode:'cover',
     borderRadius:50
   },
   videoCaptionMainContainer:{
@@ -219,7 +215,6 @@ const styles = StyleSheet.create({
  searchedVideo:{
   width:'100%',
   height:'100%',
-  resizeMode:'cover',
   alignSelf:'center'
  },
  searchedVideoInfoContainer:{
@@ -275,7 +270,6 @@ const styles = StyleSheet.create({
  SearchBtn:{
   width:'100%',
   height:'50%',
-  resizeMode:'center',
   paddingVertical:10,
   justifyContent:'center',
   flex:1

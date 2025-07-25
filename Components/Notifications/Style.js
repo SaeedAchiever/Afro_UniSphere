@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
   modalButtonImage: {
     width: 50,
     height: 50,
-    resizeMode: "contain",
   },
   notsHeader: {
     width: "100%",

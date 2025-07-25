@@ -121,26 +121,6 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
-  webLinksContainer: {
-    marginTop: 10,
-    width: "100%",
-    maxWidth: 900,
-    backgroundColor: "rgba(31, 16, 16, 1)",
-    alignSelf: "flex-end",
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexDirection: "row",
-    padding: 20,
-  },
-  webLinksSubContainer: {
-    gap: 10,
-    width: "50%",
-  },
-  webLinksText: {
-    fontSize: 15,
-    color: "#cfcfcf",
-    fontWeight: 700,
-  },
   logoText: {
     fontSize: 20,
     color: "#cfcfcf",

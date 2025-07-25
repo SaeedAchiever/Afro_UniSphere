@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
   uniLogo: {
     width: "100%",
     height: "100%",
-    resizeMode: "contain",
   },
   bodyContainer: {
     marginVertical: 20,
@@ -481,7 +480,6 @@ const styles = StyleSheet.create({
   schoolNoteSubMainBoxImage: {
     width: 100,
     height: 40,
-    resizeMode: "contain",
   },
   schoolNoteRateBox: {
     display: "flex",
@@ -590,7 +588,6 @@ const styles = StyleSheet.create({
   },
   vTourBodyContainer: {
     width: "100%",
-    resizeMode: "cover",
     position: "relative",
   },
   vTourBodyTextContainer: {
@@ -645,7 +642,6 @@ const styles = StyleSheet.create({
   mainImage: {
     width: "100%",
     height: "100%",
-    resizeMode: "contain",
     alignSelf: "center",
   },
   closeBtn: {
@@ -689,7 +685,6 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   feedslogoImage: {
-    resizeMode: "contain",
     width: 80,
     height: 80,
   },

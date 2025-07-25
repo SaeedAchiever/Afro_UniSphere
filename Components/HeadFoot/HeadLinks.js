@@ -1,5 +1,5 @@
 import { View, Text, Image, Pressable, Modal } from "react-native";
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 
 import styles from "../../Components/HomePage/HomeStyle";
@@ -26,7 +26,11 @@ const HeadLinks = ({ setIsModalVisible }) => {
         }}
         style={styles.modalButtonContainer}
       >
-        <Image source={CloseBtn} style={styles.modalButtonImage} />
+        <Image
+          source={CloseBtn}
+          resizeMethod="cover"
+          style={styles.modalButtonImage}
+        />
       </Pressable>
 
       <View style={styles.ModalBodyMainContainer}>

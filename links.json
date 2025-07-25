@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "HomePage",
+    "visible_name": "HomePage"
+  },
+  {
+    "id": 2,
+    "name": "UniversityHome",
+    "visible_name": "Universities"
+  },
+  {
+    "id": 3,
+    "name": "ScholarshipHome",
+    "visible_name": "Scholarships"
+  },
+  {
+    "id": 4,
+    "name": "ShopHome",
+    "visible_name": "Shop"
+  },
+  {
+    "id": 5,
+    "name": "Updates",
+    "visible_name": "News"
+  },
+  {
+    "id": 6,
+    "name": "CollegeHome",
+    "visible_name": "Colleges"
+  },
+  {
+    "id": 7,
+    "name": "Shorts",
+    "visible_name": "Shorts"
+  },
+  {
+    "id": 8,
+    "name": "User_Profile",
+    "visible_name": "User_Profile"
+  },
+  {
+    "id": 9,
+    "name": "MatchForm",
+    "visible_name": "Match Me"
+  },
+  {
+    "id":10,
+    "name":"LogIn",
+    "visible_name":"Log In"
+  },
+  {
+    "id":11,
+    "name":"SignUp",
+    "visible_name":"Sign Up"
+  }
+]
