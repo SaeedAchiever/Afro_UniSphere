@@ -11,14 +11,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const HomePageBody = () => {
   // State to keep track of the selected body component
 
-  const [selectedBody, setSelectedBody] = useState(() => "HomePage");
-
-  // Function to handle selecting a body com
-
-  const handleSelectBody = (body) => {
-    setSelectedBody(body);
-  };
-
   return (
     <View style={styles.HomeContainer}>
       <SafeAreaView>

@@ -31,7 +31,11 @@ const Footer = () => {
             navigation.navigate("HomePage");
           }}
         >
-          <Image source={Home} style={styles.footerImage} />
+          <Image
+            source={Home}
+            style={styles.footerImage}
+            resizeMode="contain"
+          />
           <Text
             style={{
               fontSize: deviceWidth > 500 ? 12 : 10,
@@ -45,7 +49,11 @@ const Footer = () => {
           style={styles.footerBox}
           onPress={() => navigation.navigate("UniversityHome")}
         >
-          <Image source={University} style={styles.footerImage} />
+          <Image
+            source={University}
+            resizeMode="contain"
+            style={styles.footerImage}
+          />
           <Text
             style={{
               fontSize: deviceWidth > 500 ? 12 : 10,
@@ -61,7 +69,7 @@ const Footer = () => {
             navigation.navigate("CollegeHome");
           }}
         >
-          <Image source={College} style={styles.footerImage} />
+          <Image source={College} resizeMode="contain" style={styles.footerImage} />
           <Text
             style={{
               fontSize: deviceWidth > 500 ? 12 : 10,
@@ -77,7 +85,7 @@ const Footer = () => {
             navigation.navigate("Shorts");
           }}
         >
-          <Image source={Shorts} style={styles.footerImage} />
+          <Image source={Shorts} resizeMode="contain" style={styles.footerImage} />
           <Text
             style={{
               fontSize: deviceWidth > 500 ? 12 : 10,
@@ -93,7 +101,7 @@ const Footer = () => {
             navigation.navigate("ShopHome");
           }}
         >
-          <Image source={Shop} style={styles.footerImage} />
+          <Image source={Shop} resizeMode="contain" style={styles.footerImage} />
           <Text
             style={{
               fontSize: deviceWidth > 500 ? 12 : 10,

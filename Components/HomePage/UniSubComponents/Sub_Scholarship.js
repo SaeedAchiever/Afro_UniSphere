@@ -1,13 +1,6 @@
-import {
-  View,
-  Text,
-  Image,
-  useWindowDimensions,
-  ScrollView,
-} from "react-native";
+import { View, Text, Image, ScrollView, Pressable } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import Swiper from "react-native-swiper";
 
 import styles from "../HomeStyle";
 
@@ -18,10 +11,6 @@ const Scholar_Two = require("../../../assets/scholar_two.png");
 const Scholar_Three = require("../../../assets/scholar_three.png");
 
 const Sub_Scholarship = () => {
-  // DEFINING  WIDTH AND HEIGHT
-  const deviceWidth = useWindowDimensions().width;
-  const deviceHeight = useWindowDimensions().height;
-
   const navigation = useNavigation();
 
   return (
@@ -44,7 +33,11 @@ const Sub_Scholarship = () => {
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View style={styles.ScholarshipScrolls}>
           <View style={styles.ScholarshipBox}>
-            <Image source={Scholar} style={styles.ScholarImage} />
+            <Image
+              source={Scholar}
+              resizeMethod="contain"
+              style={styles.ScholarImage}
+            />
           </View>
 
           <View style={styles.ScholarshipBodyTextContainer}>
@@ -56,7 +49,11 @@ const Sub_Scholarship = () => {
 
         <View style={styles.ScholarshipScrolls}>
           <View style={styles.ScholarshipBox}>
-            <Image source={Scholar_Two} style={styles.ScholarImage} />
+            <Image
+              source={Scholar_Two}
+              resizeMethod="contain"
+              style={styles.ScholarImage}
+            />
           </View>
 
           <View>
@@ -67,15 +64,25 @@ const Sub_Scholarship = () => {
         </View>
 
         <View style={styles.ScholarshipScrolls}>
-          <View style={styles.ScholarshipBox}>
-            <Image source={Scholar_Three} style={styles.ScholarImage} />
-          </View>
+          <Pressable
+            onPress={() => {
+              navigation.navigate("ScholarshipBody");
+            }}
+          >
+            <View style={styles.ScholarshipBox}>
+              <Image
+                source={Scholar_Three}
+                resizeMethod="contain"
+                style={styles.ScholarImage}
+              />
+            </View>
 
-          <View>
-            <Text style={styles.ScholarshipBodyText}>
-              $1000 Havard scholarship Best Offer Available
-            </Text>
-          </View>
+            <View>
+              <Text style={styles.ScholarshipBodyText}>
+                $1000 Havard scholarship Best Offer Available
+              </Text>
+            </View>
+          </Pressable>
         </View>
       </ScrollView>
     </View>

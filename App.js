@@ -14,7 +14,6 @@ import react, { useState } from "react";
 import styles from "./AppStyle";
 
 import AppStuff from "./AppStuff";
-import AppLinks from "./AppLinks";
 
 const Menu = require("./assets/menu.png");
 const Close = require("./assets/close.png");
@@ -44,7 +43,7 @@ export default function App() {
             </Pressable>
             <View>
               <View style={[styles.menuLinksContainer, { display: isMenuVisible }]}>
-                <AppLinks />
+
               </View>
             </View>
           </View>
