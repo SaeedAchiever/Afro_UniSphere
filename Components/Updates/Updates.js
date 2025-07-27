@@ -5,6 +5,8 @@ import {
   useWindowDimensions,
   ScrollView,
   StatusBar,
+  Modal,
+  Pressable,
 } from "react-native";
 import React, { useRef, useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
@@ -14,10 +16,10 @@ import Footer from "../HeadFoot/Footer";
 import newsData from "./news.json";
 import ListUpdates from "./SubComponents/ListUpdates";
 import BoxUpdates from "./SubComponents/BoxUpdates";
+import NewsBody from "./SubComponents/NewsBody";
 
 const News_One = require("../../assets/knust_students.jpg");
-const News_Two = require("../../assets/students_two.jpg");
-const News_Three = require("../../assets/staff.jpg");
+const Close = require("../../assets/close.png");
 
 const Updates = () => {
   const width = useWindowDimensions().width;
@@ -89,6 +91,21 @@ const Updates = () => {
         <Footer />
       </View>
       <StatusBar style="auto" />
+      <Modal>
+        <View style={styles.newsMenuMainContainer}>
+          <Pressable
+            onPress={() => navigation.goBack()}
+            style={styles.newsMenuContainer}
+          >
+            <Image
+              source={Close}
+              resizeMethod="cover"
+              style={styles.newsMenu}
+            />
+          </Pressable>
+          <NewsBody />
+        </View>
+      </Modal>
     </View>
   );
 };

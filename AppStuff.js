@@ -36,7 +36,7 @@ const RenderData = () => {
   return (
     <NavigationContainer linking={linking}>
       <Stack.Navigator
-        initialRouteName={"Updates"}
+        initialRouteName={"HomePage"}
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Demo" component={Demo} />
