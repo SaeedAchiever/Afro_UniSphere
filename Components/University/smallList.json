@@ -38,5 +38,18 @@
   "logo" : "https://www.dropbox.com/scl/fi/1h6zn6qxyr003soh1xmnu/acity_logo.png?rlkey=mjmfk6scxf9da54oplj6cl2m7&st=zw4qg3v8&raw=1",
   "btn"  : "Affiliated Universities",
   "home"  : "MoreUniversitiesHome"
+ },
+  {
+  "id": "4",
+  "name": "A Forth New University", 
+  "location": "Accra", 
+  "campuses": "2",
+  "note": "Acity",
+  "nick": "Acity",
+  "type" : "MoreUniversityHome",
+  "image"  : "https://www.dropbox.com/scl/fi/qjijw6i35whjq7qbnifay/Acity.png?rlkey=6wz77kkmfi8egqkgub3z211y0&st=ijtus4se&raw=1",
+  "logo" : "https://www.dropbox.com/scl/fi/1h6zn6qxyr003soh1xmnu/acity_logo.png?rlkey=mjmfk6scxf9da54oplj6cl2m7&st=zw4qg3v8&raw=1",
+  "btn"  : "Affiliated Universities",
+  "home"  : "MoreUniversitiesHome"
  }
 ]
