@@ -8,7 +8,7 @@ const Demo = () => {
     const getData = async () => {
       try {
         const res = await fetch(
-          "https://raw.githubusercontent.com/SaeedAchiever/Afro_UniSphere/refs/heads/master/Components/University/universities.json"
+          "https://raw.githubusercontent.com/SaeedAchiever/Afro_UniSphere/refs/heads/master/Components/University/smallList.json"
         );
         const data = await res.json();
         setFetcheddata(data);
@@ -23,7 +23,7 @@ const Demo = () => {
   console.log(fetchedata);
 
   return (
-    <View>
+    <View style={{ marginTop: 80 }}>
       <Text>Hello</Text>
       {/* {fetchedata.map((res) => {
         return (
@@ -41,6 +41,7 @@ const Demo = () => {
           </View>
         )}
       />
+      <Text>Fix all expo-av videos</Text>
     </View>
   );
 };

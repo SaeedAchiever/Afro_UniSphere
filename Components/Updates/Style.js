@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
   updatesMainContainer: {
-    // flex: 1,
     backgroundColor: "#e7d9d9ff",
     maxWidth: 1300,
     alignSelf: "center",
@@ -47,6 +46,13 @@ const style = StyleSheet.create({
     paddingLeft: 20,
     fontWeight: "500",
     color: "#000",
+  },
+  updatesTitleContainer: {
+    width: "auto",
+    marginHorizontal: 20,
+    maxWidth: 3000,
+    alignItems: "center",
+    paddingHorizontal: 20,
   },
   updatesContainer: {
     marginBottom: 50,
@@ -103,9 +109,9 @@ const style = StyleSheet.create({
   },
   newsMenuMainContainer: {
     flex: 1,
-    padding: 20,
+    padding: 5,
     maxWidth: 1400,
-    width: "95%",
+    width: "100%",
     alignSelf: "center",
     backgroundColor: "rgba(245, 199, 199, 0.7)",
     marginVertical: 15,
@@ -115,7 +121,7 @@ const style = StyleSheet.create({
     top: 10,
     right: 10,
     zIndex: 1000,
-    backgroundColor: "rgba(248, 241, 241, 0.5)",
+    backgroundColor: "rgba(231, 239, 139, 1)",
     padding: 10,
     borderRadius: 50,
     width: 50,
@@ -128,7 +134,7 @@ const style = StyleSheet.create({
   NewsBodyContainer: {
     width: "100%",
     alignSelf: "center",
-    paddingTop: 50,
+    flex: 1,
   },
   NewsBodyHeaderContainer: {
     width: "88%",
@@ -152,11 +158,11 @@ const style = StyleSheet.create({
     marginLeft: 20,
   },
   NewsBodyImageContainer: {
-    width:'100%',
-    maxWidth: '1000',
+    width: "100%",
+    maxWidth: "1000",
     overflow: "hidden",
     marginTop: 10,
-    backgroundColor: "#rgba(148, 186, 239, 0.8)",
+    backgroundColor: "rgba(148, 186, 239, 0.8)",
   },
   NewsBodyImage: {
     width: "100%",
@@ -185,6 +191,18 @@ const style = StyleSheet.create({
   socialIcon: {
     width: "100%",
     height: "100%",
+  },
+  newsBodyContentContainer: {
+    width: "100%",
+    paddingVertical: 10,
+    alignSelf: "center",
+  },
+  newsBodyContentText: {
+    fontSize: 13,
+    color: "#333",
+    textAlign: "left",
+    fontWeight: "500",
+    paddingVertical: 5,
   },
 });
 

@@ -16,19 +16,6 @@ const BoxUpdates = () => {
 
   return (
     <View style={styles.recommendationMainContainer}>
-      <View
-        style={{
-          width: "auto",
-          backgroundColor: "skyblue",
-          marginHorizontal: 20,
-          maxWidth: 150,
-          alignItems: "center",
-        }}
-      >
-        <Text style={{ fontSize: 18, color: "#666", fontWeight: "600" }}>
-          Top Stories
-        </Text>
-      </View>
       <FlatList
         data={News}
         keyExtractor={(item) => item.id}

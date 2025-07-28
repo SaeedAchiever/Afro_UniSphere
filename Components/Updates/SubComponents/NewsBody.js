@@ -4,9 +4,11 @@ import {
   Image,
   useWindowDimensions,
   Pressable,
+  ScrollView,
 } from "react-native";
 import React from "react";
 import styles from "../Style";
+import SuggestedNews from "./SuggestedNews";
 
 const NewsImage = require("../../../assets/knust.jpeg");
 
@@ -39,36 +41,55 @@ const NewsBody = () => {
 
   return (
     <View style={styles.NewsBodyContainer}>
-      <View style={styles.NewsBodyHeaderContainer}>
-        <Text style={styles.NewsBodyHeaderTitle}>
-          KNUST admissions for 2025 opened
-        </Text>
-        <Text style={styles.date}>July 20, 2025</Text>
-        <View
-          style={[
-            styles.NewsBodyImageContainer,
-            { height: width > 600 ? 300 : 250 },
-          ]}
-        >
-          <Image
-            source={NewsImage}
-            style={styles.NewsBodyImage}
-            resizeMode="cover"
-          />
+      <ScrollView showsHorizontalScrollIndicator={false}>
+        <View style={styles.NewsBodyHeaderContainer}>
+          <Text style={styles.NewsBodyHeaderTitle}>
+            KNUST admissions for 2025 opened
+          </Text>
+          <Text style={styles.date}>July 20, 2025</Text>
+          <View
+            style={[
+              styles.NewsBodyImageContainer,
+              { height: width > 600 ? 300 : 250 },
+            ]}
+          >
+            <Image
+              source={NewsImage}
+              style={styles.NewsBodyImage}
+              resizeMode="cover"
+            />
+          </View>
+          <View style={styles.socialMediaBTNContainer}>
+            {Social_Media.map((item, index) => (
+              <Pressable style={styles.socialMediaBTN} key={index}>
+                <Image
+                  key={index}
+                  source={item.icon}
+                  style={styles.socialIcon}
+                  resizeMode="contain"
+                />
+              </Pressable>
+            ))}
+          </View>
         </View>
-        <View style={styles.socialMediaBTNContainer}>
-          {Social_Media.map((item, index) => (
-            <Pressable style={styles.socialMediaBTN} key={index}>
-              <Image
-                key={index}
-                source={item.icon}
-                style={styles.socialIcon}
-                resizeMode="contain"
-              />
-            </Pressable>
-          ))}
+        {/* Body */}
+        <View style={styles.newsBodyContentContainer}>
+          <View>
+            <Text style={styles.newsBodyContentText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ,
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ,
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ,
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ,
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ,
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ,
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ,
+            </Text>
+          </View>
+          <View>
+            <SuggestedNews />
+          </View>
         </View>
-      </View>
+      </ScrollView>
     </View>
   );
 };
