@@ -30,6 +30,9 @@
         "projectId": "541b37d6-a0b6-46f9-82a2-e2d2fca21832"
       }
     },
-    "plugins": ["expo-video"]
+    "plugins": [
+      "expo-video",
+      "expo-audio"
+    ]
   }
 }

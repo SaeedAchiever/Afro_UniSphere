@@ -35,7 +35,7 @@ const Sub_Scholarship = () => {
           <View style={styles.ScholarshipBox}>
             <Image
               source={Scholar}
-              resizeMethod="contain"
+              resizeMode="contain"
               style={styles.ScholarImage}
             />
           </View>
@@ -51,7 +51,7 @@ const Sub_Scholarship = () => {
           <View style={styles.ScholarshipBox}>
             <Image
               source={Scholar_Two}
-              resizeMethod="contain"
+              resizeMode="contain"
               style={styles.ScholarImage}
             />
           </View>
@@ -72,7 +72,7 @@ const Sub_Scholarship = () => {
             <View style={styles.ScholarshipBox}>
               <Image
                 source={Scholar_Three}
-                resizeMethod="contain"
+                resizeMode="contain"
                 style={styles.ScholarImage}
               />
             </View>

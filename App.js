@@ -8,7 +8,7 @@ import {
   Image,
   Modal,
   Pressable,
-  StatusBar
+  StatusBar,
 } from "react-native";
 
 import react, { useState } from "react";
@@ -41,32 +41,31 @@ const Menu = require("./assets/menu.png");
 const Close = require("./assets/close.png");
 
 export default function App() {
-
   const RenderData = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName={"Demo"}
-        screenOptions={{ headerShown: false }}
-      >
-        <Stack.Screen name="Demo" component={Demo} />
-        <Stack.Screen name="MatchForm" component={MatchForm} />
-        <Stack.Screen name="LogIn" component={LogIn} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="HomePage" component={HomePage} />
-        <Stack.Screen name="UniData" component={UniData} />
-        <Stack.Screen name="UniversityHome" component={UniversityHome} />
-        <Stack.Screen name="ScholarshipHome" component={ScholarshipHome} />
-        <Stack.Screen name="ShopHome" component={ShopHome} />
-        <Stack.Screen name="Updates" component={Updates} />
-        <Stack.Screen name="CollegeHome" component={CollegeHome} />
-        <Stack.Screen name="Shorts" component={Shorts} />
-        <Stack.Screen name="User_Profile" component={User_Profile} />
-      </Stack.Navigator>
-      <StatusBar />
-    </NavigationContainer>
-  );
-};
+    return (
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName={"LogIn"}
+          screenOptions={{ headerShown: false }}
+        >
+          <Stack.Screen name="Demo" component={Demo} />
+          <Stack.Screen name="MatchForm" component={MatchForm} />
+          <Stack.Screen name="LogIn" component={LogIn} />
+          <Stack.Screen name="SignUp" component={SignUp} />
+          <Stack.Screen name="HomePage" component={HomePage} />
+          <Stack.Screen name="UniData" component={UniData} />
+          <Stack.Screen name="UniversityHome" component={UniversityHome} />
+          <Stack.Screen name="ScholarshipHome" component={ScholarshipHome} />
+          <Stack.Screen name="ShopHome" component={ShopHome} />
+          <Stack.Screen name="Updates" component={Updates} />
+          <Stack.Screen name="CollegeHome" component={CollegeHome} />
+          <Stack.Screen name="Shorts" component={Shorts} />
+          <Stack.Screen name="User_Profile" component={User_Profile} />
+        </Stack.Navigator>
+        <StatusBar />
+      </NavigationContainer>
+    );
+  };
 
   const [isMenuVisible, setIsMenuVisible] = useState("none");
 
@@ -92,7 +91,9 @@ export default function App() {
               </View>
             </Pressable>
             <View>
-              <View style={[styles.menuLinksContainer, { display: isMenuVisible }]}>
+              <View
+                style={[styles.menuLinksContainer, { display: isMenuVisible }]}
+              >
                 <AppLinks />
               </View>
             </View>

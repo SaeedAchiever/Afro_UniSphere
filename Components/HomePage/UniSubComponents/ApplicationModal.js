@@ -1,10 +1,9 @@
-import { View, useWindowDimensions, StyleSheet, Text } from "react-native";
+import { View, useWindowDimensions, StyleSheet, Text,ScrollView } from "react-native";
 import React from "react";
 
 import { useVideoPlayer, VideoView } from "expo-video";
 
 import VideoSrc from "../../../assets/elon.mp4";
-import { ScrollView } from "react-native";
 
 const ApplicationModal = () => {
   const width = useWindowDimensions().width;
