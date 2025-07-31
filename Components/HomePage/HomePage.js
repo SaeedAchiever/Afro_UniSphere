@@ -1,4 +1,11 @@
-import { View, FlatList, Text, Pressable, StatusBar,Platform } from "react-native";
+import {
+  View,
+  FlatList,
+  Text,
+  Pressable,
+  StatusBar,
+  Platform,
+} from "react-native";
 import React, { useEffect, useState } from "react";
 
 import styles from "./HomeStyle";
@@ -43,7 +50,41 @@ const getThreeRandomUniversities = (data) => {
   const firstUni = getRandomUniversity(data);
   const secondUni = getRandomUniversity(data, [firstUni.id]);
   const thirdUni = getRandomUniversity(data, [firstUni.id, secondUni.id]);
-  return [firstUni, secondUni, thirdUni];
+  const firstLand = getRandomUniversity(data, [
+    firstUni.id,
+    secondUni.id,
+    thirdUni.id,
+  ]);
+  const secondLand = getRandomUniversity(data, [
+    firstUni.id,
+    secondUni.id,
+    thirdUni.id,
+    firstLand.id,
+  ]);
+  const thirdLand = getRandomUniversity(data, [
+    firstUni.id,
+    secondUni.id,
+    thirdUni.id,
+    firstLand.id,
+    secondLand.id,
+  ]);
+  const fourthLand = getRandomUniversity(data, [
+    firstUni.id,
+    secondUni.id,
+    thirdUni.id,
+    firstLand.id,
+    secondLand.id,
+    thirdLand.id,
+  ]);
+  return [
+    firstUni,
+    secondUni,
+    thirdUni,
+    firstLand,
+    secondLand,
+    thirdLand,
+    fourthLand,
+  ];
 };
 
 // Function to get random universities or colleges
@@ -59,7 +100,7 @@ const HomePage = () => {
   const [ColBorWid, setColBorWid] = useState(0);
 
   // Get data for rendering
-  const [uni1, uni2, uni3] = getThreeRandomUniversities(selectedData);
+  const [uni1, uni2, uni3, land1, land2, land3,land4] = getThreeRandomUniversities(selectedData);
   const Preference_Uni = getRandomUniversities(selectedData, 5);
   // const Ongoing_List = selectedData.filter(value => value.town ===  "Tamale");
 
@@ -71,6 +112,10 @@ const HomePage = () => {
         uni1={uni1}
         uni2={uni2}
         uni3={uni3}
+        land1={land1}
+        land2={land2}
+        land3={land3}
+        land4={land4}
         // Ongoing_List={Ongoing_List}
         Preference_Uni={Preference_Uni}
         selectedData={selectedData}
@@ -81,7 +126,12 @@ const HomePage = () => {
   return (
     <View style={styles.allHomeContainer}>
       {/* Switch between Universities and Colleges */}
-      <View style={[styles.SwitchContainer, {display: Platform.OS === "web" ? "none" : "flex"}]}>
+      <View
+        style={[
+          styles.SwitchContainer,
+          { display: Platform.OS === "web" ? "none" : "flex" },
+        ]}
+      >
         <View
           style={{
             position: "absolute",

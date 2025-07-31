@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+
+  
   LogInMainContainer: {
     width: "100%",
     flex: 1,

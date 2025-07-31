@@ -10,13 +10,13 @@
     "splash": {
       "image": "./assets/UniSphere.png",
       "resizeMode": "cover",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#cfcfcf"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "package": "com.saeedachiever.afrounisphere",
+      "package": "saeedachiever.afrounisphere",
       "adaptiveIcon": {
         "foregroundImage": "./assets/iconhere.png",
         "backgroundColor": "#ffffff"

@@ -36,16 +36,18 @@ const images = [
   },
 ];
 
-const Landing = () => {
+const Landing = ({ land1, land2, land3, land4 }) => {
   const width = useWindowDimensions().width;
   const height = useWindowDimensions().height;
 
   const scrollRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const universities = [land1, land2, land3, land4].filter(Boolean);
+
   useEffect(() => {
     const interval = setInterval(() => {
-      const nextIndex = (currentIndex + 1) % images.length;
+      const nextIndex = (currentIndex + 1) % universities.length;
       const offset = nextIndex * width;
 
       scrollRef.current?.scrollTo({ x: offset, animated: true });
@@ -53,7 +55,7 @@ const Landing = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, width]);
+  }, [currentIndex, width, universities.length]);
 
   return (
     <View
@@ -109,7 +111,6 @@ const Landing = () => {
       </View>
 
       {/* Scrollable Image Backgrounds */}
-
       <ScrollView
         ref={scrollRef}
         horizontal
@@ -118,26 +119,31 @@ const Landing = () => {
         scrollEventThrottle={16}
         style={{ flex: 1 }}
       >
-        {images.map((item, index) => (
-          <ImageBackground
-            key={index.toString()}
-            style={[styles.BgImageContainer, { width }]}
-            source={item.source}
-            resizeMode="cover"
-          >
-            <Pressable style={styles.landingContainer}>
-              <View style={styles.landingSubContainer}>
-                <View style={styles.landingSchlsListContainer}>
-                  <Text style={styles.landingUniText}>{item.title}</Text>
+        {[land1, land2, land3, land4].map((item, index) => {
+          if (!item) return null;
+
+          return (
+            <ImageBackground
+              key={index.toString()}
+              style={[styles.BgImageContainer, { width }]}
+              source={{uri : item.image}}
+              resizeMode="cover"
+            >
+              <Pressable style={styles.landingContainer}>
+                <View style={styles.landingSubContainer}>
+                  <View style={styles.landingSchlsListContainer}>
+                    <Text style={styles.landingUniText}>{item.name}</Text>
+                  </View>
+                  <View style={styles.landingSchlsListContainer}>
+                    <Text style={styles.landingUniText}>{item.faculties.length()}</Text>
+                  </View>
                 </View>
-                <View style={styles.landingSchlsListContainer}>
-                  <Text style={styles.landingUniText}>{item.programs}</Text>
-                </View>
-              </View>
-            </Pressable>
-          </ImageBackground>
-        ))}
+              </Pressable>
+            </ImageBackground>
+          );
+        })}
       </ScrollView>
+
       <StatusBar backgroundColor={"blue"} />
     </View>
   );
