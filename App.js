@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 import {
   Platform,
   ScrollView,
@@ -31,9 +31,12 @@ import User_Profile from "./Components/User_Profile/User_Profile";
 import LogIn from "./Components/Authentication/LogIn";
 import SignUp from "./Components/Authentication/SignUp";
 
+import { navigationRef, navigate } from "./NavRef";
+
 import MatchForm from "./Components/MatchMe/MatchForm";
 
 import Demo from "./Demo";
+import Head from "./Components/HeadFoot/Head";
 
 const Stack = createNativeStackNavigator();
 
@@ -41,68 +44,69 @@ const Menu = require("./assets/menu.png");
 const Close = require("./assets/close.png");
 
 export default function App() {
-  const RenderData = () => {
-    return (
-      <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName={"HomePage"}
-          screenOptions={{ headerShown: false }}
-        >
-          <Stack.Screen name="Demo" component={Demo} />
-          <Stack.Screen name="MatchForm" component={MatchForm} />
-          <Stack.Screen name="LogIn" component={LogIn} />
-          <Stack.Screen name="SignUp" component={SignUp} />
-          <Stack.Screen name="HomePage" component={HomePage} />
-          <Stack.Screen name="UniData" component={UniData} />
-          <Stack.Screen name="UniversityHome" component={UniversityHome} />
-          <Stack.Screen name="ScholarshipHome" component={ScholarshipHome} />
-          <Stack.Screen name="ShopHome" component={ShopHome} />
-          <Stack.Screen name="Updates" component={Updates} />
-          <Stack.Screen name="CollegeHome" component={CollegeHome} />
-          <Stack.Screen name="Shorts" component={Shorts} />
-          <Stack.Screen name="User_Profile" component={User_Profile} />
-        </Stack.Navigator>
-        <StatusBar />
-      </NavigationContainer>
-    );
-  };
-
   const [isMenuVisible, setIsMenuVisible] = useState("none");
 
-  return Platform.select({
-    web: () => {
-      return (
-        <ScrollView>
-          <RenderData />
-          <View style={styles.webAppContainer}>
-            {/* Menu For Web */}
-            <Pressable
-              onPress={() => {
-                isMenuVisible === "none"
-                  ? setIsMenuVisible("flex")
-                  : setIsMenuVisible("none");
-              }}
-            >
-              <View style={styles.menuContainer}>
-                <Image
-                  source={isMenuVisible == "none" ? Menu : Close}
-                  style={styles.menu}
-                />
-              </View>
-            </Pressable>
-            <View>
-              <View
-                style={[styles.menuLinksContainer, { display: isMenuVisible }]}
-              >
-                <AppLinks />
-              </View>
-            </View>
-          </View>
-        </ScrollView>
-      );
-    },
-    default: () => <RenderData />,
-  })();
-}
+  const toggleMenu = () => {
+    setIsMenuVisible((prev) => (prev === "none" ? "flex" : "none"));
+  };
 
-// const styles = StyleSheet.create({});
+  const RenderData = () => (
+    <NavigationContainer ref={navigationRef}>
+      <Stack.Navigator
+        initialRouteName={"HomePage"}
+        screenOptions={{ headerShown: false }}
+      >
+        <Stack.Screen name="Demo" component={Demo} />
+        <Stack.Screen name="MatchForm" component={MatchForm} />
+        <Stack.Screen name="LogIn" component={LogIn} />
+        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="HomePage" component={HomePage} />
+        <Stack.Screen name="UniData" component={UniData} />
+        <Stack.Screen name="UniversityHome" component={UniversityHome} />
+        <Stack.Screen name="ScholarshipHome" component={ScholarshipHome} />
+        <Stack.Screen name="ShopHome" component={ShopHome} />
+        <Stack.Screen name="Updates" component={Updates} />
+        <Stack.Screen name="CollegeHome" component={CollegeHome} />
+        <Stack.Screen name="Shorts" component={Shorts} />
+        <Stack.Screen name="User_Profile" component={User_Profile} />
+      </Stack.Navigator>
+      <StatusBar />
+    </NavigationContainer>
+  );
+
+  const renderMenu = () => (
+    <View style={styles.webAppContainer}>
+      <Pressable onPress={toggleMenu}>
+        <View style={styles.menuContainer}>
+          <Image
+            source={isMenuVisible === "none" ? Menu : Close}
+            style={styles.menu}
+          />
+        </View>
+      </Pressable>
+      <View style={[styles.menuLinksContainer, { display: isMenuVisible }]}>
+        <AppLinks
+          navigate={navigate}
+          isMenuVisible={isMenuVisible}
+          setIsMenuVisible={setIsMenuVisible}
+        />
+      </View>
+    </View>
+  );
+
+  if (Platform.OS === "web") {
+    return (
+      <ScrollView>
+        <RenderData />
+        {renderMenu()}
+      </ScrollView>
+    );
+  }
+
+  return (
+    <View style={{ flex: 1, marginBottom: 20 }}>
+      {renderMenu()}
+      <RenderData />
+    </View>
+  );
+}

@@ -10,7 +10,7 @@ import Footer from "../HeadFoot/Footer";
 
 const data = [
   { id: "1", component: "ProfileHeader" },
-  // { id: '2', component: 'ProfileBody' }
+  { id: '2', component: 'ProfileBody' }
 ];
 
 const User_Profile = () => {

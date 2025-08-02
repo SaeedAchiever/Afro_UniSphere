@@ -62,39 +62,31 @@ const Landing = ({ land1, land2, land3, land4 }) => {
       style={[
         styles.landingPageContainer,
         {
-          height: Platform.OS === "web" && width > 1000 ? height - 50 : 330,
+          height: Platform.OS === "web" && width > 1000 ? height - 300 : 330,
         },
       ]}
     >
       {/* Top UI */}
       <View style={styles.landingSearchContainer}>
         {Platform.select({
-          default: () => (
-            <View style={styles.landingListContainer}>
-              <Pressable style={styles.landingSchlsListContainer}>
-                <Text style={styles.landingListText}>73 Universities</Text>
-              </Pressable>
-              <Pressable style={styles.landingSchlsListContainer}>
-                <Text style={styles.landingListText}>153 Colleges</Text>
-              </Pressable>
-            </View>
-          ),
           web: () => <LandingLinks />,
-        })()}
+        })?.()}
 
-        {/* Search Text */}
-        <View style={styles.landingTextContainer}>
-          <Text style={styles.landingText}>
-            Search for Universities, Colleges, Courses, updates and more
-          </Text>
-        </View>
+        <View style={{ marginTop: 20, gap: 20 }}>
+          {/* Search Text */}
+          <View style={styles.landingTextContainer}>
+            <Text style={styles.landingText}>
+              Search for Universities, Colleges, Courses, updates and more
+            </Text>
+          </View>
 
-        {/* Input */}
-        <View style={styles.landingSearch}>
-          <TextInput
-            style={styles.landingSearchInput}
-            placeholder="Enter your query here..."
-          />
+          {/* Input */}
+          <View style={styles.landingSearch}>
+            <TextInput
+              style={styles.landingSearchInput}
+              placeholder="Enter your query here..."
+            />
+          </View>
         </View>
 
         {Platform.select({
@@ -126,18 +118,11 @@ const Landing = ({ land1, land2, land3, land4 }) => {
             <ImageBackground
               key={index.toString()}
               style={[styles.BgImageContainer, { width }]}
-              source={{uri : item.image}}
-              resizeMode="cover"
+              source={{ uri: item.image }}
+              // resizeMode=""
             >
-              <Pressable style={styles.landingContainer}>
-                <View style={styles.landingSubContainer}>
-                  <View style={styles.landingSchlsListContainer}>
-                    <Text style={styles.landingUniText}>{item.name}</Text>
-                  </View>
-                  <View style={styles.landingSchlsListContainer}>
-                    <Text style={styles.landingUniText}>{item.faculties.length()}</Text>
-                  </View>
-                </View>
+              <Pressable style={styles.landingSchlsListContainer}>
+                <Text style={styles.landingUniText}>{item.name}</Text>
               </Pressable>
             </ImageBackground>
           );

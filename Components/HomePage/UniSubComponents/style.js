@@ -14,41 +14,22 @@ const styles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
   },
-  landingContainer: {
-    alignContent: "center",
-    justifyContent: "flex-end",
-    width: "100%",
-    height: "100%",
-  },
-  landingSubContainer: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "row",
-    gap: 9,
-    paddingHorizontal: 5,
-    paddingVertical: 9,
-    justifyContent: "space-around",
-  },
-  landingListContainer: {
-    width: "auto",
-    display: "flex",
-    flexDirection: "row",
-    gap: 9,
-    alignItems: "center",
-    marginHorizontal: 10,
-  },
   landingSchlsListContainer: {
-    backgroundColor: "rgba(0,0,0,0.4)",
+    backgroundColor: "rgba(243, 229, 229, 0.4)",
     paddingHorizontal: 15,
     paddingVertical: 5,
     maxWidth: 400,
+    marginLeft:10,
+    position:'absolute',
+    bottom:"5%",
+
   },
   landingListText: {
     color: "#cfcfcf",
   },
   landingUniText: {
     fontSize: 12,
-    color: "#fcfcfc",
+    color: "#000",
     fontWeight: "700",
   },
   landingSearchContainer: {
@@ -86,12 +67,13 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     borderRadius: 10,
-    color: "#333",
+    color: "#555",
     fontSize: 16,
     fontWeight: "600",
     alignSelf: "center",
     borderWidth: 1,
     borderColor: "gold",
+    paddingHorizontal:5
   },
   webLogoContainer: {
     width: "100%",

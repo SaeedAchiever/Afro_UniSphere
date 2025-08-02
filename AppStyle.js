@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     height: 600,
     top: 40,
     right: "5%",
-    zIndex: 999,
+    zIndex: 1
   },
   menuContainer: {
     width: 50,

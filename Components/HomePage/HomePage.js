@@ -100,7 +100,8 @@ const HomePage = () => {
   const [ColBorWid, setColBorWid] = useState(0);
 
   // Get data for rendering
-  const [uni1, uni2, uni3, land1, land2, land3,land4] = getThreeRandomUniversities(selectedData);
+  const [uni1, uni2, uni3, land1, land2, land3, land4] =
+    getThreeRandomUniversities(selectedData);
   const Preference_Uni = getRandomUniversities(selectedData, 5);
   // const Ongoing_List = selectedData.filter(value => value.town ===  "Tamale");
 
@@ -125,44 +126,6 @@ const HomePage = () => {
 
   return (
     <View style={styles.allHomeContainer}>
-      {/* Switch between Universities and Colleges */}
-      <View
-        style={[
-          styles.SwitchContainer,
-          { display: Platform.OS === "web" ? "none" : "flex" },
-        ]}
-      >
-        <View
-          style={{
-            position: "absolute",
-            right: 10,
-            zIndex: 100,
-          }}
-        >
-          <Head />
-        </View>
-        <Pressable
-          style={[styles.SwitchContainerBTN, { borderBottomWidth: UniBorWid }]}
-          onPress={() => {
-            setSelectedData(universities);
-            setUniBorWid(2);
-            setColBorWid(0);
-          }}
-        >
-          <Text style={styles.SwitchContainerText}>Universities</Text>
-        </Pressable>
-        <Pressable
-          style={[styles.SwitchContainerBTN, { borderBottomWidth: ColBorWid }]}
-          onPress={() => {
-            setSelectedData(colleges);
-            setColBorWid(2);
-            setUniBorWid(0);
-          }}
-        >
-          <Text style={styles.SwitchContainerText}>Colleges</Text>
-        </Pressable>
-      </View>
-
       {/* Render Components */}
       <View style={styles.HomeContainer}>
         <FlatList data={data} renderItem={renderItem} />

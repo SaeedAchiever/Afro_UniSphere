@@ -30,6 +30,7 @@ const Demo = () => {
           <View key={res.id}>
             <Text>{res.name}</Text>
           </View>
+          </View>
         );
       })} */}
 

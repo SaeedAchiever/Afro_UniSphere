@@ -28,6 +28,15 @@ const Head = () => {
         }
       }
     >
+      <Text>Hello</Text>
+      <Text>Hello</Text>
+      <Text>Hello</Text>
+      <Text>Hello</Text>
+      <Text>Hello</Text>
+      <Text>Hello</Text>
+      <Text>Hello</Text>
+      <Text>Hello</Text>
+      <Text>Hello</Text>
       <View style={styles.headerContainer}>
         <View>
           <Pressable onPress={() => setIsModalVisible(true)}>
