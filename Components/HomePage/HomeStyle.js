@@ -1,4 +1,4 @@
-import { StyleSheet, Platform, usw } from "react-native";
+import { StyleSheet, Platform, } from "react-native";
 // const deviceWidth = useWindowDimensions().width;
 
 const styles = StyleSheet.create({

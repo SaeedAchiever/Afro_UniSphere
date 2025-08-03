@@ -34,7 +34,7 @@ const Demo = () => {
         );
       })} */}
 
-      <FlatList
+      {/* <FlatList
         data={fetchedata}
         renderItem={({ item }) => (
           <View>
@@ -42,7 +42,7 @@ const Demo = () => {
           </View>
         )}
       />
-      <Text>Fix all expo-av videos</Text>
+      <Text>Fix all expo-av videos</Text> */}
     </View>
   );
 };

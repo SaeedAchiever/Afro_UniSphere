@@ -38,6 +38,7 @@ import MatchForm from "./Components/MatchMe/MatchForm";
 import Demo from "./Demo";
 import Head from "./Components/HeadFoot/Head";
 
+
 const Stack = createNativeStackNavigator();
 
 const Menu = require("./assets/menu.png");
@@ -53,7 +54,7 @@ export default function App() {
   const RenderData = () => (
     <NavigationContainer ref={navigationRef}>
       <Stack.Navigator
-        initialRouteName={"HomePage"}
+        initialRouteName={"Demo"}
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Demo" component={Demo} />
