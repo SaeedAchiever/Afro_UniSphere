@@ -121,7 +121,7 @@
     "courses" : [
       {
         "course_id" : 1,
-        "course_name" : " Journalism & Mass Communication",
+        "course_name" : "Journalism & Mass Communication",
         "course_type" : "undergraduate",
         "entry_requirements" : [
           "Refer to the General Entry Requirements"

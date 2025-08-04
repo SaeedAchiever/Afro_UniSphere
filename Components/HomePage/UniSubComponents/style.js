@@ -19,10 +19,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     paddingVertical: 5,
     maxWidth: 400,
-    marginLeft:10,
-    position:'absolute',
-    bottom:"5%",
-
+    marginLeft: 10,
+    position: "absolute",
+    bottom: "5%",
   },
   landingListText: {
     color: "#cfcfcf",
@@ -43,7 +42,7 @@ const styles = StyleSheet.create({
   landingSearch: {
     height: 46,
     width: "80%",
-    backgroundColor: "rgba(169, 177, 179, 0.91)",
+    backgroundColor: "rgba(154, 175, 239, 0.6)",
     borderRadius: 10,
     alignSelf: "center",
   },
@@ -67,13 +66,13 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     borderRadius: 10,
-    color: "#555",
-    fontSize: 16,
-    fontWeight: "600",
+    color: "#777",
+    fontSize: 18,
+    fontWeight: "400",
     alignSelf: "center",
     borderWidth: 1,
     borderColor: "gold",
-    paddingHorizontal:5
+    paddingHorizontal: 5,
   },
   webLogoContainer: {
     width: "100%",
@@ -125,6 +124,70 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     alignItems: "center",
     gap: 20,
+  },
+  closeContainer: {
+    position: "absolute",
+    top: 30,
+    right: 30,
+    width: 40,
+    height: 40,
+  },
+  closeImage: {
+    width: "100%",
+    height: "100%",
+  },
+  SearchedCoursesModalCont: {
+    maxWidth: 1200,
+    alignSelf: "center",
+    width: "100%",
+  },
+  SearchedCoursesModalSubCont: {
+    marginTop: 70,
+  },
+  SearchedCoursesContainer: {
+    width: "98%",
+    height: "auto",
+    borderWidth: 1,
+    paddingVertical: 20,
+    paddingHorizontal: 5,
+    alignSelf: "center",
+    marginTop: 30,
+  },
+  SearchedCoursesHeadContainer: {
+    gap: 40,
+    width: "90%",
+    alignSelf: "center",
+  },
+  recentSearchesContainer: {
+    gap: 10,
+    width: "100%",
+  },
+  recentSearchesHeadContainer: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "80%",
+    alignSelf: "center",
+  },
+  recentSearchesBodySubContainer: {
+    gap: 10,
+  },
+  recentSearchesHeadText: {
+    fontSize: 18,
+    fontWeight: "500",
+    color: "#333",
+  },
+  recentSearchesClearText: {
+    fontSize: 13,
+    fontWeight: "600",
+    fontStyle: "italic",
+  },
+  recentSearchesBodyContainer: {
+    paddingLeft: 10,
+  },
+  recentSearchesBodyText: {
+    fontSize: 16,
+    fontWeight: "400",
   },
 });
 

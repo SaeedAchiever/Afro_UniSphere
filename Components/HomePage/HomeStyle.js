@@ -374,9 +374,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "400",
     borderRadius: 10,
-    paddingVertical: 5,
+    padding: 5,
     color: "#333",
     width: "85%",
+    borderWidth:0,
+    borderColor:"#fff"
   },
   searchContainer: {
     width: "100%",

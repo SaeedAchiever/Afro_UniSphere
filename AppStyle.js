@@ -1,6 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+  entireAppContainer: {
+    flex: 1,
+    overflow: "scroll",
+    marginBottom: 30,
+  },
   webAppContainer: {
     position: "absolute",
     width: "60%",
@@ -8,7 +13,9 @@ const styles = StyleSheet.create({
     height: 600,
     top: 40,
     right: "5%",
-    zIndex: 1
+    zIndex: 1,
+    flex: 1,
+    minHeight: "100vh",
   },
   menuContainer: {
     width: 50,

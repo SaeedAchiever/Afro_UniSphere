@@ -38,7 +38,6 @@ import MatchForm from "./Components/MatchMe/MatchForm";
 import Demo from "./Demo";
 import Head from "./Components/HeadFoot/Head";
 
-
 const Stack = createNativeStackNavigator();
 
 const Menu = require("./assets/menu.png");
@@ -50,30 +49,6 @@ export default function App() {
   const toggleMenu = () => {
     setIsMenuVisible((prev) => (prev === "none" ? "flex" : "none"));
   };
-
-  const RenderData = () => (
-    <NavigationContainer ref={navigationRef}>
-      <Stack.Navigator
-        initialRouteName={"Demo"}
-        screenOptions={{ headerShown: false }}
-      >
-        <Stack.Screen name="Demo" component={Demo} />
-        <Stack.Screen name="MatchForm" component={MatchForm} />
-        <Stack.Screen name="LogIn" component={LogIn} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="HomePage" component={HomePage} />
-        <Stack.Screen name="UniData" component={UniData} />
-        <Stack.Screen name="UniversityHome" component={UniversityHome} />
-        <Stack.Screen name="ScholarshipHome" component={ScholarshipHome} />
-        <Stack.Screen name="ShopHome" component={ShopHome} />
-        <Stack.Screen name="Updates" component={Updates} />
-        <Stack.Screen name="CollegeHome" component={CollegeHome} />
-        <Stack.Screen name="Shorts" component={Shorts} />
-        <Stack.Screen name="User_Profile" component={User_Profile} />
-      </Stack.Navigator>
-      <StatusBar />
-    </NavigationContainer>
-  );
 
   const renderMenu = () => (
     <View style={styles.webAppContainer}>
@@ -95,19 +70,30 @@ export default function App() {
     </View>
   );
 
-  if (Platform.OS === "web") {
-    return (
-      <ScrollView>
-        <RenderData />
-        {renderMenu()}
-      </ScrollView>
-    );
-  }
-
   return (
-    <View style={{ flex: 1, marginBottom: 20 }}>
+    <View style={styles.entireAppContainer}>
+      <NavigationContainer ref={navigationRef}>
+        <Stack.Navigator
+          initialRouteName={"HomePage"}
+          screenOptions={{ headerShown: false }}
+        >
+          <Stack.Screen name="Demo" component={Demo} />
+          <Stack.Screen name="MatchForm" component={MatchForm} />
+          <Stack.Screen name="LogIn" component={LogIn} />
+          <Stack.Screen name="SignUp" component={SignUp} />
+          <Stack.Screen name="HomePage" component={HomePage} />
+          <Stack.Screen name="UniData" component={UniData} />
+          <Stack.Screen name="UniversityHome" component={UniversityHome} />
+          <Stack.Screen name="ScholarshipHome" component={ScholarshipHome} />
+          <Stack.Screen name="ShopHome" component={ShopHome} />
+          <Stack.Screen name="Updates" component={Updates} />
+          <Stack.Screen name="CollegeHome" component={CollegeHome} />
+          <Stack.Screen name="Shorts" component={Shorts} />
+          <Stack.Screen name="User_Profile" component={User_Profile} />
+        </Stack.Navigator>
+        <StatusBar />
+      </NavigationContainer>
       {renderMenu()}
-      <RenderData />
     </View>
   );
 }

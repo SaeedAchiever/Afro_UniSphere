@@ -2,8 +2,6 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   ScholarshipMainBodyContainer: {
-    paddingBottom: 40,
-    marginBottom: 80,
     alignSelf: "center",
     width: "95%",
     maxwidth: 900,

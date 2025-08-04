@@ -7,38 +7,21 @@ import {
   Pressable,
   TextInput,
   ScrollView,
-  StatusBar,
+  Modal,
+  Image,
 } from "react-native";
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./style";
-import { useNavigation } from "@react-navigation/native";
 import LandingLinks from "./LandingLinks";
+import SearchedCourses from "./SearchedCourses";
 
-const BGImage = require("../../../assets/accra.jpg");
-const BGImageTwo = require("../../../assets/ug.jpeg");
-const BGImageThree = require("../../../assets/cape_coast.jpeg");
-
-const images = [
-  {
-    source: BGImage,
-    title: "Academic City University College",
-    programs: "33 Programs",
-  },
-  {
-    source: BGImageTwo,
-    title: "Accra Business School",
-    programs: "12 Programs",
-  },
-  {
-    source: BGImageThree,
-    title: "African University College of Communication",
-    programs: "45 Programs",
-  },
-];
+const Close = require("../../../assets/close.png");
 
 const Landing = ({ land1, land2, land3, land4 }) => {
   const width = useWindowDimensions().width;
   const height = useWindowDimensions().height;
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const scrollRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,7 +45,7 @@ const Landing = ({ land1, land2, land3, land4 }) => {
       style={[
         styles.landingPageContainer,
         {
-          height: Platform.OS === "web" && width > 1000 ? height - 300 : 330,
+          height: Platform.OS === "web" && width > 1000 ? height - 300 : 430,
         },
       ]}
     >
@@ -72,7 +55,7 @@ const Landing = ({ land1, land2, land3, land4 }) => {
           web: () => <LandingLinks />,
         })?.()}
 
-        <View style={{ marginTop: 20, gap: 20 }}>
+        <View style={{ marginTop: 50, gap: 20 }}>
           {/* Search Text */}
           <View style={styles.landingTextContainer}>
             <Text style={styles.landingText}>
@@ -81,17 +64,24 @@ const Landing = ({ land1, land2, land3, land4 }) => {
           </View>
 
           {/* Input */}
-          <View style={styles.landingSearch}>
+          <Pressable
+            style={styles.landingSearch}
+            readOnly
+            onPress={() => {
+              setIsModalVisible(true);
+            }}
+          >
             <TextInput
               style={styles.landingSearchInput}
               placeholder="Enter your query here..."
+              readOnly
             />
-          </View>
+          </Pressable>
         </View>
 
         {Platform.select({
           web: () =>
-            width < 660 ? null : (
+            width < 880 ? null : (
               <View style={styles.landingTextContainer}>
                 <Text style={styles.landingText}>
                   Bsc, Bd, MSc, MPhl, Phd and more...
@@ -119,7 +109,6 @@ const Landing = ({ land1, land2, land3, land4 }) => {
               key={index.toString()}
               style={[styles.BgImageContainer, { width }]}
               source={{ uri: item.image }}
-              // resizeMode=""
             >
               <Pressable style={styles.landingSchlsListContainer}>
                 <Text style={styles.landingUniText}>{item.name}</Text>
@@ -129,7 +118,35 @@ const Landing = ({ land1, land2, land3, land4 }) => {
         })}
       </ScrollView>
 
-      <StatusBar backgroundColor={"blue"} />
+      <View>
+        <Modal
+          visible={isModalVisible}
+          onRequestClose={() => {
+            setIsModalVisible(false);
+          }}
+          animationType="slide"
+        >
+          <View style={styles.SearchedCoursesModalCont}>
+            <View>
+              <Pressable
+                onPress={() => {
+                  setIsModalVisible(false);
+                }}
+                style={styles.closeContainer}
+              >
+                <Image
+                  source={Close}
+                  style={styles.closeImage}
+                  resizeMode="cover"
+                />
+              </Pressable>
+            </View>
+            <View style={styles.SearchedCoursesModalSubCont}>
+              <SearchedCourses />
+            </View>
+          </View>
+        </Modal>
+      </View>
     </View>
   );
 };

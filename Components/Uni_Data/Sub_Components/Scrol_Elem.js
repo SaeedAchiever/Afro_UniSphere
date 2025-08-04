@@ -19,7 +19,7 @@ const Scrol_Elem = ({ university }) => {
   };
 
   return (
-    <View>
+    <View style={{marginTop:40}}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View style={styles.horHeadersMainContaineter}>
           <Pressable

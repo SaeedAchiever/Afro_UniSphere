@@ -517,7 +517,7 @@ const styles = StyleSheet.create({
   },
   horHeadersContaineter: {
     paddingHorizontal: 10,
-    borderLeftWidth: 1.5,
+    borderRightWidth: 1.5,
     borderColor: "#333",
   },
   horHeadersTitle: {
@@ -665,7 +665,7 @@ const styles = StyleSheet.create({
   // Feeds
 
   feedsBodyMainContainer: {
-    width: "95%",
+    width: "80%",
     maxWidth: 430,
     marginTop: 20,
     display: "flex",
