@@ -589,6 +589,7 @@ const styles = StyleSheet.create({
   vTourBodyContainer: {
     width: "100%",
     position: "relative",
+    backgroundColor: "rgba(0,0,0,0.6)",
   },
   vTourBodyTextContainer: {
     flexDirection: "row",

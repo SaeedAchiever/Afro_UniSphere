@@ -142,6 +142,7 @@ const Rating = ({ university }) => {
                 <Image
                   source={Placement}
                   style={styles.schoolNoteSubMainBoxImage}
+                  resizeMode="contain"
                 />
               </View>
 
@@ -172,6 +173,7 @@ const Rating = ({ university }) => {
                 <Image
                   source={Hostel}
                   style={styles.schoolNoteSubMainBoxImage}
+                  resizeMode="contain"
                 />
               </View>
 
@@ -202,6 +204,7 @@ const Rating = ({ university }) => {
                 <Image
                   source={Facilities}
                   style={styles.schoolNoteSubMainBoxImage}
+                  resizeMode="contain"
                 />
               </View>
 
@@ -232,6 +235,7 @@ const Rating = ({ university }) => {
                 <Image
                   source={Sports}
                   style={styles.schoolNoteSubMainBoxImage}
+                  resizeMode="contain"
                 />
               </View>
 
@@ -262,6 +266,7 @@ const Rating = ({ university }) => {
                 <Image
                   source={Amenities}
                   style={styles.schoolNoteSubMainBoxImage}
+                  resizeMode="contain"
                 />
               </View>
 

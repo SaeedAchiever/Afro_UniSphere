@@ -4,6 +4,9 @@ import {
   Image,
   useWindowDimensions,
   Pressable,
+  Modal,
+  TextInput,
+  Text,
 } from "react-native";
 import React, { useState, useRef, useCallback } from "react";
 import { Video } from "expo-av";
@@ -14,15 +17,19 @@ import Interactions from "./Interactions";
 import User from "./User";
 import Comments from "./Comments";
 import Footer from "../HeadFoot/Footer";
+import Search from "./Search";
 
-const Menu = require("../../assets/menu.png");
-const Close = require("../../assets/minus.png");
+import DemoVid from "../../assets/vids/bgVid.mp4";
+
+const Hide = require("../../assets/minus.png");
+const Close = require("../../assets/close.png");
 const PlayIcon = require("../../assets/play.png"); // Add your play icon image
 const PauseIcon = require("../../assets/pause.png"); // Add your pause icon image
 
 const Shorts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isCommentsVisible, setIsCommentsVisible] = useState(false);
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true); // Track play/pause state
 
   const width = useWindowDimensions().width;
@@ -71,29 +78,27 @@ const Shorts = () => {
     <View style={[styles.shortsVideoContainer, { height, width }]}>
       <Video
         ref={(ref) => (videoRefs.current[index] = ref)} // Store the React ref
-        source={{ uri: item.source }}
+        // source={{ uri: item.source }}
+        source={DemoVid}
         style={styles.shortsVideo}
         resizeMode="cover"
         shouldPlay={index === currentIndex} // Play only the visible video
         isLooping
-        useNativeControls={true}
+        useNativeControls={false}
       />
-
-      {/* Play/Pause Button */}
-      {index === currentIndex && (
-        <Pressable style={styles.playPauseButton} onPress={togglePlayPause}>
-          <Image
-            source={isPlaying ? PauseIcon : PlayIcon}
-            style={styles.playPauseIcon}
-          />
-        </Pressable>
-      )}
 
       {/* Comments Section */}
       {isCommentsVisible && (
         <View style={styles.showCommentsContainer}>
-          <Pressable onPress={() => setIsCommentsVisible(false)}>
-            <Image source={Close} style={{ width: 30, height: 30 }} />
+          <Pressable
+            style={styles.closeComments}
+            onPress={() => setIsCommentsVisible(false)}
+          >
+            <Image
+              source={Hide}
+              resizeMode="contain"
+              style={styles.closeCommentsContainer}
+            />
           </Pressable>
           <Comments item={item} />
         </View>
@@ -115,13 +120,22 @@ const Shorts = () => {
   );
 
   return (
-    <View style={styles.shortsMainContainer}>
+    <View style={[styles.shortsMainContainer]}>
       {/* Menu Button */}
-      <View style={styles.shortsMenuContainer}>
-        <Pressable onPress={() => console.log("Menu clicked")}>
-          <Image source={Menu} style={styles.shortsMenu} />
-        </Pressable>
-      </View>
+      <Pressable
+        onPress={() => {
+          setIsSearchVisible(true);
+        }}
+        style={styles.shortsMenuContainer}
+      >
+        <TextInput
+          numberOfLines={1}
+          placeholder="Discover More"
+          placeholderTextColor="#cfcfcf"
+          style={styles.searchVideos}
+          readOnly
+        />
+      </Pressable>
 
       {/* Video List */}
       <FlatList
@@ -137,7 +151,20 @@ const Shorts = () => {
       />
 
       {/* Footer */}
-      {!isCommentsVisible && <Footer />}
+      {/* {!isCommentsVisible && <Footer />} */}
+      <View>
+        <Modal visible={isSearchVisible} animationType="slide">
+          <Pressable
+            style={styles.searchModalClose}
+            onPress={() => {
+              setIsSearchVisible(false);
+            }}
+          >
+            <Image source={Close} style={styles.closeCommentsContainer} />
+          </Pressable>
+          <Search />
+        </Modal>
+      </View>
     </View>
   );
 };

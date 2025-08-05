@@ -64,7 +64,7 @@ const Virt_Tour = ({ university }) => {
           style={[
             styles.vTourBodyContainer,
             {
-              height: width > 550 ? 300 : 250,
+              height: width > 600 ? 450 : 350,
             },
           ]}
         >

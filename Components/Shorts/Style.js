@@ -1,21 +1,35 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  shortsMainContaner: {
-    maxWidth: 9000,
+  shortsMainContainer: {
+    // maxWidth: 1200,
     width: "100%",
     backgroundColor: "rgba(0,0,0,0.3)",
     position: "relative",
+    alignSelf: "center",
+    flex: 1,
   },
   shortsMenuContainer: {
     position: "absolute",
-    right: 20,
-    top: 20,
+    left: "10%",
+    top: 50,
     zIndex: 200,
+    width: "70%",
+    maxWidth: 700,
+    height: 45,
+    alignSelf: "center",
+    backgroundColor: "rgba(234, 242, 227, 0.3)",
+    borderRadius: 10,
   },
-  shortsMenu: {
+  searchVideos: {
     width: "100%",
     height: "100%",
+    borderRadius: 10,
+    paddingVertical: 5,
+    color: "#555",
+    fontSize: 20,
+    letterSpacing: 1,
+    fontWeight: "400",
   },
   MenuBtnContainer: {
     alignSelf: "center",
@@ -24,8 +38,9 @@ const styles = StyleSheet.create({
   },
 
   shortsVideoContainer: {
-    backgroundColor: "rgba(0,0,0,0.9)",
     zIndex: 999,
+    height: "100%",
+    width: "100%",
   },
   shortsVideo: {
     height: "100%",
@@ -37,18 +52,17 @@ const styles = StyleSheet.create({
     right: 0,
     zIndex: 100,
     width: "auto",
-    // backgroundColor:'#000'
   },
   InteractionsContainer: {
     flexDirection: "column",
-    gap: 10,
+    gap: 15,
   },
   InteractionsButtonsContainer: {
     alignItems: "center",
     overflow: "hidden",
   },
   InteractionsButtons: {
-    width: "65%",
+    width: "100%",
     height: "65%",
   },
   InteractionsText: {
@@ -58,10 +72,21 @@ const styles = StyleSheet.create({
   showCommentsContainer: {
     width: "100%",
     bottom: 0,
-    height: "70%",
-    zIndex: 200,
+    height: "74%",
+    zIndex: 999,
     position: "absolute",
     backgroundColor: "rgba(0,0,0,0.77)",
+  },
+  closeComments: {
+    backgroundColor: "#cfcfcf",
+    alignContent: "center",
+    alignItems: "center",
+    width: "100%",
+    height: 30,
+  },
+  closeCommentsContainer: {
+    width: "100%",
+    height: "100%",
   },
   CommentsMainContaier: {
     width: "100%",
@@ -199,8 +224,19 @@ const styles = StyleSheet.create({
 
   SearchMainContainer: {
     width: "100%",
-    // flexDirection:'row',
     paddingHorizontal: 10,
+    maxWidth: 1000,
+    alignSelf: "center",
+  },
+  userPicContainer: {
+    width: 70,
+    height: 70,
+    borderRadius: 50,
+  },
+  userPic: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 50,
   },
   searchResultsContainer: {
     marginVertical: 2,
@@ -209,7 +245,7 @@ const styles = StyleSheet.create({
   },
   searchedVideoContainer: {
     width: "100%",
-    height: "79%",
+    height: "75%",
   },
   searchedVideo: {
     width: "100%",
@@ -217,11 +253,35 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
   searchedVideoInfoContainer: {
-    width: "95%",
-    height: "20%",
+    width: "100%",
+    height: "23%",
     alignSelf: "center",
     flexWrap: "wrap",
     overflow: "hidden",
+    backgroundColor: "rgba(0,0,0,0.3)",
+  },
+  userInfooterContainer: {
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "row",
+    gap: 10,
+    alignSelf: "center",
+    alignItems: "center",
+    overflow: "hidden",
+  },
+  userInfooterImageContainer: {
+    width: 50,
+    height: 50,
+  },
+  userInfooterImage: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 50,
+  },
+  accountName: {
+    color: "#cfcfcf",
+    fontSize: 15,
   },
   shortsFilterContainer: {
     width: "80%",
@@ -232,22 +292,25 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   searchedResultsFilterText: {
-    fontSize: 15,
-    fontWeight: "condensedBold",
+    fontSize: 18,
+    fontWeight: "bold",
   },
   menuOutputHeaderContainer: {
     flexDirection: "row",
     width: "100%",
+    height: "100%",
     gap: 10,
-    marginTop: 20,
     alignItems: "center",
-    height: 40,
-    // backgroundColor:'#000',
+    height: 50,
+    alignSelf: "center",
+    justifyContent: "center",
+    marginTop: 90,
+    marginBottom: 40,
   },
   menuOutputSearchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    width: "90%",
+    width: "80%",
     height: "100%",
     maxHeight: 100,
     borderRadius: 10,
@@ -259,6 +322,8 @@ const styles = StyleSheet.create({
     width: "85%",
     height: "100%",
     color: "#fff",
+    fontSize: 18,
+    fontWeight: "500",
   },
   menuOutputSearchBtn: {
     width: "15%",
@@ -268,23 +333,14 @@ const styles = StyleSheet.create({
   },
   SearchBtn: {
     width: "100%",
-    height: "50%",
-    paddingVertical: 10,
-    justifyContent: "center",
-    flex: 1,
+    height: "100%",
   },
-  playPauseButton: {
+  searchModalClose: {
     position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: [{ translateX: -25 }, { translateY: -25 }], // Center the button
-    zIndex: 10,
-  },
-
-  playPauseIcon: {
+    top: 20,
+    right: 40,
     width: 50,
     height: 50,
-    tintColor: "white", // Optional, for styling
   },
 });
 
