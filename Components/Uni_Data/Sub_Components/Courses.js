@@ -103,8 +103,8 @@ const Courses = ({ university }) => {
       </View>
 
       <View style={styles.departmentMainContainer}>
+        <PopularCourse />
         <CoursesTable />
-          <PopularCourse />
       </View>
     </View>
   );

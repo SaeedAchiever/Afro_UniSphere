@@ -9,12 +9,123 @@ const AllCourses = () => {
   return (
     <View style={styles.departmentMainContainer}>
       <View style={styles.facultyMainContainer}>
-        {/* <View style={styles.popularCOursesContainer}>
+        <View
+          style={[
+            styles.popularCOursesContainer,
+            { alignSelf: "flex-start", marginLeft: 40 },
+          ]}
+        >
           <Text style={styles.overviewHeadTitle}>
-            Popular Courses On Campus
+            Undergraduate Courses
           </Text>
-        </View> */}
+        </View>
 
+        <View
+          style={[
+            styles.MainPopularContainer,
+            {
+              flexDirection: width > 650 ? "row" : "column",
+            },
+          ]}
+        >
+          <View
+            style={[
+              styles.popularCourseMainContainer,
+              {
+                width: width > 650 ? "50%" : "90%",
+              },
+            ]}
+          >
+            <View style={styles.popularCourseContainer}>
+              <View style={styles.popularCourseContainer}>
+                <Text style={styles.popularCourseText}>
+                  Business Adminisration
+                </Text>
+              </View>
+              <View style={styles.popularCourseNormalContainer}>
+                <View style={styles.popularCourseMainBox}>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Total Fees Per Sem
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>GHC 3k</Text>
+                  </View>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Mode Of Tuition
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>Full Time</Text>
+                  </View>
+                </View>
+                <View style={styles.popularCourseMainBox}>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Course Duration
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>3 yrs</Text>
+                  </View>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Average Salary
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>
+                      GHC 70k-90k
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+
+          {/* MMM */}
+
+          <View
+            style={[
+              styles.popularCourseMainContainer,
+              {
+                width: width > 600 ? "45%" : "90%",
+              },
+            ]}
+          >
+            <View style={styles.popularCourseContainer}>
+              <View style={styles.popularCourseContainer}>
+                <Text style={styles.popularCourseText}>Civil Engineering</Text>
+              </View>
+              <View style={styles.popularCourseNormalContainer}>
+                <View style={styles.popularCourseMainBox}>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Total Fees Per Sem
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>GHC 3k</Text>
+                  </View>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Mode Of Tuition
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>Full Time</Text>
+                  </View>
+                </View>
+                <View style={styles.popularCourseMainBox}>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Course Duration
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>3 yrs</Text>
+                  </View>
+                  <View style={styles.popularCourseBox}>
+                    <Text style={styles.popularCourseNormalText}>
+                      Average Salary
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>
+                      GHC 70k-90k
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
         <View
           style={[
             styles.MainPopularContainer,
@@ -41,24 +152,30 @@ const AllCourses = () => {
                 <View style={styles.popularCourseMainBox}>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Total Fees Per Sem
                     </Text>
+                    <Text style={styles.popularCourseOtherText}>GHC 3k</Text>
                   </View>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Mode Of Tuition
                     </Text>
+                    <Text style={styles.popularCourseOtherText}>Full Time</Text>
                   </View>
                 </View>
                 <View style={styles.popularCourseMainBox}>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Course Duration
                     </Text>
+                    <Text style={styles.popularCourseOtherText}>3 yrs</Text>
                   </View>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Average Salary
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>
+                      GHC 70k-90k
                     </Text>
                   </View>
                 </View>
@@ -78,32 +195,36 @@ const AllCourses = () => {
           >
             <View style={styles.popularCourseContainer}>
               <View style={styles.popularCourseContainer}>
-                <Text style={styles.popularCourseText}>
-                  Business Adminisration
-                </Text>
+                <Text style={styles.popularCourseText}>Civil Engineering</Text>
               </View>
               <View style={styles.popularCourseNormalContainer}>
                 <View style={styles.popularCourseMainBox}>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Total Fees Per Sem
                     </Text>
+                    <Text style={styles.popularCourseOtherText}>GHC 3k</Text>
                   </View>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Mode Of Tuition
                     </Text>
+                    <Text style={styles.popularCourseOtherText}>Full Time</Text>
                   </View>
                 </View>
                 <View style={styles.popularCourseMainBox}>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Course Duration
                     </Text>
+                    <Text style={styles.popularCourseOtherText}>3 yrs</Text>
                   </View>
                   <View style={styles.popularCourseBox}>
                     <Text style={styles.popularCourseNormalText}>
-                      vvvHVellovvvvvv
+                      Average Salary
+                    </Text>
+                    <Text style={styles.popularCourseOtherText}>
+                      GHC 70k-90k
                     </Text>
                   </View>
                 </View>

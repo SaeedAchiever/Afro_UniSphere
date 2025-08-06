@@ -209,6 +209,9 @@ const styles = StyleSheet.create({
   MainPopularContainer: {
     display: "flex",
     gap: "3%",
+    alignSelf: "center",
+    width: "100%",
+    alignSelf: "center",
   },
   popularCourseMainContainer: {
     height: "auto",
@@ -216,10 +219,21 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(188, 193, 196, 0.3)",
     alignSelf: "center",
     maxWidth: 700,
+    marginVertical: 10,
   },
   popularCourseContainer: {
     width: "97%",
     alignSelf: "center",
+  },
+  popularCourseHeadContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+  },
+  CourseInfoImage:{
+    width:25,
+    height:25
   },
   popularCourseText: {
     color: "blue",
@@ -340,19 +354,21 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   searchBarContainer: {
-    width: "95%",
+    width: "80%",
     flexDirection: "row",
     alignItems: "center",
-    gap: 15,
-    backgroundColor: "rgba(0,0,0,0.09)",
     paddingVertical: 5,
     marginBottom: 10,
     borderRadius: 15,
     paddingLeft: 20,
+    borderWidth: 1.3,
+    borderColor: "magenta",
+    marginTop: 50,
   },
   searchBar: {
     fontSize: 15,
     fontWeight: "500",
+    borderRadius: 10,
     borderRadius: 10,
     paddingVertical: 5,
     color: "#333",
