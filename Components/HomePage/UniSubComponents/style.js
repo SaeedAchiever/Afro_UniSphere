@@ -147,7 +147,6 @@ const styles = StyleSheet.create({
   SearchedCoursesContainer: {
     width: "98%",
     height: "auto",
-    borderWidth: 1,
     paddingVertical: 20,
     paddingHorizontal: 5,
     alignSelf: "center",

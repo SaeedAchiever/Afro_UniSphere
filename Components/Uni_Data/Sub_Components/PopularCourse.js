@@ -97,7 +97,7 @@ const PopularCourse = () => {
             style={[
               styles.popularCourseMainContainer,
               {
-                width: width > 600 ? "45%" : "90%",
+                width: width > 650 ? "50%" : "90%",
               },
             ]}
           >
@@ -155,7 +155,7 @@ const PopularCourse = () => {
             style={[
               styles.popularCourseMainContainer,
               {
-                width: width > 600 ? "50%" : "90%",
+                width: width > 650 ? "50%" : "90%",
               },
             ]}
           >
@@ -209,7 +209,7 @@ const PopularCourse = () => {
             style={[
               styles.popularCourseMainContainer,
               {
-                width: width > 600 ? "45%" : "90%",
+                width: width > 650 ? "50%" : "90%",
               },
             ]}
           >

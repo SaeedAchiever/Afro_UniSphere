@@ -128,11 +128,8 @@ const styles = StyleSheet.create({
 
   departmentMainContainer: {
     width: "100%",
-    alignItems: "center",
     gap: 13,
-    // marginBottom: 20,
   },
-  // Degree type
 
   programsContainer: {
     borderBottomWidth: 1,
@@ -159,7 +156,6 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     borderWidth: 1,
     overflow: "hidden",
-    marginBottom: 40,
   },
   degreeTypeSubContainers: {
     width: "33.5%",
@@ -231,15 +227,85 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
   },
-  CourseInfoImage:{
-    width:25,
-    height:25
+  CourseInfoImage: {
+    width: 25,
+    height: 25,
   },
   popularCourseText: {
     color: "blue",
     fontSize: 18,
     fontWeight: "600",
   },
+  CourseInfoContainer: {
+    backgroundColor: "rgba(107, 154, 225, 0.2)",
+    width: "100%",
+    height: "auto",
+    maxWidth: 1000,
+    alignSelf: "center",
+  },
+  CourseInfoCloseBTNContainer: {
+    position: "absolute",
+    top: 20,
+    right: 20,
+    width: 40,
+    height: 40,
+  },
+  CourseInfoCloseBTN: {
+    width: "100%",
+    height: "100%",
+  },
+  CourseInfoSubContainer: {
+    paddingTop: 80,
+    marginVertical: 20,
+    width: "95%",
+    alignSelf: "center",
+  },
+  CourseInfoMainContainer: {
+    width: "100%",
+    height: "auto",
+  },
+  CourseInfoHeaderContainer: {
+    width: "85%",
+    alignSelf: "center",
+  },
+  CourseInfoHeaderText: {
+    fontSize: 18,
+    fontWeight: "500",
+    color: "#333",
+  },
+  CourseInfoBodyContainer: {
+    width: "95%",
+    alignSelf: "center",
+    gap: 10,
+    marginTop: 40,
+    borderBottomWidth:1,
+    paddingVertical:10
+  },
+  BulletsContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 7,
+  },
+  Bullets: {
+    width: 10,
+    height: 10,
+  },
+  CourseInfoBodyHeadingsText: {
+    fontSize: 17,
+    fontWeight: "500",
+    color: "#666",
+  },
+  CourseInfoBodyTextContainer: {
+    width: "75%",
+    alignSelf: "center",
+  },
+  CourseInfoBodyText: {
+    fontSize: 15,
+    fontWeight: "500",
+    color: "#666",
+  },
+
   popularCourseNormalContainer: {
     width: "100%",
     display: "flex",
@@ -249,6 +315,7 @@ const styles = StyleSheet.create({
     alignContent: "center",
     alignSelf: "center",
     paddingVertical: 10,
+    position: "relative",
   },
   popularCourseMainBox: {
     width: "48%",
