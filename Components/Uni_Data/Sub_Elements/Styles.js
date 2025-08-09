@@ -278,8 +278,8 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     gap: 10,
     marginTop: 40,
-    borderBottomWidth:1,
-    paddingVertical:10
+    borderBottomWidth: 1,
+    paddingVertical: 10,
   },
   BulletsContainer: {
     display: "flex",
@@ -431,6 +431,7 @@ const styles = StyleSheet.create({
     borderWidth: 1.3,
     borderColor: "magenta",
     marginTop: 50,
+    alignSelf: "center",
   },
   searchBar: {
     fontSize: 15,

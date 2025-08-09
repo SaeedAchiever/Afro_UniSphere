@@ -47,20 +47,18 @@ const AllCourses = () => {
             ]}
           >
             <View style={styles.popularCourseContainer}>
-              <View style={styles.popularCourseHeadContainer}>
-                <Text style={styles.popularCourseText}>
-                  Business Administration
-                </Text>
-                {/* <View> */}
                 <Pressable
                   onPress={() => {
                     setIsModalVisible(true);
                   }}
                 >
+              <View style={styles.popularCourseHeadContainer}>
+                <Text style={styles.popularCourseText}>
+                  Business Administration
+                </Text>
                   <Image source={Info} style={styles.CourseInfoImage} />
-                </Pressable>
-                {/* </View> */}
               </View>
+                </Pressable>
               <View style={styles.popularCourseNormalContainer}>
                 <View style={styles.popularCourseMainBox}>
                   <View style={styles.popularCourseBox}>
