@@ -16,9 +16,9 @@ import Like_Dislike from "./Sub_Components/Like_Dislike";
 const data = [
   { id: "1", component: Header },
   { id: "2", component: Campus },
+  { id: "7", component: Rating },
   { id: "4", component: Scrol_Elem },
   { id: "5", component: Courses },
-  { id: "7", component: Rating },
   { id: "8", component: Virt_Tour },
   // { id: '9', component: Feeds },
   { id: "10", component: Like_Dislike },

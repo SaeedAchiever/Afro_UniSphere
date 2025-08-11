@@ -208,6 +208,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     width: "100%",
     alignSelf: "center",
+    height: "auto",
   },
   popularCourseMainContainer: {
     height: "auto",
@@ -215,11 +216,12 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(188, 193, 196, 0.3)",
     alignSelf: "center",
     maxWidth: 700,
-    marginVertical: 10,
+    margin: 10,
   },
   popularCourseContainer: {
     width: "97%",
     alignSelf: "center",
+    flex: 1,
   },
   popularCourseHeadContainer: {
     display: "flex",
@@ -231,10 +233,18 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
   },
+  popularCourseTextContainer: {
+    width: "83%",
+    height: "100%",
+  },
   popularCourseText: {
     color: "blue",
     fontSize: 18,
     fontWeight: "600",
+  },
+  popularCourseInfoImageContainer: {
+    width: "15%",
+    height: "100%",
   },
   CourseInfoContainer: {
     backgroundColor: "rgba(107, 154, 225, 0.2)",

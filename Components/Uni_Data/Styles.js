@@ -400,6 +400,7 @@ const styles = StyleSheet.create({
     width: "90%",
     paddingLeft: 20,
   },
+
   // Rating Here
 
   schoolRatingMainContainer: {
@@ -408,7 +409,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     paddingBottom: 10,
     position: "relative",
-    minHeight: 300,
+    // minHeight: 300,
   },
   schoolNoteBodyBox: {
     width: "100%",

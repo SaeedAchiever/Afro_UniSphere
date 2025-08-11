@@ -39,7 +39,9 @@ const Rating = ({ university }) => {
           {/* Box Body */}
 
           <View style={styles.schoolNoteBodyBoxBody}>
+
             {/* One */}
+
             <View style={styles.schoolNoteRateBox}>
               <View style={{ flexDirection: "row", gap: 3 }}>
                 <Text style={styles.schoolNoteBodyBoxHeaderStarText}>5</Text>
@@ -58,7 +60,7 @@ const Rating = ({ university }) => {
               </View>
             </View>
 
-            {/* Tow */}
+            {/* Two */}
 
             <View style={styles.schoolNoteRateBox}>
               <View style={{ flexDirection: "row", gap: 3 }}>
@@ -129,6 +131,7 @@ const Rating = ({ university }) => {
               </View>
               <Text style={styles.schoolNoteBodyBoxHeaderStarText}>-</Text>
             </View>
+            
           </View>
         </View>
       </View>

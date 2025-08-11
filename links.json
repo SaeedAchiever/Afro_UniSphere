@@ -43,15 +43,5 @@
     "id": 9,
     "name": "MatchForm",
     "visible_name": "Match Me"
-  },
-  {
-    "id":10,
-    "name":"LogIn",
-    "visible_name":"Log In"
-  },
-  {
-    "id":11,
-    "name":"SignUp",
-    "visible_name":"Sign Up"
   }
 ]

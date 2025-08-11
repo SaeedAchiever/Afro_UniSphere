@@ -115,6 +115,7 @@ const Header = ({ university }) => {
               source={{ uri: university.logo }}
               style={styles.uniLogo}
               alt="Logo"
+              resizeMode="contain"
             />
           </View>
         </View>

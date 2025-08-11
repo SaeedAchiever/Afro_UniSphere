@@ -6,7 +6,7 @@ import {
   FlatList,
   Pressable,
 } from "react-native";
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 import styles from "../../Components/HomePage/HomeStyle";
 import Footer from "../HeadFoot/Footer";
