@@ -27,7 +27,7 @@ const PurchaseDetails = ({ data }) => {
         >
           <Image
             source={{ uri: data.image }}
-            resizeMode={cover}
+            resizeMode="cover"
             style={{
               width: "100%",
               height: "100%",

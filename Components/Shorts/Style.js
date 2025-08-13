@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     zIndex: 999,
     height: "100%",
     width: "100%",
+    borderWidth: 5,
   },
   shortsVideo: {
     height: "100%",
@@ -172,10 +173,12 @@ const styles = StyleSheet.create({
   // USer
   UserMainContainer: {
     position: "absolute",
-    width: "100%",
-    bottom: 70,
-    left: "10%",
+    width: "95%",
+    bottom: 50,
     zIndex: 100,
+    alignSelf: "center",
+    height: "auto",
+    padding:10
   },
   UserProfileContainer: {
     width: "auto",

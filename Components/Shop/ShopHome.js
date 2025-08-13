@@ -5,11 +5,13 @@ import {
   Keyboard,
   FlatList,
   Pressable,
+  StatusBar,
 } from "react-native";
 import React, { useState } from "react";
 
 import styles from "../../Components/HomePage/HomeStyle";
 import Footer from "../HeadFoot/Footer";
+
 import Head from "../HeadFoot/Head";
 
 import ShopList from "./ShopList";
@@ -42,14 +44,13 @@ const ShopHome = () => {
     <View
       style={{
         width: "100%",
-        maxWidth: 900,
+        maxWidth: 1200,
         alignSelf: "center",
         flex: 1,
-        paddingBottom: 150,
+        paddingBottom: 80,
+        marginTop:90
       }}
     >
-      <Head />
-
       <Footer />
 
       <View
@@ -98,6 +99,7 @@ const ShopHome = () => {
       >
         <FlatList data={data} renderItem={renderItem} />
       </View>
+      <StatusBar />
     </View>
   );
 };

@@ -78,8 +78,8 @@ const Shorts = () => {
     <View style={[styles.shortsVideoContainer, { height, width }]}>
       <Video
         ref={(ref) => (videoRefs.current[index] = ref)} // Store the React ref
-        source={{ uri: item.source }}
-        // source={DemoVid}
+        // source={{ uri: item.source }}
+        source={DemoVid}
         style={styles.shortsVideo}
         resizeMode="cover"
         shouldPlay={index === currentIndex} // Play only the visible video

@@ -74,7 +74,7 @@ export default function App() {
     <View style={styles.entireAppContainer}>
       <NavigationContainer ref={navigationRef}>
         <Stack.Navigator
-          initialRouteName={"HomePage"}
+          initialRouteName={"Shorts"}
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="Demo" component={Demo} />
