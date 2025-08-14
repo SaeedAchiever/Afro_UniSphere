@@ -47,50 +47,45 @@ const CollegeBody = () => {
             onPress={() => {
               setmainCol(colleges);
             }}
+            style={styles.collegeOptionsContainer}
           >
-            <View style={styles.collegeOptionsContainer}>
-              <Text style={styles.collegeOptions}>All Colleges</Text>
-            </View>
+            <Text style={styles.collegeOptions}>All Colleges</Text>
           </Pressable>
 
           <Pressable
             onPress={() => {
               setmainCol(Nursing);
             }}
+            style={styles.collegeOptionsContainer}
           >
-            <View style={styles.collegeOptionsContainer}>
-              <Text style={styles.collegeOptions}>Nursing Colleges</Text>
-            </View>
+            <Text style={styles.collegeOptions}>Nursing Colleges</Text>
           </Pressable>
 
           <Pressable
             onPress={() => {
               setmainCol(Education);
             }}
+            style={styles.collegeOptionsContainer}
           >
-            <View style={styles.collegeOptionsContainer}>
-              <Text style={styles.collegeOptions}>Teaching Colleges</Text>
-            </View>
+            <Text style={styles.collegeOptions}>Teaching Colleges</Text>
           </Pressable>
 
           <Pressable
             onPress={() => {
               setmainCol(Agric);
             }}
+            style={styles.collegeOptionsContainer}
           >
-            <View style={styles.collegeOptionsContainer}>
-              <Text style={styles.collegeOptions}>Agric Colleges</Text>
-            </View>
+            <Text style={styles.collegeOptions}>Agric Colleges</Text>
           </Pressable>
 
           <Pressable
             onPress={() => {
               setmainCol(Poly);
             }}
+            style={styles.collegeOptionsContainer}
           >
-            <View style={styles.collegeOptionsContainer}>
-              <Text style={styles.collegeOptions}>Polytechnic</Text>
-            </View>
+            <Text style={styles.collegeOptions}>Polytechnic</Text>
           </Pressable>
         </View>
       </ScrollView>

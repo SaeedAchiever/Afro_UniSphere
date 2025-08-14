@@ -1,0 +1,180 @@
+[
+  {
+    "id": "1",
+    "name": "Academic City University College",
+    "faculties": [
+      {
+        "faculty_id": 1,
+        "faculty_name": "Engineering",
+        "note": [
+          "where an applicant does not meet the entry requirements, he/she can apply for our 6-mons pre-engineer course. Once passed will automatically qualified.",
+          "Tuition Fees => GH₵ 44,550 / USD 3,300 September 2024 - Semester 1"
+        ],
+        "courses": [
+          {
+            "course_id": 1,
+            "course_name": "Electronics & Communication Engineering",
+            "carreer": ["Electrician", "Journalist", "Teacher"],
+            "salary": "GHC 59000 - GHC 70000",
+            "course_type": [
+              {
+                "level": "Undergraduate",
+                "fees": [1000, 1200],
+                "duration": "4 years",
+                "electives": ["Physics", "Chemistry", "Biology"],
+                "mode": ["Full time on-campus", "Sandwich", "Weekend"],
+                "entry_requirements": [
+                  "Refer to the General Entry Requirements",
+                  "Pariatur proident minim ipsum dolore."
+                ]
+              },
+              {
+                "level": "masters",
+                "fees": [12000, 15000],
+                "duration": "2 years",
+                "electives": ["Physics", "Chemistry", "Biology"],
+                "mode": ["Full time on-campus", "Sandwich", "Weekend"],
+                "entry_requirements": [
+                  "Refer to the General Entry Requirements",
+                  "Pariatur proident minim ipsum dolore."
+                ]
+              }
+            ]
+          },
+          {
+            "course_id": 2,
+            "course_name": "Computer Engineering",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 3,
+            "course_name": "Mechanical Engineering",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 4,
+            "course_name": "Electrical & Electronics Engineering",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 5,
+            "course_name": "Industrial & Systems Engineering",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 6,
+            "course_name": "Robotics Engineering",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 7,
+            "course_name": "Biomedical Engineering",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          }
+        ]
+      },
+      {
+        "faculty_id": 2,
+        "faculty_name": "Business",
+        "courses": [
+          {
+            "course_id": 1,
+            "course_name": "Business Administration - Accounting",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 2,
+            "course_name": "Business Administration - Banking & Finance",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 3,
+            "course_name": "Business Administration - Human Resource Management",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 4,
+            "course_name": "Business Administration - Marketing",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 5,
+            "course_name": "Business Administration - Entrepreneurship",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          }
+        ]
+      },
+      {
+        "faculty_id": 3,
+        "faculty_name": "Communication Arts",
+        "courses": [
+          {
+            "course_id": 1,
+            "course_name": "Journalism & Mass Communication",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 2,
+            "course_name": "Advertising & Public Relations",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 3,
+            "course_name": "Business Administration - Human Resource Management",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          }
+        ]
+      },
+      {
+        "faculty_id": 4,
+        "faculty_name": "Infomatics",
+        "courses": [
+          {
+            "course_id": 1,
+            "course_name": "Artificial Intelligence",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 2,
+            "course_name": "Information Technology",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 3,
+            "course_name": "Computer Science",
+            "course_type": "undergraduate",
+            "entry_requirements": ["Refer to the General Entry Requirements"]
+          },
+          {
+            "course_id": 4,
+            "course_name": "Data Science and Analytics",
+            "course_type": "masters",
+            "entry_requirements": []
+          },
+          {
+            "course_id": 5,
+            "course_name": "Cyber Security",
+            "course_type": "masters",
+            "entry_requirements": []
+          }
+        ]
+      }
+    ]
+  }
+]

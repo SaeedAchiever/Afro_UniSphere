@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Basketry"
+  },
+  {
+    "id": 2,
+    "name": "Ceramics"
+  },
+  {
+    "id": 3,
+    "name": "Graphic Design"
+  },
+  {
+    "id": 4,
+    "name": "Jewellery"
+  },
+  {
+    "id": 5,
+    "name": "Leatherwork"
+  },
+  {
+    "id": 6,
+    "name": "Picture Making"
+  },
+  {
+    "id": 7,
+    "name": "Sculpture"
+  },
+  {
+    "id": 8,
+    "name": "Textiles"
+  },
+  {
+    "id": 9,
+    "name": "Food and Nutrition"
+  },
+  {
+    "id": 10,
+    "name": "Arabic"
+  }
+]

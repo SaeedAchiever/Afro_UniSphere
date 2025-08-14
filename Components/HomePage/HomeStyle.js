@@ -1,4 +1,4 @@
-import { StyleSheet, Platform, } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 // const deviceWidth = useWindowDimensions().width;
 
 const styles = StyleSheet.create({
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   },
   recommendationContainer: {
     backgroundColor: "rgba(0,0,0,0.1)",
-    zIndex:999,
+    zIndex: 999,
     borderColor: "lighblue",
     flexDirection: "row",
     borderRadius: 10,
@@ -378,8 +378,8 @@ const styles = StyleSheet.create({
     padding: 5,
     color: "#333",
     width: "85%",
-    borderWidth:0,
-    borderColor:"#fff"
+    borderWidth: 0,
+    borderColor: "#fff",
   },
   searchContainer: {
     width: "100%",
@@ -816,7 +816,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     margin: 10,
     justifyContent: "flex-start",
-    width:'95%'
+    width: "95%",
   },
   NewsBGImage: {
     width: "100%",
@@ -916,6 +916,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   collegeOptionsMainContainer: {
+    width: "100%",
     display: "flex",
     flexDirection: "row",
     gap: 20,

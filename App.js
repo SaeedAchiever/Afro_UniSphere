@@ -35,7 +35,7 @@ import { navigationRef, navigate } from "./NavRef";
 
 import MatchForm from "./Components/MatchMe/MatchForm";
 
-import Demo from "./Demo";
+import Demo from "./Components/Demo/Demo";
 import Head from "./Components/HeadFoot/Head";
 
 const Stack = createNativeStackNavigator();
@@ -74,7 +74,7 @@ export default function App() {
     <View style={styles.entireAppContainer}>
       <NavigationContainer ref={navigationRef}>
         <Stack.Navigator
-          initialRouteName={"Shorts"}
+          initialRouteName={"Demo"}
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="Demo" component={Demo} />

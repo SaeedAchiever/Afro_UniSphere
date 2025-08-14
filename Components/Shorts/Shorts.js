@@ -6,8 +6,8 @@ import {
   Pressable,
   Modal,
   TextInput,
-  Text,
 } from "react-native";
+
 import React, { useState, useRef, useCallback } from "react";
 import { Video } from "expo-av";
 
@@ -75,19 +75,20 @@ const Shorts = () => {
   };
 
   const renderItem = ({ item, index }) => (
-    <View style={[styles.shortsVideoContainer, { height, width }]}>
+    <View style={[styles.shortsVideoContainer, { height: "auto" }]}>
       <Video
         ref={(ref) => (videoRefs.current[index] = ref)} // Store the React ref
         // source={{ uri: item.source }}
         source={DemoVid}
-        style={styles.shortsVideo}
+        style={[styles.shortsVideo, { height: "100%", flex: 1 }]}
         resizeMode="cover"
-        shouldPlay={index === currentIndex} // Play only the visible video
+        shouldPlay={index === currentIndex}
         isLooping
         useNativeControls={false}
       />
 
       {/* Comments Section */}
+
       {isCommentsVisible && (
         <View style={styles.showCommentsContainer}>
           <Pressable

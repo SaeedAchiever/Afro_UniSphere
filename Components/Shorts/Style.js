@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   shortsMainContainer: {
-    // maxWidth: 1200,
+    maxWidth: 900,
     width: "100%",
     backgroundColor: "rgba(0,0,0,0.3)",
     position: "relative",
@@ -39,9 +39,9 @@ const styles = StyleSheet.create({
 
   shortsVideoContainer: {
     zIndex: 999,
-    height: "100%",
     width: "100%",
     borderWidth: 5,
+    borderColor: "#fcfcfc",
   },
   shortsVideo: {
     height: "100%",
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     zIndex: 100,
     alignSelf: "center",
     height: "auto",
-    padding:10
+    padding: 10,
   },
   UserProfileContainer: {
     width: "auto",
