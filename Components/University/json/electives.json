@@ -38,5 +38,9 @@
   {
     "id": 10,
     "name": "Arabic"
+  },
+  {
+    "id": 11,
+    "name": "French"
   }
 ]

@@ -75,7 +75,7 @@ const Shorts = () => {
   };
 
   const renderItem = ({ item, index }) => (
-    <View style={[styles.shortsVideoContainer, { height: "auto" }]}>
+    <View style={[styles.shortsVideoContainer, { height }]}>
       <Video
         ref={(ref) => (videoRefs.current[index] = ref)} // Store the React ref
         // source={{ uri: item.source }}
